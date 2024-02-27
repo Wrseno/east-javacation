@@ -8,26 +8,14 @@
     font-family: "Poppins", sans-serif;
 }
 
+.amaranth-regular {
+    font-family: "Amaranth", sans-serif;
+}
+
 .image-hero {
     object-fit: cover;
     height: 700px;
     width: 100%;
-}
-
-.protest-strike {
-    font-family: "Protest Strike", sans-serif;
-}
-
-.lilita-one {
-    font-family: "Lilita One", cursive;
-}
-
-.rowdyes-regular {
-    font-family: "Rowdies", sans-serif;
-}
-
-.amaranth-regular {
-    font-family: "Amaranth", sans-serif;
 }
 
 .text-shadow {
