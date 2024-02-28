@@ -2,7 +2,11 @@ async function apiWeather() {
   let url;
 
   const pathName = window.location.pathname;
-  if (pathName === "/city/surabaya/" || pathName === "/") {
+  if (
+    pathName === "/city/surabaya/" ||
+    pathName === "/" ||
+    pathName === "/gallery/"
+  ) {
     url = "https://cuaca-gempa-rest-api.vercel.app/weather/jawa-timur/surabaya";
   } else if (pathName === "/city/malang/") {
     url =
