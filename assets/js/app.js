@@ -1,9 +1,3 @@
-let typed = new Typed("#slogan", {
-  strings: ["Discover Nature's Beauty and Cultural Wonders!"],
-  typeSpeed: 50,
-  loop: true,
-});
-
 // navbar offset
 const nav = document.getElementById("nav");
 const navChild = document.getElementById("navChild");
