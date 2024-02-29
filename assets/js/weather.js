@@ -4,19 +4,24 @@ async function apiWeather() {
   const pathName = window.location.pathname;
   if (
     pathName === "/city/surabaya/" ||
+    pathName === "/city/surabaya" ||
     pathName === "/" ||
+    pathName === "/gallery" ||
     pathName === "/gallery/"
   ) {
     url = "https://cuaca-gempa-rest-api.vercel.app/weather/jawa-timur/surabaya";
-  } else if (pathName === "/city/malang/") {
+  } else if (pathName === "/city/malang/" || pathName === "/city/malang") {
     url =
       "https://cuaca-gempa-rest-api.vercel.app/weather/jawa-timur/kabupaten-malang";
-  } else if (pathName === "/city/pacitan/") {
+  } else if (pathName === "/city/pacitan/" || pathName === "/city/pacitan") {
     url = "https://cuaca-gempa-rest-api.vercel.app/weather/jawa-timur/pacitan";
-  } else if (pathName === "/city/probolinggo/") {
+  } else if (
+    pathName === "/city/probolinggo/" ||
+    pathName === "/city/probolinggo"
+  ) {
     url =
       "https://cuaca-gempa-rest-api.vercel.app/weather/jawa-timur/kabupaten-probolinggo";
-  } else if (pathName === "/city/kediri/") {
+  } else if (pathName === "/city/kediri/" || pathName === "/city/kediri") {
     url =
       "https://cuaca-gempa-rest-api.vercel.app/weather/jawa-timur/kabupaten-kediri";
   }
