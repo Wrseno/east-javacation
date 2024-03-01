@@ -72,22 +72,6 @@ themeToggleBtn.addEventListener("click", function () {
   }
 });
 
-// function change the video while resize
-window.addEventListener("resize", function () {
-  var screenWidth = window.innerWidth;
-
-  var video = document.getElementById("video");
-
-  var source768 = document.querySelector('source[data-width="768"]');
-  var sourceDefault = document.querySelector("source[data-default]");
-
-  if (screenWidth <= 767) {
-    video.src = source768.getAttribute("src");
-  } else {
-    video.src = sourceDefault.getAttribute("src");
-  }
-});
-
 document.addEventListener("DOMContentLoaded", function () {
   const fadeIns = document.querySelectorAll(".fade-in");
 

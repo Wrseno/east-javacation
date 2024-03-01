@@ -33,11 +33,12 @@ body {
     opacity: 1;
 }
 
-
+.grid-gallery {
+    max-width: none;
+}
 
 /* Grid galeri responsif pada layar yang lebih besar dari tablet */
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-
+@media screen and (min-width: 768px) {
     .grid-item {
         width: 200px;
         height: 150px;
@@ -58,7 +59,7 @@ body {
     }
 
     .md-grid-item--width5 {
-        width: 50%;
+        width: 49.5%;
     }
 
     .md-grid-item--height2 {
