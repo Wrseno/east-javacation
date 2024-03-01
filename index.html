@@ -7,13 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>East Javacation</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/css/style.css" />
   <!-- Konfigurasi -->
   <script src="/tailwind.config.js"></script>
   <script src="/assets/js/colorTheme.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 
@@ -39,23 +37,19 @@
             class="bg-white text-mixed100 dark:bg-mixed100 dark:text-white md:bg-transparent dark:md:bg-transparent right-0 flex flex-col font-medium p-4 md:p-0 mt-4 border md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 rounded-md items-center">
             
             <li>
-              <a href="/" hx-boost="false" class="block py-2 px-3 md:p-0 md:text-white">Home</a>
+              <a href="/" class="block py-2 px-3 md:p-0 md:text-white">Home</a>
             </li>
             
             <li>
-              <a href="/destinations" hx-boost="true" class="block py-2 px-3 md:p-0 md:text-white">Destinations</a>
+              <a href="/destinations" class="block py-2 px-3 md:p-0 md:text-white">Destinations</a>
             </li>
 
             <li>
-              <a href="/attraction" hx-boost="true" class="block py-2 px-3 md:p-0 md:text-white">Attraction</a>
+              <a href="/local-quirkiness" class="block py-2 px-3 md:p-0 md:text-white">Local Quirkiness</a>
             </li>
 
             <li>
-              <a href="/local-foods" hx-boost="true" class="block py-2 px-3 md:p-0 md:text-white">Local Foods</a>
-            </li>
-
-            <li>
-              <a href="/gallery" hx-boost="true" class="block py-2 px-3 md:p-0 md:text-white">Gallery</a>
+              <a href="/gallery" class="block py-2 px-3 md:p-0 md:text-white">Gallery</a>
             </li>
             
             <li>
@@ -81,14 +75,17 @@
   </header>
 
   <!-- Header Background -->
-  <div class="bg-background bg-cover bg-center aspect-widescreen relative">
-    <video autoplay loop muted id="video" class="object-cover w-full h-full">
-      <source src="https://ik.imagekit.io/rnatrnn6r/eastjavacation-video-mobile.mp4?updatedAt=1709023264798" type="video/mp4" media="(max-width: 768px)" data-width="768">
-      <source src="https://ik.imagekit.io/rnatrnn6r/eastjavacation-video-lg.mp4?updatedAt=1709023338275" type="video/mp4" media="(min-width: 768px)" data-default/>
-    </video>
+  
+  <div class="mx-auto bg-background bg-cover bg-center aspect-widescreen relative">
+    <div class="image-hero">
+      <video autoplay loop muted id="video" class="object-cover w-full h-full">
+        <source src="https://ik.imagekit.io/rnatrnn6r/eastjavacation-video-mobile.mp4?updatedAt=1709023264798" type="video/mp4" media="(max-width: 768px)" data-width="768">
+        <source src="https://ik.imagekit.io/rnatrnn6r/eastjavacation-video-lg.mp4?updatedAt=1709023338275" type="video/mp4" media="(min-width: 768px)" data-default/>
+      </video>
+    </div>
     <div >
-      <div data-aos="zoom-in" class="amaranth-regular font-bold max-w-full w-full absolute items-center top-[30%]">
-        <div class="text-white mx-auto text-center">
+      <div  class=" font-bold max-w-full w-full absolute items-center top-[30%]">
+        <div class="text-white mx-auto text-center bebas">
           <h3 class="inline md:block tracking-widest text-lg md:text-3xl lg:text-4xl">
             Adventure in
           </h3>
@@ -114,12 +111,12 @@
 
 
   <section class="container max-w-screen-xl mx-auto my-8 px-4 md:px-12">
-    <h2 class="amaranth-regular font-bold text-2xl md:text-4xl my-4 mt-20" data-aos="fade-down">A brief history of East Java</h2>
+    <h2 class=" font-bold text-2xl md:text-4xl my-4 mt-20 wow" >A brief history of East Java</h2>
     <div class="md:flex md:gap-6">
-      <div class="w-full" data-aos="fade-right">
+      <div class="w-full" >
         <img loading="lazy" src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/Ggrahadi-min.webp?updatedAt=1708960984296" alt="Image" class="rounded">
       </div>
-      <div class="w-full" data-aos="fade-left">
+      <div class="w-full" >
         <p>
           East Java, located on the eastern part of Java Island in Indonesia, has a rich and diverse history dating back centuries. The region has been inhabited since prehistoric times, with evidence of early human settlements found in various archaeological sites. <br><br>
           One of the earliest known kingdoms in East Java was the kingdom of Kediri, which flourished from the 11th to the 13th century. It was followed by the Majapahit Empire, one of the largest and most powerful empires in Southeast Asia, which rose to prominence in the 13th century under the rule of King Hayam Wuruk. <br><br>
@@ -135,16 +132,16 @@
     </div>
   </section>
 
-  <section id="indicators-carousel" class="relative w-full mt-24 duration-3000" data-carousel="slide">
+  <section id="indicators-carousel" class="mx-auto relative w-full mt-24 duration-3000" data-carousel="slide">
     <!-- Carousel wrapper -->
-    <div class="relative h-screen md:h-[450px] overflow-hidden text-white" data-aos="fade-in">
+    <div class="relative h-screen md:h-[450px] overflow-hidden text-white" >
          <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-          <div class="absolute top-6 left-6 md:top-16 md:left-32 z-10 md:w-1/2">
-            <h2 class="amaranth-regular font-bold text-4xl md:text-6xl text-shadow mb-6">Surabaya</h2>
-            <h3 class="amaranth-regular font-bold text-3xl md:text-5xl text-shadow">The largest city in East Java and second in Indonesia.</h3>
+          <div class="absolute top-6 left-6 md:top-16 md:left-20 z-10 lg:w-2/3">
+            <h2 class=" font-bold text-4xl md:text-6xl text-shadow mb-6">Surabaya</h2>
+            <h3 class=" font-bold text-3xl md:text-5xl text-shadow">The largest city in East Java.</h3>
             <p class="text-sm md:text-xl text-shadow">A bustling metropolitan city known for its dynamic culture. With a rich history and modern infrastructure.</p>
-            <div class="bg-gradient-to-r from-secondary to-primary p-3 rounded w-1/2 md:w-1/3 mt-6">
+            <div class="bg-gradient-to-r from-secondary to-primary p-3 rounded w-2/3 md:w-1/2 mt-6">
               <div class="flex flex-warp items-center">
                 <a href="/city/surabaya" class="block mx-auto">Explore Surabaya</a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="block mx-auto bi bi-arrow-right" viewBox="0 0 16 16">
@@ -157,11 +154,11 @@
         </div>
         <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <div class="absolute top-6 left-6 md:top-16 md:left-32 z-10 md:w-1/2">
-            <h2 class="amaranth-regular font-bold text-4xl md:text-6xl text-shadow mb-6">Malang</h2>
-            <h3 class="amaranth-regular font-bold text-3xl md:text-5xl text-shadow">Nature's Beauty, and Culinary Delights</h3>
+          <div class="absolute top-6 left-6 md:top-16 md:left-20 z-10 lg:w-2/3">
+            <h2 class=" font-bold text-4xl md:text-6xl text-shadow mb-6">Malang</h2>
+            <h3 class=" font-bold text-3xl md:text-5xl text-shadow">Nature's Beauty, and Culinary Delights</h3>
             <p class="text-sm md:text-xl text-shadow">Famous for its diverse natural beauty, delicious traditional cuisine, and sustainable culture.</p>
-            <div class="bg-gradient-to-r from-secondary to-primary p-3 rounded w-1/2 md:w-1/3 mt-6">
+            <div class="bg-gradient-to-r from-secondary to-primary p-3 rounded w-2/3 md:w-1/2 mt-6">
               <div class="flex flex-warp items-center">
                 <a href="/city/malang" class="block mx-auto">Explore Malang</a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="block mx-auto bi bi-arrow-right" viewBox="0 0 16 16">
@@ -174,11 +171,11 @@
         </div>
         <!-- Item 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <div class="absolute top-6 left-6 md:top-16 md:left-32 z-10 md:w-1/2">
-            <h2 class="amaranth-regular font-bold text-4xl md:text-6xl text-shadow mb-6">Pacitan</h2>
-            <h3 class="amaranth-regular font-bold text-3xl md:text-5xl text-shadow">Warm hospitality and welcoming community.</h3>
+          <div class="absolute top-6 left-6 md:top-16 md:left-20 z-10 lg:w-2/3">
+            <h2 class=" font-bold text-4xl md:text-6xl text-shadow mb-6">Pacitan</h2>
+            <h3 class=" font-bold text-3xl md:text-5xl text-shadow">Warm hospitality and welcoming community.</h3>
             <p class="text-sm md:text-xl text-shadow">Renowned for its pristine beaches, enchanting waterfalls, countryside, and rich cultural heritage.</p>
-            <div class="bg-gradient-to-r from-secondary to-primary p-3 rounded w-1/2 md:w-1/3 mt-6">
+            <div class="bg-gradient-to-r from-secondary to-primary p-3 rounded w-2/3 md:w-1/2 mt-6">
               <div class="flex flex-warp items-center">
                 <a href="/city/pacitan" class="block mx-auto">Explore Pacitan</a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="block mx-auto bi bi-arrow-right" viewBox="0 0 16 16">
@@ -191,11 +188,11 @@
         </div>
         <!-- Item 4 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <div class="absolute top-6 left-6 md:top-16 md:left-32 z-10 md:w-1/2">
-            <h2 class="amaranth-regular font-bold text-4xl md:text-6xl text-shadow mb-6">Probolinggo</h2>
-            <h3 class="amaranth-regular font-bold text-3xl md:text-5xl text-shadow">Where Culture Meets the Sea.</h3>
+          <div class="absolute top-6 left-6 md:top-16 md:left-20 z-10 lg:w-2/3">
+            <h2 class=" font-bold text-4xl md:text-6xl text-shadow mb-6">Probolinggo</h2>
+            <h3 class=" font-bold text-3xl md:text-5xl text-shadow">Where Culture Meets the Sea.</h3>
             <p class="text-sm md:text-xl text-shadow">Dive into the city's history by exploring ancient temples, such as Candi Badut, and immerse yourself in the bustling atmosphere of traditional markets.</p>
-            <div class="bg-gradient-to-r from-secondary to-primary p-3 rounded w-1/2 md:w-1/3 mt-6">
+            <div class="bg-gradient-to-r from-secondary to-primary p-3 rounded w-2/3 md:w-1/2 mt-6">
               <div class="flex flex-warp items-center">
                 <a href="/city/probolinggo" class="block mx-auto">Explore Probolinggo</a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="block mx-auto bi bi-arrow-right" viewBox="0 0 16 16">
@@ -208,11 +205,11 @@
         </div>
         <!-- Item 5 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <div class="absolute top-6 left-6 md:top-16 md:left-32 z-10 md:w-1/2">
-            <h2 class="amaranth-regular font-bold text-4xl md:text-6xl text-shadow mb-6">Kediri</h2>
-            <h3 class="amaranth-regular font-bold text-3xl md:text-5xl text-shadow">Where Past Meets Present.</h3>
+          <div class="absolute top-6 left-6 md:top-16 md:left-20 z-10 lg:w-2/3">
+            <h2 class=" font-bold text-4xl md:text-6xl text-shadow mb-6">Kediri</h2>
+            <h3 class=" font-bold text-3xl md:text-5xl text-shadow">Where Past Meets Present.</h3>
             <p class="text-sm md:text-xl text-shadow">Nestled in the heart of East Java, Kediri is a dynamic city renowned for its fascinating blend of ancient wonders and modern delights</p>
-            <div class="bg-gradient-to-r from-secondary to-primary p-3 rounded w-1/2 md:w-1/3 mt-6">
+            <div class="bg-gradient-to-r from-secondary to-primary p-3 rounded w-2/3 md:w-1/2 mt-6">
               <div class="flex flex-warp items-center">
                 <a href="/city/kediri" class="block mx-auto">Explore Kediri</a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="block mx-auto bi bi-arrow-right" viewBox="0 0 16 16">
@@ -225,7 +222,7 @@
         </div>
     </div>
     
-    <button type="button" data-aos="fade-right" class="absolute top-0 start-0 z-20 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+    <button type="button"  class="absolute top-0 start-0 z-20 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
         <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
             <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
@@ -233,7 +230,7 @@
             <span class="sr-only">Previous</span>
         </span>
     </button>
-    <button type="button" data-aos="fade-left" class="absolute top-0 end-0 z-20 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+    <button type="button"  class="absolute top-0 end-0 z-20 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
         <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
             <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
@@ -244,35 +241,35 @@
   </section>
 
   <section class="container max-w-screen-xl mx-auto my-8 px-4 md:px-12" id="travel-tips">
-    <h2 class="amaranth-regular font-bold text-2xl md:text-4xl my-4 mt-20" data-aos="fade-down">Travel Tips</h2>
-    <ul class=" grid md:grid-cols-3 w-fulll gap-4 md:gap-6" data-aos="fade-up">
+    <h2 class=" font-bold text-2xl md:text-4xl my-4 mt-20" >Travel Tips</h2>
+    <ul class=" grid md:grid-cols-3 w-fulll gap-4 md:gap-6" >
       <li class="bg-white border border-gray-200 shadow dark:bg-mixed200 p-4 rounded">
         <div class="mx-auto flex items-center gap-2">
           <span
-            class="grid text-white bg-gradient-to-r from-secondary to-primary font-extrabold w-10 h-10 text-center items-center rounded-full">1</span>
-          <h3 class="font-semibold">Explore Diverse Landscapes</h3>
+            class="grid text-white bg-gradient-to-r from-secondary to-primary font-extrabold w-10 h-10 text-center items-center rounded-full text-sm">1</span>
+          <h3 class="font-semibold text-sm">Explore Diverse Landscapes</h3>
         </div>
-        <p class="text-gray-900 dark:text-[#908d96] my-4">
+        <p class="text-sm text-gray-900 dark:text-[#908d96] my-4">
           From the iconic Mount Bromo to the tranquil beaches of Pacitan, East Java boasts a wide array of natural wonders waiting to be explored.
         </p>
       </li>
       <li class="bg-white border border-gray-200 shadow dark:bg-mixed200 p-4 rounded">
         <div class="mx-auto flex items-center gap-2">
           <span
-            class="grid text-white bg-gradient-to-r from-secondary to-primary font-extrabold w-10 h-10 text-center items-center rounded-full">2</span>
-          <h3 class="font-semibold">Immerse in Culture and Tradition</h3>
+            class="grid text-white bg-gradient-to-r from-secondary to-primary font-extrabold w-10 h-10 text-center items-center rounded-full text-sm">2</span>
+          <h3 class="font-semibold text-sm">Immerse in Culture and Tradition</h3>
         </div>
-        <p class="text-gray-900 dark:text-[#908d96] my-4">
+        <p class="text-sm text-gray-900 dark:text-[#908d96] my-4">
           Dive into the rich cultural heritage of cities like Surabaya, where traditional markets, historical sites, and vibrant festivals offer a glimpse into Indonesia's past and present.
         </p>
       </li>
       <li class="bg-white border border-gray-200 shadow dark:bg-mixed200 p-4 rounded">
         <div class="mx-auto flex items-center gap-2">
           <span
-            class="grid text-white bg-gradient-to-r from-secondary to-primary font-extrabold w-10 h-10 text-center items-center rounded-full">3</span>
-          <h3 class="font-semibold">Indulge in Culinary Delights</h3>
+            class="grid text-white bg-gradient-to-r from-secondary to-primary font-extrabold w-10 h-10 text-center items-center rounded-full text-sm">3</span>
+          <h3 class="font-semibold text-sm">Indulge in Culinary Delights</h3>
         </div>
-        <p class="text-gray-900 dark:text-[#908d96] my-4">
+        <p class="text-sm text-gray-900 dark:text-[#908d96] my-4">
           Treat your taste buds to the flavors of East Java with its mouthwatering cuisine, from savory sate kambing to refreshing es teler, each dish tells a story of the region's culinary heritage.
         </p>
       </li>
@@ -281,35 +278,35 @@
       <li class="bg-white border border-gray-200 shadow dark:bg-mixed200 p-4 rounded">
         <div class="mx-auto flex items-center gap-2">
           <span
-            class="grid text-white bg-gradient-to-r from-secondary to-primary font-extrabold w-10 h-10 text-center items-center rounded-full">4</span>
-          <h3 class="font-semibold">Embrace Adventure</h3>
+            class="grid text-white bg-gradient-to-r from-secondary to-primary font-extrabold w-10 h-10 text-center items-center rounded-full text-sm">4</span>
+          <h3 class="font-semibold text-sm">Embrace Adventure</h3>
         </div>
-        <p class="text-gray-900 dark:text-[#908d96] my-4">
+        <p class="text-sm text-gray-900 dark:text-[#908d96] my-4">
           Embark on thrilling adventures in East Java's lush countryside, whether it's trekking through dense forests, rafting down scenic rivers, or exploring hidden waterfalls, there's no shortage of outdoor activities to enjoy.
         </p>
       </li>
       <li class="bg-white border border-gray-200 shadow dark:bg-mixed200 p-4 rounded">
         <div class="mx-auto flex items-center gap-2">
           <span
-            class="grid text-white bg-gradient-to-r from-secondary to-primary font-extrabold w-10 h-10 text-center items-center rounded-full">5</span>
-          <h3 class="font-semibold">Plan Your Trip</h3>
+            class="grid text-white bg-gradient-to-r from-secondary to-primary font-extrabold w-10 h-10 text-center items-center rounded-full text-sm">5</span>
+          <h3 class="font-semibold text-sm">Plan Your Trip</h3>
         </div>
-        <p class="text-gray-900 dark:text-[#908d96] my-4">
+        <p class="text-sm text-gray-900 dark:text-[#908d96] my-4">
           Before you go, make sure to plan your trip carefully, considering factors like weather, transportation, and accommodation to ensure a smooth and enjoyable journey.
         </p>
       </li>
       <li class="bg-white border border-gray-200 shadow dark:bg-mixed200 p-4 rounded">
         <div class="mx-auto flex items-center gap-2">
           <span
-            class="grid text-white bg-gradient-to-r from-secondary to-primary font-extrabold w-10 h-10 text-center items-center rounded-full">6</span>
-          <h3 class="font-semibold">Respect Local Customs</h3>
+            class="grid text-white bg-gradient-to-r from-secondary to-primary font-extrabold w-10 h-10 text-center items-center rounded-full text-sm">6</span>
+          <h3 class="font-semibold text-sm">Respect Local Customs</h3>
         </div>
-        <p class="text-gray-900 dark:text-[#908d96] my-4">
+        <p class="text-sm text-gray-900 dark:text-[#908d96] my-4">
           While exploring East Java, remember to respect local customs and traditions, from dress codes at religious sites to etiquette in local communities, showing cultural sensitivity enriches your travel experience
         </p>
       </li>
     </ul>
-    <div class="flex items-center justify-center my-2" data-aos="fade-up">
+    <div class="flex items-center justify-center my-2" >
       <button id="show-more-btn" class="font-semibold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent" onclick="showMore()">Show More</button>
       <svg id="arrow-down" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-secondary bi bi-caret-down-fill" viewBox="0 0 16 16">
         <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
@@ -321,9 +318,9 @@
   </section>
 
   <section class="container max-w-screen-xl mx-auto my-8 px-4 md:px-12">
-    <h2 class="amaranth-regular font-bold text-2xl md:text-4xl my-4 mt-20" data-aos="fade-right">Destination Highlight</h2>
+    <h2 class=" font-bold text-2xl md:text-4xl my-4 mt-20" >Destination Highlight</h2>
     <div class="grid md:grid-cols-3 gap-6 md:gap-4 aspect-widescreen">
-      <div class="relative overflow-hidden rounded" data-aos="fade-right">
+      <div class="relative overflow-hidden rounded fade-in" >
         <img loading="lazy" src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/bromo-optimaze-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960985107" alt="Image"
           class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer" />
           <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
@@ -331,14 +328,14 @@
           </div>
       </div>
       <div class="grid gap-6 md:gap-4">
-        <div class="relative overflow-hidden rounded" data-aos="fade-down">
+        <div class="relative overflow-hidden rounded fade-in" >
           <img loading="lazy" src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/kawah-ijen-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960983660" alt="Image"
             class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer" />
             <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
               <h3 class="text-sm md:text-md font-semibold text-white">Ijen Crater</h3>
             </div>
         </div>
-        <div class="relative overflow-hidden rounded" data-aos="fade-up">
+        <div class="relative overflow-hidden rounded fade-in" >
           <img loading="lazy" src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/de-djawatan-min-ezgif.com-optiwebp.webp?updatedAt=1708960985807" alt="Image"
             class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer" />
             <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
@@ -346,7 +343,7 @@
             </div>
         </div>
       </div>
-      <div class="relative overflow-hidden rounded" data-aos="fade-left">
+      <div class="relative overflow-hidden rounded fade-in" >
         <img loading="lazy" src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/madakaripura-waterfall-min-ezgif.com-optiwebp.webp?updatedAt=1708960985526" alt="Image"
           class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer" />
           <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
@@ -356,14 +353,14 @@
     </div>
     <div class="grid md:grid-cols-3 gap-6 md:gap-4 aspect-widescreen mt-4">
       <div class="grid gap-6 md:gap-4">
-        <div class="relative overflow-hidden rounded" data-aos="fade-right">
+        <div class="relative overflow-hidden rounded fade-in" >
           <img loading="lazy" src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/wedi-klopo-beach-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960984535" alt="Image"
             class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer" />
             <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
               <h3 class="text-sm md:text-md font-semibold text-white">Wedi Klopo Beach</h3>
             </div>
         </div>
-        <div class="relative overflow-hidden rounded" data-aos="fade-right">
+        <div class="relative overflow-hidden rounded fade-in" >
           <img loading="lazy" src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/gunung-kelud-min-ezgif.com-optiwebp.webp?updatedAt=1708960983047" alt="Image"
             class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer" />
             <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
@@ -371,7 +368,7 @@
             </div>
         </div>
       </div>
-      <div class="relative overflow-hidden rounded" data-aos="fade-up">  
+      <div class="relative overflow-hidden rounded fade-in" >  
           <img loading="lazy" src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/Tumpak_sewu-min-ezgif.com-optiwebp.webp?updatedAt=1708960984277" alt="Image"
             class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer" />
             <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
@@ -379,14 +376,14 @@
             </div>
       </div>
       <div class="grid gap-6 md:gap-4">
-        <div class="relative overflow-hidden rounded" data-aos="fade-left">
+        <div class="relative overflow-hidden rounded fade-in" >
           <img loading="lazy" src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/pantai-papuma-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960985371" alt="Image"
             class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer" />
             <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
               <h3 class="text-sm md:text-md font-semibold text-white">Papuma Beach</h3>
             </div>
         </div>
-        <div class="relative overflow-hidden rounded" data-aos="fade-left">
+        <div class="relative overflow-hidden rounded fade-in" >
           <img loading="lazy" src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/kawah-bondowoso-min.webp?updatedAt=1708960985131" alt="Image"
           class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer" />
           <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
@@ -395,12 +392,12 @@
         </div>
       </div>
     </div>
-    <div class="mx-auto md:w-1/4 my-6 bg-gradient-to-r from-secondary to-primary p-2 rounded" data-aos="zoom-in">
+    <div class="mx-auto md:w-1/4 my-6 bg-gradient-to-r from-secondary to-primary p-2 rounded" >
       <a href="/destinations" class="block text-center font-semibold text-white">Discover More</a>
     </div>
   </section>
 
-  <footer class="mx-auto p-4 bg-gray-100 dark:bg-mixed200">
+  <footer class="container max-w-screen-xl mx-auto p-4 bg-gray-100 dark:bg-mixed200">
     <div class="grid md:grid-cols-2 gap-4">
       <div>
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse z-10">
@@ -450,11 +447,14 @@
     </div>
   </footer>
 
-  <script src="/assets/js/typed.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    let typedSlogan = new Typed("#slogan", {
+      strings: ["Discover Nature's Beauty and Cultural Wonders!"],
+      typeSpeed: 50,
+      loop: true,
+    });
   </script>
+   
   <script src="/assets/js/app.js"></script>
   <script src="/assets/js/weather.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>

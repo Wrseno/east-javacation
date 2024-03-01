@@ -1,23 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Lilita+One&family=Poppins&family=Protest+Strike&family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
     scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .poppins-regular {
     font-family: "Poppins", sans-serif;
 }
 
-.amaranth-regular {
-    font-family: "Amaranth", sans-serif;
+.text-shadow {
+    text-shadow: 4px 4px 8px #000;
 }
 
 .image-hero {
     object-fit: cover;
-    height: 700px;
+    height: 100vh;
     width: 100%;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, transparent 100%);
 }
 
-.text-shadow {
-    text-shadow: 4px 4px 8px #000;
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.fade-in-show {
+    opacity: 1;
+}
+
+
+
+/* Grid galeri responsif pada layar yang lebih besar dari tablet */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .grid-item {
+        width: 200px;
+        height: 150px;
+        text-align: center;
+    }
+
+    /* Penyesuaian ukuran grid-item lebar dan tinggi */
+    .md-grid-item--width2 {
+        width: 20%;
+    }
+
+    .md-grid-item--width3 {
+        width: 30%;
+    }
+
+    .md-grid-item--width4 {
+        width: 40%;
+    }
+
+    .md-grid-item--width5 {
+        width: 50%;
+    }
+
+    .md-grid-item--height2 {
+        height: 200px;
+    }
+
+    .md-grid-item--height3 {
+        height: 300px;
+    }
+
+    .md-grid-item--height4 {
+        height: 400px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .grid-gallery {
+        max-width: 1200px;
+    }
+
+    .grid-item {
+        width: 200px;
+        height: 150px;
+    }
+
+    /* Penyesuaian ukuran grid-item lebar dan tinggi */
+    .lg-grid-item--width2 {
+        width: 300px;
+    }
+
+    .lg-grid-item--width3 {
+        width: 400px;
+    }
+
+    .lg-grid-item--width4 {
+        width: 500px;
+    }
+
+    .lg-grid-item--width5 {
+        width: 600px;
+    }
+
+    .lg-grid-item--width6 {
+        width: 700px;
+    }
+
+    .lg-grid-item--width7 {
+        width: 800px;
+    }
+
+    .lg-grid-item--width8 {
+        width: 900px;
+    }
+
+    .lg-grid-item--height2 {
+        height: 300px;
+    }
+
+    .lg-grid-item--height3 {
+        height: 450px;
+    }
+
+    .lg-grid-item--height4 {
+        height: 600px;
+    }
 }

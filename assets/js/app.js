@@ -88,6 +88,29 @@ window.addEventListener("resize", function () {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const fadeIns = document.querySelectorAll(".fade-in");
+
+  function checkFadeIns() {
+    fadeIns.forEach((fadeIn) => {
+      const fadeInTop = fadeIn.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (fadeInTop < windowHeight) {
+        fadeIn.classList.add("fade-in-show");
+      } else {
+        fadeIn.classList.remove("fade-in-show");
+      }
+    });
+  }
+
+  checkFadeIns();
+
+  window.addEventListener("scroll", function () {
+    checkFadeIns();
+  });
+});
+
 // function read more history of eastjava
 function readMore() {
   var dots = document.getElementById("dots");
