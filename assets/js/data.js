@@ -207,7 +207,7 @@ const destinations = [
   {
     id: "sempu_island",
     description: "Sempu Island",
-    image: "https://live.staticflickr.com/65535/53547463669_546fe0f7ea_o.jpg",
+    image: "https://live.staticflickr.com/65535/53547463669_d938577dc9_b.jpg",
     size: "big",
   },
   {
