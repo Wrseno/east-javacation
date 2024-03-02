@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Local Quirkiness</title>
+    <title>City on East Java</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
       rel="stylesheet"
@@ -14,10 +15,10 @@
     <!-- Konfigurasi -->
     <script src="/tailwind.config.js"></script>
     <script src="/assets/js/colorTheme.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
+
   <body
-    class="poppins-regular bg-white text-mixed100 dark:bg-mixed100 dark:text-white duration-300 overflow-x-hidden"
+    class="poppins-regular bg-white text-mixed100 dark:bg-mixed100 dark:text-white duration-300"
   >
     <header class="container max-w-full mx-auto">
       <nav id="nav" class="w-full z-30">
@@ -76,7 +77,7 @@
                 <button
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="dropdownNavbar"
-                  class="flex items-center justify-between w-full py-2 px-3 text-mixed100 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto dark:focus:text-white md:dark:hover:bg-transparent"
+                  class="flex items-center justify-between w-full py-2 px-3 text-mixed100 md:text-white dark:text-white rounded md:hover:bg-transparent md:border-0 md:p-0 md:w-auto md:dark:hover:bg-transparent"
                 >
                   What to Visit
                   <svg
@@ -98,7 +99,7 @@
                 <!-- Dropdown menu -->
                 <div
                   id="dropdownNavbar"
-                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-mixed100 dark:divide-gray-600"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-mixed200 dark:divide-gray-600"
                 >
                   <ul
                     class="py-2 text-gray-700 dark:text-gray-100"
@@ -107,14 +108,14 @@
                     <li>
                       <a
                         href="/destinations"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed200/[0.2] dark:hover:text-white"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed100/[0.2] dark:hover:text-white"
                         >Destinations</a
                       >
                     </li>
                     <li>
                       <a
                         href="/city"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed200/[0.2] dark:hover:text-white"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed100/[0.2] dark:hover:text-white"
                         >City</a
                       >
                     </li>
@@ -202,70 +203,172 @@
       </nav>
     </header>
 
-    <div class="bg-background bg-cover bg-center aspect-widescreen relative">
+    <div class="bg-background bg-cover bg-center aspect-widescreen">
       <img
-        src="https://i.pinimg.com/originals/e1/fa/c9/e1fac9b2318d4645cdd5e9dbb53aac97.jpg"
-        class="object-cover lg:w-full image-hero"
+        src="https://live.staticflickr.com/8780/28327864142_2193947065_h.jpg"
+        class="object-cover lg:w-full image-hero h-lvh"
       />
-      <div class="absolute w-full top-[40%] text-shadow">
-        <h1 class="text-white font-bold text-5xl md:text-6xl text-center">
-          Local Quirkiness
-        </h1>
-        <h2 class="text-white text-center text-4xl md:text-4xl">
-          <span id="gallery"></span>
-        </h2>
-      </div>
     </div>
 
     <section
-      class="block container max-w-screen-xl mx-auto mt-8 mb-16 px-4 md:px-12"
+      class="container max-w-screen-xl mx-auto my-8 px-4 md:px-12"
+      id="how-to-start"
     >
-      <div class="grid grid-cols-3 gap-4">
-        <div>
-          <h2 class="text-xl font-bold">Tari Gandrung</h2>
-          <div class="w-[80%] h-[2px] bg-mixed100 dark:bg-gray-100 mb-4"></div>
-          <img
-            src="https://awsimages.detik.net.id/community/media/visual/2023/01/19/tari-gandrung-banyuwangi_169.jpeg?w=600&q=90"
-            alt=""
-            class="w-full h-[70%] rounded"
-          />
-          <p>
-            Gandrung dance is a typical Banyuwangi dance performed as a
-            manifestation of community gratitude after harvest.
-          </p>
+      <div class="text-center">
+        <h1 class="text-4xl lg:text-6xl font-bold my-4 md:mt-12">
+          City in East Java
+        </h1>
+        <div class="mb-12">
+          <h3 class="text-2xl">5 Popular City Destination</h3>
+          <hr class="my-2 border-1" />
         </div>
-        <div>
-          <h2 class="text-xl font-bold">Tari Remo</h2>
-          <div class="w-[80%] h-[2px] bg-mixed100 dark:bg-gray-100 mb-4"></div>
-          <img
-            src="https://www.suarasurabaya.net/wp-content/uploads/2019/11/potretd34630_clip2.jpg"
-            alt=""
-            class="w-full h-[70%] rounded"
-          />
-          <p>
-            Remo dance is a traditional dance originating from Jombang and is
-            referred to by the local community as ngremo dance.
-          </p>
+      </div>
+      <div class="mb-6">
+        <h1 class="text-4xl">Explore more about East Java</h1>
+        <p class="mt-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+          dolorum nisi illo saepe culpa quae quisquam dolor debitis recusandae
+          vero! Fugiat, autem dolor? Provident architecto vel saepe ducimus
+          culpa illum?
+        </p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div
+          class="relative overflow-hidden rounded h-[400px]"
+          data-aos="fade-righ t"
+        >
+          <a href="surabaya">
+            <img
+              loading="lazy"
+              src="https://ik.imagekit.io/rnatrnn6r/surabaya-min.jpeg?updatedAt=1708522806906"
+              alt="Image"
+              class="object-cover w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3 class="text-lg md:text-xl font-semibold text-white">
+                Surabaya City
+              </h3>
+              <p>The largest city in East Java and second in Indonesia.</p>
+            </div>
+          </a>
         </div>
-        <div>
-          <h2 class="text-xl font-bold">Tari Sangkal</h2>
-          <div class="w-[80%] h-[2px] bg-mixed100 dark:bg-gray-100 mb-4"></div>
-          <img
-            src="https://ketik.co.id/assets/upload/20230819114743img-20230819-1147000.webp"
-            alt=""
-            class="w-full h-[70%] rounded"
-          />
-          <p>
-            The muang sangkal dance originates from Sumenep Regency. Literally,
-            this dance aims to get rid of disasters.
-          </p>
+        <div
+          class="relative overflow-hidden rounded h-[400px]"
+          data-aos="fade-righ t"
+        >
+          <a href="malang">
+            <img
+              loading="lazy"
+              src="https://ik.imagekit.io/rnatrnn6r/City/malang.jpg?updatedAt=1709017757960"
+              alt="Image"
+              class="object-cover w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3 class="text-lg md:text-xl font-semibold text-white">
+                Malang City
+              </h3>
+              <p>Nature's Beauty, and Culinary Delights</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-3">
+        <div
+          class="relative overflow-hidden rounded h-[400px]"
+          data-aos="fade-righ t"
+        >
+          <a href="pacitan">
+            <img
+              loading="lazy"
+              src="https://ik.imagekit.io/rnatrnn6r/City/pacitan.webp?updatedAt=1709017827374"
+              alt="Image"
+              class="object-cover w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3 class="text-lg md:text-xl font-semibold text-white">
+                Pacitan City
+              </h3>
+              <p>Warm hospitality and welcoming community.</p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="relative overflow-hidden rounded h-[400px]"
+          data-aos="fade-righ t"
+        >
+          <a href="probolinggo">
+            <img
+              loading="lazy"
+              src="https://ik.imagekit.io/rnatrnn6r/City/probolinggo.webp?updatedAt=1709017921365"
+              alt="Image"
+              class="object-cover w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3 class="text-lg md:text-xl font-semibold text-white">
+                Probolinggo City
+              </h3>
+              <p>Where Culture Meets the Sea..</p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="relative overflow-hidden rounded h-[400px]"
+          data-aos="fade-righ t"
+        >
+          <a href="kediri">
+            <img
+              loading="lazy"
+              src="https://ik.imagekit.io/rnatrnn6r/City/kediri.webp?updatedAt=1709017972562"
+              alt="Image"
+              class="object-cover w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3 class="text-lg md:text-xl font-semibold text-white">
+                Kediri City
+              </h3>
+              <p>Where Past Meets Present.</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- <footer
-      class="container max-w-screen-xl mx-auto p-4 bg-gray-100 dark:bg-mixed200"
-    >
+    <section class="container max-w-screen-xl mx-auto my-8 px-4 md:px-12">
+      <hr class="my-12" />
+      <div class="relative overflow-hidden rounded" data-aos="fade-righ t">
+        <img
+          loading="lazy"
+          src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/kawah-ijen-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960983660"
+          alt="Image"
+          class="object-cover w-full cursor-pointer h-[200px] md:h-[300px]"
+        />
+        <div class="absolute bottom-0 m-[50px] md:m-[100px]">
+          <h3
+            class="text-xl md:text-3xl lg:text-5xl font-bold text-white drop-shadow-xl"
+          >
+            Destination Highlight
+          </h3>
+          <div
+            class="w-[140px] p-3 bg-gradient-to-r from-secondary to-primary rounded mt-3"
+          >
+            <a href="/destinations/" class="font-semibold">Discover More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mx-auto p-4 bg-gray-100 dark:bg-mixed200">
       <div class="grid md:grid-cols-2 gap-4">
         <div>
           <a
@@ -282,8 +385,8 @@
         <div
           class="bg-gray-300/[0.3] dark:bg-mixed300/[0.3] p-2 md:p-4 rounded"
         >
-          <div id="weather" class="p-2"></div>
-          <div class="flex gap-2 mt-6 p-2">
+          <div id="weather"></div>
+          <div class="flex gap-2 mt-6">
             <p>Source :</p>
             <a href="https://data.bmkg.go.id/prakiraan-cuaca/" target="_blank"
               >BMKG</a
@@ -372,15 +475,7 @@
       <div class="text-center mt-4">
         <p>&copy; 2024 East Javacation</p>
       </div>
-    </footer> -->
-
-    <script>
-      let typedSlogan = new Typed("#slogan", {
-        strings: ["Discover Nature's Beauty and Cultural Wonders!"],
-        typeSpeed: 50,
-        loop: true,
-      });
-    </script>
+    </footer>
 
     <script src="/assets/js/app.js"></script>
     <script src="/assets/js/weather.js"></script>

@@ -52,6 +52,7 @@ async function apiWeather() {
   });
 
   const weather = document.getElementById("weather");
+  const weatherHeader = document.getElementById("weather-header");
 
   weather.innerHTML = " ";
 
@@ -73,6 +74,39 @@ async function apiWeather() {
               .join("")}
           </div>
           <p>The weather is updated every 6 hours.</p>
+    `;
+  } else {
+    weather.innerHTML =
+      "<p>Weather information is not available at the moment.</p>";
+  }
+
+  if (matchingWeather.length > 0) {
+    weatherHeader.innerHTML = `
+          <div class="flex items-center md:text-sm lg:text-base">
+            <h2 class="text-2xl mb-2">Weather in <span class="font-bold">${
+              data.data.description
+            }</span>
+            </h2>
+            <div class="md:w-[60%] lg:w-[75%] h-[1px] bg-mixed100 dark:bg-gray-50"></div>
+          </div>
+          <div class="grid md:grid-cols-4">
+            <p>Humidity</p>
+            <p>Tempereature</p>
+            <p>Weather</p>
+            <p>Wind</p>
+          </div>
+          <div class="grid md:grid-cols-4">
+            ${matchingWeather
+              .map(
+                (item) => `
+                ${item.ms ? `<p>${item.ms}</p>` : ""}
+                ${item.celcius ? `<p>${item.celcius}</p>` : ""}
+                ${item.name ? `<p>${translateWeather(item.name)}</p>` : ""}
+                ${item.value ? `<p>${item.value}</p>` : ""}
+                `
+              )
+              .join("")}
+          </div>
     `;
   } else {
     weather.innerHTML =

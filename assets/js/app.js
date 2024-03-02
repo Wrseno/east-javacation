@@ -32,8 +32,8 @@ function goToTravelTips() {
 }
 
 // function dark & light theme
-var themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
-var themeToggleLightIcon = document.getElementById("theme-toggle-light-icon");
+var themeToggleDarkIcon = document.querySelector(".theme-toggle-dark-icon");
+var themeToggleLightIcon = document.querySelector(".theme-toggle-light-icon");
 
 if (
   localStorage.getItem("color-theme") === "dark" ||
@@ -45,7 +45,7 @@ if (
   themeToggleDarkIcon.classList.remove("hidden");
 }
 
-var themeToggleBtn = document.getElementById("theme-toggle");
+var themeToggleBtn = document.querySelector(".theme-toggle");
 
 themeToggleBtn.addEventListener("click", function () {
   themeToggleDarkIcon.classList.toggle("hidden");
@@ -55,11 +55,48 @@ themeToggleBtn.addEventListener("click", function () {
     if (localStorage.getItem("color-theme") === "light") {
       document.documentElement.classList.add("dark");
       localStorage.setItem("color-theme", "dark");
-      console.log("dark");
     } else {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("color-theme", "light");
-      console.log("light");
+    }
+  } else {
+    if (document.documentElement.classList.contains("dark")) {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("color-theme", "light");
+    } else {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("color-theme", "dark");
+    }
+  }
+});
+
+// function dark & light theme
+let themeToggleDarkIcon1 = document.querySelector("#theme-toggle-dark");
+let themeToggleLightIcon1 = document.querySelector("#theme-toggle-light");
+
+if (
+  localStorage.getItem("color-theme") === "dark" ||
+  (!("color-theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  themeToggleLightIcon1.classList.remove("hidden");
+} else {
+  themeToggleDarkIcon1.classList.remove("hidden");
+}
+
+let themeToggleBtn1 = document.querySelector("#theme-toggle");
+
+themeToggleBtn1.addEventListener("click", function () {
+  themeToggleDarkIcon1.classList.toggle("hidden");
+  themeToggleLightIcon1.classList.toggle("hidden");
+
+  if (localStorage.getItem("color-theme")) {
+    if (localStorage.getItem("color-theme") === "light") {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("color-theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("color-theme", "light");
     }
   } else {
     if (document.documentElement.classList.contains("dark")) {

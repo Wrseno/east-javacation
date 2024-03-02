@@ -1,1713 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>East Javacation</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/masonary.css" />
     <!-- Konfigurasi -->
     <script src="/tailwind.config.js"></script>
     <script src="/assets/js/colorTheme.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-</head>
-<body class="poppins-regular bg-white text-mixed100 dark:bg-mixed100 dark:text-white duration-300 overflow-x-hidden">
+  </head>
+  <body
+    class="poppins-regular bg-white text-mixed100 dark:bg-mixed100 dark:text-white duration-300 overflow-x-hidden"
+  >
     <header class="container max-w-full mx-auto">
-        <nav id="nav" class="w-full z-30">
+      <nav id="nav" class="w-full z-30">
+        <div
+          class="max-w-full mx-auto flex flex-wrap items-center justify-between p-4 absolute w-full px-4 md:px-12 text-white dark:bg-transparent"
+          id="navChild"
+        >
+          <a
+            href="/"
+            class="flex items-center space-x-3 rtl:space-x-reverse z-10"
+          >
+            <span
+              class="self-center text-lg md:text-2xl font-semibold whitespace-nowrap"
+              >East Javacation</span
+            >
+          </a>
+
+          <button
+            data-collapse-toggle="navbar-dropdown"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center rounded-lg md:hidden z-10"
+            aria-controls="navbar-dropdown"
+            aria-expanded="false"
+          >
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+
           <div
-            class="max-w-full mx-auto flex flex-wrap items-center justify-between p-4 absolute w-full px-4 md:px-12 text-white dark:bg-transparent"
-            id="navChild">
-            <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse z-10">
-              <span class="self-center text-lg md:text-2xl font-semibold whitespace-nowrap">East Javacation</span>
-            </a>
-            <button data-collapse-toggle="navbar-dropdown" type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center rounded-lg md:hidden z-10"
-              aria-controls="navbar-dropdown" aria-expanded="false">
-              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M1 1h15M1 7h15M1 13h15" />
-              </svg>
-            </button>
-            <div class="hidden w-full md:block md:w-auto z-10" id="navbar-dropdown">
-              <ul
-                class="bg-white text-mixed100 dark:bg-mixed100 dark:text-white md:bg-transparent dark:md:bg-transparent right-0 flex flex-col font-medium p-4 md:p-0 mt-4 border md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 rounded-md items-center">
-                
-                <li>
-                  <a href="/" class="block py-2 px-3 md:p-0 md:text-white">Home</a>
-                </li>
-                
-                <li>
-                  <a href="/destinations" class="block py-2 px-3 md:p-0 md:text-white">Destinations</a>
-                </li>
-    
-                <li>
-                  <a href="/local-quirkiness" class="block py-2 px-3 md:p-0 md:text-white">Local Quirkiness</a>
-                </li>
-    
-                <li>
-                  <a href="/gallery" class="block py-2 px-3 md:p-0 md:text-white">Gallery</a>
-                </li>
-                
-                <li>
-                  <button id="theme-toggle" type="button" class="md:text-white rounded-lg text-sm p-2.5 z-10">
-                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                    </svg>
-                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                        fill-rule="evenodd" clip-rule="evenodd"></path>
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-            </div>
-            <!-- Start Mode Button -->
-            <!-- End Mode Button -->
-          </div>
-        </nav>
-      </header>
+            class="hidden w-full md:block md:w-auto z-10"
+            id="navbar-dropdown"
+          >
+            <ul
+              class="bg-white text-mixed100 dark:bg-mixed100 dark:text-white md:bg-transparent dark:md:bg-transparent right-0 flex flex-col font-medium p-4 md:p-0 mt-4 border md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 rounded-md items-center"
+            >
+              <li>
+                <a href="/" class="block py-2 px-3 md:p-0 md:text-white"
+                  >Home</a
+                >
+              </li>
 
-        <div class="bg-background bg-cover bg-center aspect-widescreen relative">
-            <img src="https://ik.imagekit.io/rnatrnn6r/City/surabaya.webp?updatedAt=1709017665036"
-                class="object-cover lg:w-full image-hero">
-            <div class="absolute w-full top-[40%] text-shadow">
-                <h1 class="text-white font-bold text-5xl md:text-6xl text-center">Gallery</h1>
-                <h2 class="text-white text-center text-4xl md:text-4xl">
-                    <span id="gallery"></span>
-                </h2>
-            </div>
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 px-3 text-mixed100 md:text-white dark:text-white rounded md:hover:bg-transparent md:border-0 md:p-0 md:w-auto md:dark:hover:bg-transparent"
+                >
+                  What to Visit
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-mixed200 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-gray-700 dark:text-gray-100"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="/destinations"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed100/[0.2] dark:hover:text-white"
+                        >Destinations</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/city"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed100/[0.2] dark:hover:text-white"
+                        >City</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <a
+                  href="/local-quirkiness"
+                  class="block py-2 px-3 md:p-0 md:text-white"
+                  >Local Quirkiness</a
+                >
+              </li>
+
+              <li>
+                <a href="/gallery" class="block py-2 px-3 md:p-0 md:text-white"
+                  >Gallery</a
+                >
+              </li>
+
+              <li class="md:hidden">
+                <button
+                  id="theme-toggle"
+                  type="button"
+                  class="md:text-white rounded-lg text-sm p-2.5 z-30"
+                >
+                  <svg
+                    id="theme-toggle-dark"
+                    class="hidden w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                    ></path>
+                  </svg>
+                  <svg
+                    id="theme-toggle-light"
+                    class="hidden w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <button
+            type="button"
+            class="hidden md:block theme-toggle md:text-white rounded-lg text-sm p-2.5 z-30"
+          >
+            <svg
+              class="theme-toggle-dark-icon hidden w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+              ></path>
+            </svg>
+            <svg
+              class="theme-toggle-light-icon hidden w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
         </div>
+      </nav>
+    </header>
 
-        <section class="grid-gallery mx-auto text-center md:text-left overflow-hidden" data-carousel="static"
-            id="controls-carousel" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 100 }'>
-            
+    <div class="bg-background bg-cover bg-center aspect-widescreen relative">
+      <img
+        src="https://ik.imagekit.io/rnatrnn6r/City/surabaya.webp?updatedAt=1709017665036"
+        class="object-cover lg:w-full image-hero"
+      />
+      <div class="absolute w-full top-[40%] text-shadow">
+        <h1 class="text-white font-bold text-5xl md:text-6xl text-center">
+          Gallery
+        </h1>
+        <h2 class="text-white text-center text-4xl md:text-4xl">
+          <span id="gallery"></span>
+        </h2>
+      </div>
+    </div>
 
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--width5 md-grid-item--height2 lg-grid-item--width3 lg-grid-item--height3">
-                <a data-modal-target="ijen_carter" data-modal-toggle="ijen_carter">
-                    <img src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/kawah-ijen-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960983660" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Ijen Carter</h3>
-                    </div>
+    <section
+      class="container max-w-screen-xl mx-auto my-8 px-4"
+      data-carousel="static"
+      id="controls-carousel"
+    >
+      <div class="grid-wrapper" id="grid-gallery"></div>
+    </section>
 
-                </a>
-                <div id="ijen_carter" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/kawah-ijen-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960983660" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Ijen Carter
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="ijen_carter" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--height3 md-w md-grid-item--height2 lg-grid-item--width3 lg-grid-item--height3">
-                <a data-modal-target="tumpak_sewu" data-modal-toggle="tumpak_sewu">
-                    <img src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/Tumpak_sewu-min-ezgif.com-optiwebp.webp?updatedAt=1708960984277" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Tumpak Sewu Waterfall</h3>
-                    </div>
-                </a>
-                <div id="tumpak_sewu" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/Tumpak_sewu-min-ezgif.com-optiwebp.webp?updatedAt=1708960984277" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Tumpak Sewu Waterfall
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="tumpak_sewu" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--height2 lg-grid-item--width5 lg-grid-item--height3">
-                <a data-modal-target="bondowoso_carter" data-modal-toggle="bondowoso_carter">
-                    <img src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/kawah-bondowoso-min.webp?updatedAt=1708960985131" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Bondowoso Carter</h3>
-                    </div>
-                </a>
-                <div id="bondowoso_carter" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/kawah-bondowoso-min.webp?updatedAt=1708960985131" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Bondowoso
-                                        Carter
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="bondowoso_carter" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--width5 lg-grid-item--width3">
-                <a data-modal-target="wedi_klopo_beach" data-modal-toggle="wedi_klopo_beach">
-                    <img src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/wedi-klopo-beach-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960984535" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Wedi Klopo Beach</h3>
-                    </div>
-                </a>
-                <div id="wedi_klopo_beach" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/wedi-klopo-beach-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960984535" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Wedi Klopo Beach
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="wedi_klopo_beach" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item lg-grid-item--width3 lg-grid-item--height2" >
-                <a data-modal-target="papuma_beach" data-modal-toggle="papuma_beach">
-                    <img src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/pantai-papuma-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960985371" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Papuma Beach</h3>
-                    </div>
-                </a>
-                <div id="papuma_beach" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/pantai-papuma-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960985371" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Papuma Beach</h3> 
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="papuma_beach" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--width5 md-grid-item--height3 lg-grid-item--width3 lg-grid-item--height2" >
-                <a data-modal-target="de_djawatan" data-modal-toggle="de_djawatan">
-                    <img src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/de-djawatan-min-ezgif.com-optiwebp.webp?updatedAt=1708960985807" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">De Djawatan Forest</h3>
-                    </div>
-                </a>
-                <div id="de_djawatan" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/de-djawatan-min-ezgif.com-optiwebp.webp?updatedAt=1708960985807" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">De Djawatan Forest
-                                        
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="de_djawatan" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- End -->
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item lg-grid-item--height2" >
-                <a data-modal-target="tunjungan_street" data-modal-toggle="tunjungan_street">
-                    <img src="https://live.staticflickr.com/65535/53534764925_f4005b3893_b.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Bondowo</h3>
-                    </div>
-                </a>
-                <div id="tunjungan_street" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53534764925_f4005b3893_b.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Tunjungan
-                                        Street
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="tunjungan_street" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item lg-grid-item--height2" >
-                <a data-modal-target="mangrove_forest" data-modal-toggle="mangrove_forest">
-                    <img src="https://live.staticflickr.com/65535/53534345831_323fa1d1d4_b.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Mangrove Forrest</h3>
-                    </div>
-                </a>
-                <div id="mangrove_forest" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53534345831_323fa1d1d4_b.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Mangrove
-                                        Forrest
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="mangrove_forest" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--height2 lg-grid-item--width3 lg-grid-item--height2" >
-                <a data-modal-target="bamboo_forrest" data-modal-toggle="bamboo_forrest">
-                    <img src="https://live.staticflickr.com/65535/53534764940_1082d44159_b.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Bamboo Forrest</h3>
-                    </div>
-                </a>
-                <div id="bamboo_forrest" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53534764940_1082d44159_b.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Bamboo
-                                        Forrest
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="bamboo_forrest" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item lg-grid-item--width3 lg-grid-item--height2" >
-                <a data-modal-target="house_of_sampoerna" data-modal-toggle="house_of_sampoerna">
-                    <img src="https://live.staticflickr.com/65535/53534661804_efd155babe_b.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">House of Sampoerna</h3>
-                    </div>
-                </a>
-                <div id="house_of_sampoerna" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53534661804_efd155babe_b.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">House of
-                                        Sampoerna
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="house_of_sampoerna" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item lg-grid-item--height2" >
-                <a data-modal-target="dipo_lokomotif" data-modal-toggle="dipo_lokomotif">
-                    <img src="https://live.staticflickr.com/65535/53534661834_abfb016639_b.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Dipo Lokomotif</h3>
-                    </div>
-                </a>
-                <div id="dipo_lokomotif" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53534661834_abfb016639_b.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Dipo
-                                        Lokomotif
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="dipo_lokomotif" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item lg-grid-item--width3 lg-grid-item--height2" >
-                <a data-modal-target="monumen_jalesveva_jayamahe" data-modal-toggle="monumen_jalesveva_jayamahe">
-                    <img src="https://live.staticflickr.com/65535/53534345921_5de0e096f2_b.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Jalesveva Jayamahe
-                            Monument
-                        </h3>
-                    </div>
-                </a>
-                <div id="monumen_jalesveva_jayamahe" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53534345921_5de0e096f2_b.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Jalesveva
-                                        Jayamahe Monument
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="monumen_jalesveva_jayamahe" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--width5 lg-grid-item--width3 lg-grid-item--height2" >
-                <a data-modal-target="de_javasche_bank" data-modal-toggle="de_javasche_bank">
-                    <img src="https://live.staticflickr.com/65535/53534345851_9a77120e36_b.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">De Javasche Bank</h3>
-                    </div>
-                </a>
-                <div id="de_javasche_bank" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53534345851_9a77120e36_b.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">De Javasche
-                                        Bank
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="de_javasche_bank" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--width5 md-grid-item--height2 lg-grid-item--height2" >
-                <a data-modal-target="kampung-bulak" data-modal-toggle="kampung-bulak">
-                    <img src="https://live.staticflickr.com/65535/53533458637_1a18ac34aa_b.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Bulak Village</h3>
-                    </div>
-                </a>
-                <div id="kampung-bulak" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53533458637_1a18ac34aa_b.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Bulak Village
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="kampung-bulak" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--height3 lg-grid-item--height2" >
-                <a data-modal-target="madakaripura_waterfall" data-modal-toggle="madakaripura_waterfall">
-                    <img src="https://live.staticflickr.com/65535/53551214988_fe4be29501_o.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Madakaripura Waterfall</h3>
-                    </div>
-                </a>
-                <div id="madakaripura_waterfall" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53551214988_fe4be29501_o.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Madakaripura
-                                        Waterfall
-                                    </h3>
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="madakaripura_waterfall" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item lg-grid-item--width5 lg-grid-item--height4" >
-                <a data-modal-target="gili_ketapang" data-modal-toggle="gili_ketapang">
-                    <img src="https://live.staticflickr.com/65535/53551478580_3915d21fcc_o.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Gili Ketapang
-                        </h3>
-                    </div>
-                </a>
-                <div id="gili_ketapang" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53551478580_3915d21fcc_o.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Gili Ketapang
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="gili_ketapang" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item lg-grid-item--width5 lg-grid-item--height3" >
-                <a data-modal-target="sumber_maron_waterfall" data-modal-toggle="sumber_maron_waterfall">
-                    <img src="https://live.staticflickr.com/65535/53551225138_6f887bf4d4_o.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Sumber Maron Waterfall</h3>
-                    </div>
-                </a>
-                <div id="sumber_maron_waterfall" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53551225138_6f887bf4d4_o.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Sumber Maron
-                                        Waterfall
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="sumber_maron_waterfall" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--height3 lg-grid-item--width3 lg-grid-item--height2" >
-                <a data-modal-target="probolinggo_square" data-modal-toggle="probolinggo_square">
-                    <img src="https://live.staticflickr.com/65535/53550163642_beae68ff65_o.jpg" alt=""
-                        class="w-auto h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Probolinggo Square</h3>
-                    </div>
-                </a>
-                <div id="probolinggo_square" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53550163642_beae68ff65_o.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Probolinggo
-                                        Square
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="probolinggo_square" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--width5 lg-grid-item--width5 lg-grid-item--height2" >
-                <a data-modal-target="beejay_bakau_resort" data-modal-toggle="beejay_bakau_resort">
-                    <img src="https://live.staticflickr.com/65535/53550171647_6e49b0f28e_o.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Beejay Bakau Resort</h3>
-                    </div>
-                </a>
-                <div id="beejay_bakau_resort" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53550171647_6e49b0f28e_o.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Beejay Bakau
-                                        Resort
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="beejay_bakau_resort" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item lg-grid-item--width5 lg-grid-item--height3" >
-                <a data-modal-target="ranu_agung" data-modal-toggle="ranu_agung">
-                    <img src="https://live.staticflickr.com/65535/53551374304_9318ad0f9b_k.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Ranu Agung Lake
-                        </h3>
-                    </div>
-                </a>
-                <div id="ranu_agung" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53551374304_9318ad0f9b_k.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Ranu Agung Lake
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="ranu_agung" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--width5 lg-grid-item--width3 lg-grid-item--height2" >
-                <a data-modal-target="seruni_point" data-modal-toggle="seruni_point">
-                    <img src="https://live.staticflickr.com/65535/53551384379_21c3a09481_k.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Seruni Point</h3>
-                    </div>
-                </a>
-                <div id="seruni_point" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53551384379_21c3a09481_k.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Seruni Point
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="seruni_point" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item lg-grid-item--height2" >
-                <a data-modal-target="mayangan_fotress" data-modal-toggle="mayangan_fotress">
-                    <img src="https://live.staticflickr.com/65535/53550181787_09a93b19c7_h.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Mayangan Fotress</h3>
-                    </div>
-                </a>
-                <div id="mayangan_fotress" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53550181787_09a93b19c7_h.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Mayangan Fotress
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="mayangan_fotress" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item lg-grid-item--height2" >
-                <a data-modal-target="teleng_ria_beach" data-modal-toggle="teleng_ria_beach">
-                    <img src="https://live.staticflickr.com/65535/53548845110_df46b51294_z.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Teleng Ria Beach</h3>
-                    </div>
-                </a>
-                <div id="teleng_ria_beach" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53548845110_df46b51294_z.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Teleng Ria Beach
-                                    </h3>
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="teleng_ria_beach" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item lg-grid-item--width3 lg-grid-item--height3" >
-                <a data-modal-target="gong_caves" data-modal-toggle="gong_caves">
-                    <img src="https://live.staticflickr.com/65535/53548737189_9accffa707_z.jpg" alt=""
-                        class="w-auto h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Gong Caves</h3>
-                    </div>
-                </a>
-                <div id="gong_caves" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53548737189_9accffa707_z.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Gong Caves
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="gong_caves" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--width5 lg-grid-item--width3" >
-                <a data-modal-target="watu_karang_beach" data-modal-toggle="watu_karang_beach">
-                    <img src="https://live.staticflickr.com/65535/53548845075_af96bf3725_z.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Watu Karang Beach</h3>
-                    </div>
-                </a>
-                <div id="watu_karang_beach" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53548845075_af96bf3725_z.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Watu Karang Beach
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="watu_karang_beach" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item lg-grid-item--width3 lg-grid-item--height2" >
-                <a data-modal-target="banyu_tibo_beach" data-modal-toggle="banyu_tibo_beach">
-                    <img src="https://live.staticflickr.com/65535/53550890169_1fe33e0968_z.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Banyu Tibo Beach
-                        </h3>
-                    </div>
-                </a>
-                <div id="banyu_tibo_beach" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53550890169_1fe33e0968_z.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Banyu Tibo Beach
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="banyu_tibo_beach" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--width5" >
-                <a data-modal-target="soge_beach" data-modal-toggle="soge_beach">
-                    <img src="https://live.staticflickr.com/65535/53550749633_eccbcd6d40_z.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Soge Beach</h3>
-                    </div>
-                </a>
-                <div id="soge_beach" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53550749633_eccbcd6d40_z.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Soge Beach
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="soge_beach" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item" >
-                <a data-modal-target="pacitan_city" data-modal-toggle="pacitan_city">
-                    <img src="https://live.staticflickr.com/65535/53550999590_a6a7814552_z.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Pacitan City Gate
-                        </h3>
-                    </div>
-                </a>
-                <div id="pacitan_city" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53550999590_a6a7814552_z.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Pacitan City Gate
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="pacitan_city" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item" >
-                <a data-modal-target="srau_beach" data-modal-toggle="srau_beach">
-                    <img src="https://live.staticflickr.com/65535/53550557246_8f085290e9_z.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Srau Beach</h3>
-                    </div>
-                </a>
-                <div id="srau_beach" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53550557246_8f085290e9_z.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Srau Beach
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="srau_beach" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item" >
-                <a data-modal-target="kasap_beach" data-modal-toggle="kasap_beach">
-                    <img src="https://live.staticflickr.com/65535/53550561491_6ee451dbaa_z.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Kasap Beach</h3>
-                    </div>
-                </a>
-                <div id="kasap_beach" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53550561491_6ee451dbaa_z.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Kasap Beach
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="kasap_beach" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--width5" >
-                <a data-modal-target="sempu_island" data-modal-toggle="sempu_island">
-                    <img src="https://live.staticflickr.com/65535/53547463669_546fe0f7ea_o.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Sempu Island</h3>
-                    </div>
-                </a>
-                <div id="sempu_island" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53547463669_546fe0f7ea_o.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Sempu Island</h3>
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="sempu_island" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--height3" >
-                <a data-modal-target="malang_city" data-modal-toggle="malang_city">
-                    <img src="https://live.staticflickr.com/65535/53547495389_bfe1d31730_b.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Malang City</h3>
-                    </div>
-                </a>
-                <div id="malang_city" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53547495389_bfe1d31730_b.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Malang City
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="malang_city" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--width5" >
-                <a data-modal-target="alun_alun_tugu" data-modal-toggle="alun_alun_tugu">
-                    <img src="https://live.staticflickr.com/65535/53547508294_3ac643e9d9_b.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Alun - alun Tugu</h3>
-                    </div>
-                </a>
-                <div id="alun_alun_tugu" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53547508294_3ac643e9d9_b.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Alun - alun Tugu
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="alun_alun_tugu" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item lg-grid-item--width3 lg-grid-item--height2" >
-                <a data-modal-target="the_coban_rondo" data-modal-toggle="the_coban_rondo">
-                    <img src="https://live.staticflickr.com/65535/53547617675_804505affa_b.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">The Coban Rondo Labyrinth
-                        </h3>
-                    </div>
-                </a>
-                <div id="the_coban_rondo" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53547617675_804505affa_b.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">The Coban Rondo
-                                        Labyrinth
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="the_coban_rondo" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--width5 md-grid-item--height3 lg-grid-item--width3 lg-grid-item--height3" >
-                <a data-modal-target="sumber_umbulan" data-modal-toggle="sumber_umbulan">
-                    <img src="https://live.staticflickr.com/65535/53547531039_82534a40a9_z.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Sumber Umbulan</h3>
-                    </div>
-                </a>
-                <div id="sumber_umbulan" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53547531039_82534a40a9_z.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Sumber Umbulan
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="sumber_umbulan" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item lg-grid-item--width3 lg-grid-item--height2" >
-                <a data-modal-target="asmara_bay" data-modal-toggle="asmara_bay">
-                    <img src="https://live.staticflickr.com/65535/53546325802_66512a899a_z.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Asmara Bay
-                        </h3>
-                    </div>
-                </a>
-                <div id="asmara_bay" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53546325802_66512a899a_z.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Asmara Bay
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="asmara_bay" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item lg-grid-item--width3 lg-grid-item--height3" >
-                <a data-modal-target="bromo_mount" data-modal-toggle="bromo_mount">
-                    <img src="https://live.staticflickr.com/65535/53547636755_9b29f32323_z.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Bromo Mountain</h3>
-                    </div>
-                </a>
-                <div id="bromo_mount" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53547636755_9b29f32323_z.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Bromo Mountain
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="bromo_mount" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item lg-grid-item--width3 lg-grid-item--height2" >
-                <a data-modal-target="malang_city_night" data-modal-toggle="malang_city_night">
-                    <img src="https://live.staticflickr.com/65535/53547389293_a762ff6095_z.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Malang City Night</h3>
-                    </div>
-                </a>
-                <div id="malang_city_night" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53547389293_a762ff6095_z.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Malang City Night
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="malang_city_night" type="button"
-                                    class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item lg-grid-item--width3 lg-grid-item--height3" >
-                <a data-modal-target="penataran_temple" data-modal-toggle="penataran_temple">
-                    <img src="https://live.staticflickr.com/65535/53551133663_43b5e3c799_h.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Penataran Temple</h3>
-                    </div>
-                </a>
-                <div id="penataran_temple" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53551133663_43b5e3c799_h.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Penataran Temple
-                                    </h3>
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="penataran_temple" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item lg-grid-item--width3 lg-grid-item--height2" >
-                <a data-modal-target="kelud_mount" data-modal-toggle="kelud_mount">
-                    <img src="https://live.staticflickr.com/65535/53551280524_1356d67567_h.jpg" alt=""
-                        class="w-auto h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Kelud Mountain</h3>
-                    </div>
-                </a>
-                <div id="kelud_mount" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53551280524_1356d67567_h.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Kelud Mountain
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="kelud_mount" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--width5 md-grid-item--height3 lg-grid-item--height2" >
-                <a data-modal-target="watu_ondo_waterfall" data-modal-toggle="watu_ondo_waterfall">
-                    <img src="https://live.staticflickr.com/65535/53550946086_3ef245354b_o.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Watu Ondo Waterfall</h3>
-                    </div>
-                </a>
-                <div id="watu_ondo_waterfall" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53550946086_3ef245354b_o.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Watu Ondo
-                                        Waterfall
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="watu_ondo_waterfall" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item lg-grid-item--height2" >
-                <a data-modal-target="wilis_mountain" data-modal-toggle="wilis_mountain">
-                    <img src="https://live.staticflickr.com/65535/53550130542_e969d5f3c2_o.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Wilis Montain
-                        </h3>
-                    </div>
-                </a>
-                <div id="wilis_mountain" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53550130542_e969d5f3c2_o.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Wilis Montain
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="wilis_mountain" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item lg-grid-item--height2" >
-                <a data-modal-target="garden_cafe" data-modal-toggle="garden_cafe">
-                    <img src="https://live.staticflickr.com/65535/53550993806_b965c0f069_o.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Garden Café Seedlings Kediri
-                        </h3>
-                    </div>
-                </a>
-                <div id="garden_cafe" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53550993806_b965c0f069_o.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">
-                                        Garden-Café-Seedlings-Kediri
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="garden_cafe" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--height3 lg-grid-item--width3 lg-grid-item--height2" >
-                <a data-modal-target="dolo_waterfall" data-modal-toggle="dolo_waterfall">
-                    <img src="https://live.staticflickr.com/65535/53551426045_d595ec4215_o.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Dolo Waterfall
-                        </h3>
-                    </div>
-                </a>
-                <div id="dolo_waterfall" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53551426045_d595ec4215_o.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Dolo Waterfall
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="dolo_waterfall" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--height2 lg-grid-item--height2" >
-                <a data-modal-target="onga'an" data-modal-toggle="onga'an">
-                    <img src="https://live.staticflickr.com/65535/53550977541_09a130e37e_o.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Onga'an Hill</h3>
-                    </div>
-                </a>
-                <div id="onga'an" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53550977541_09a130e37e_o.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Onga'an Hill
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="onga'an" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="fade-in relative overflow-hidden border-4 border-gray-50 dark:border-mixed100 rounded grid-item md-grid-item--height2 md-grid-item--width5 lg-grid-item--width3 lg-grid-item--height2" >
-                <a data-modal-target="selomangleng_caves" data-modal-toggle="selomangleng_caves">
-                    <img src="https://live.staticflickr.com/65535/53550111077_202b1a7757_o.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Selomangleng Caves</h3>
-                    </div>
-                </a>
-                <div id="selomangleng_caves" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53550111077_202b1a7757_o.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Selomangleng
-                                        Caves
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="selomangleng_caves" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-      
-
-
-      <footer class="container max-w-screen-xl mx-auto p-4 bg-gray-100 dark:bg-mixed200">
-        <div class="grid md:grid-cols-2 gap-4">
-          <div>
-            <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse z-10">
-              <span class="self-center text-lg md:text-2xl font-semibold whitespace-nowrap">East Javacation</span>
-            </a>
-            <p>Discover Nature's Beauty and Cultural Wonders!</p>
-          </div>
-          <div class="bg-gray-300/[0.3] dark:bg-mixed300/[0.3] p-2 md:p-4 rounded">
-            <div id="weather" class="p-2"></div>
-            <div class="flex gap-2 mt-6 p-2">
-              <p>Source : </p>
-              <a href="https://data.bmkg.go.id/prakiraan-cuaca/" target="_blank">BMKG</a>
-              <a href="https://github.com/renomureza/cuaca-gempa-rest-api" target="_blank">Rest API</a> 
-            </div>
+    <footer
+      class="container max-w-screen-xl mx-auto p-4 bg-gray-100 dark:bg-mixed200"
+    >
+      <div class="grid md:grid-cols-2 gap-4">
+        <div>
+          <a
+            href="/"
+            class="flex items-center space-x-3 rtl:space-x-reverse z-10"
+          >
+            <span
+              class="self-center text-lg md:text-2xl font-semibold whitespace-nowrap"
+              >East Javacation</span
+            >
+          </a>
+          <p>Discover Nature's Beauty and Cultural Wonders!</p>
+        </div>
+        <div
+          class="bg-gray-300/[0.3] dark:bg-mixed300/[0.3] p-2 md:p-4 rounded"
+        >
+          <div id="weather" class="p-2"></div>
+          <div class="flex gap-2 mt-6 p-2">
+            <p>Source :</p>
+            <a href="https://data.bmkg.go.id/prakiraan-cuaca/" target="_blank"
+              >BMKG</a
+            >
+            <a
+              href="https://github.com/renomureza/cuaca-gempa-rest-api"
+              target="_blank"
+              >Rest API</a
+            >
           </div>
         </div>
-        <h2 class="mt-6 mb-2">Social Media</h2>
-        <div class="flex flex-wrap gap-4 items-center">
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
-              <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-            </svg>
-          </a>
-        </div>
-        <div class="text-center mt-4">
-          <p>&copy; 2024 East Javacation</p>
-        </div>
-      </footer>
-    
-      <script>
-        let typedGallery = new Typed("#gallery", {
-            strings: ["Capturing Amazing Moments: <br> Our Visual Gallery"],
-            typeSpeed: 50,
-            loop: true,
-        });
+      </div>
+      <h2 class="mt-6 mb-2">Social Media</h2>
+      <div class="flex flex-wrap gap-4 items-center">
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-instagram"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+            />
+          </svg>
+        </a>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-facebook"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+            />
+          </svg>
+        </a>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-tiktok"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"
+            />
+          </svg>
+        </a>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-youtube"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+            />
+          </svg>
+        </a>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-twitter-x"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="text-center mt-4">
+        <p>&copy; 2024 East Javacation</p>
+      </div>
+    </footer>
 
-      </script>
-      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-      <script src="/assets/js/app.js"></script>
-      <script src="/assets/js/weather.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
-</body>
+    <script>
+      let typedGallery = new Typed("#gallery", {
+        strings: ["Capturing Amazing Moments: <br> Our Visual Gallery"],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/weather.js"></script>
+    <script src="/assets/js/galleries.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  </body>
 </html>

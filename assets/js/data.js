@@ -1,0 +1,311 @@
+const destinations = [
+  {
+    id: "ijen_carter",
+    description: "Ijen Carter",
+    image:
+      "https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/kawah-ijen-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960983660",
+    size: "big",
+  },
+  {
+    id: "bondowoso_carter",
+    description: "Bondowoso Carter",
+    image:
+      "https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/kawah-bondowoso-min.webp?updatedAt=1708960985131",
+    size: "wide",
+  },
+  {
+    id: "tumpak_sewu",
+    description: "Tumpak Sewu",
+    image:
+      "https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/Tumpak_sewu-min-ezgif.com-optiwebp.webp?updatedAt=1708960984277",
+    size: "tall",
+  },
+  {
+    id: "wedi_klopo_beach",
+    description: "Wedi Klopo Beach",
+    image:
+      "https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/wedi-klopo-beach-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960984535",
+    size: "wide",
+  },
+  {
+    id: "bromo_mount",
+    description: "Bromo Mountain",
+    image: "https://live.staticflickr.com/65535/53547636755_9b29f32323_z.jpg",
+    size: "tall",
+  },
+  {
+    id: "papuma_beach",
+    description: "Papuma Beach",
+    image:
+      "https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/pantai-papuma-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960985371",
+    size: "wide",
+  },
+  {
+    id: "de_djawatan",
+    description: "De Djawatan Forest",
+    image:
+      "https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/de-djawatan-min-ezgif.com-optiwebp.webp?updatedAt=1708960985807",
+    size: "big",
+  },
+  {
+    id: "tunjungan_street",
+    description: "Tunjangan Street",
+    image: "https://live.staticflickr.com/65535/53534764925_f4005b3893_b.jpg",
+    size: "wide",
+  },
+  {
+    id: "mangrove_forest",
+    description: "Mangrove Forest",
+    image: "https://live.staticflickr.com/65535/53534345831_323fa1d1d4_b.jpg",
+    size: "tall",
+  },
+  {
+    id: "bamboo_forrest",
+    description: "Bamboo Forrest",
+    image: "https://live.staticflickr.com/65535/53534764940_1082d44159_b.jpg",
+    size: "big",
+  },
+  {
+    id: "house_of_sampoerna",
+    description: "House of Sampoerna",
+    image: "https://live.staticflickr.com/65535/53534661804_efd155babe_b.jpg",
+    size: "wide",
+  },
+  {
+    id: "dipo_lokomotif",
+    description: "Dipo Lokomotif",
+    image: "https://live.staticflickr.com/65535/53534661834_abfb016639_b.jpg",
+    size: "tall",
+  },
+  {
+    id: "monumen_jalesveva_jayamahe",
+    description: "Monumen Jalesvevajayamahe",
+    image: "https://live.staticflickr.com/65535/53534345921_5de0e096f2_b.jpg",
+    size: "tall",
+  },
+  {
+    id: "de_javasche_bank",
+    description: "Dejavasche Bank",
+    image: "https://live.staticflickr.com/65535/53534345851_9a77120e36_b.jpg",
+    size: "wide",
+  },
+  {
+    id: "papuma_beach",
+    description: "Papuma Beach",
+    image:
+      "https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/pantai-papuma-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960985371",
+    size: "wide",
+  },
+  {
+    id: "kampung_bulak",
+    description: "Kampung Bulak",
+    image: "https://live.staticflickr.com/65535/53533458637_1a18ac34aa_b.jpg",
+    size: "tall",
+  },
+  {
+    id: "madakaripura_waterfall",
+    description: "Madaripura Waterfall",
+    image: "https://live.staticflickr.com/65535/53551214988_fe4be29501_o.jpg",
+    size: "tall",
+  },
+  {
+    id: "sumber_maron_waterfall",
+    description: "Sumber Maron Waterfall",
+    image: "https://live.staticflickr.com/65535/53551225138_6f887bf4d4_o.jpg",
+    size: "tall",
+  },
+  {
+    id: "gili_ketapang",
+    description: "Gili Ketapang",
+    image: "https://live.staticflickr.com/65535/53551478580_3915d21fcc_o.jpg",
+    size: "big",
+  },
+  {
+    id: "probolinggo_square",
+    description: "Probolinggo Square",
+    image: "https://live.staticflickr.com/65535/53550163642_beae68ff65_o.jpg",
+    size: "wide",
+  },
+  {
+    id: "beejay_bakau_resort",
+    description: "Beejay Bakau Resort",
+    image: "https://live.staticflickr.com/65535/53550171647_6e49b0f28e_o.jpg",
+    size: "tall",
+  },
+  {
+    id: "ranu_agung",
+    description: "Ranu Agung",
+    image: "https://live.staticflickr.com/65535/53551374304_9318ad0f9b_k.jpg",
+    size: "tall",
+  },
+  {
+    id: "seruni_point",
+    description: "Seruni Point",
+    image: "https://live.staticflickr.com/65535/53551384379_21c3a09481_k.jpg",
+    size: "wide",
+  },
+  {
+    id: "mayangan_fotress",
+    description: "Mayangan Fotress",
+    image: "https://live.staticflickr.com/65535/53550181787_09a93b19c7_h.jpg",
+    size: "big",
+  },
+  {
+    id: "teleng_ria_beach",
+    description: "Teleng Ria Beach",
+    image: "https://live.staticflickr.com/65535/53548845110_df46b51294_z.jpg",
+    size: "wide",
+  },
+  {
+    id: "gong_caves",
+    description: "Gong Caves",
+    image: "https://live.staticflickr.com/65535/53548737189_9accffa707_z.jpg",
+    size: "big",
+  },
+  {
+    id: "watu_karang_beach",
+    description: "Watu Karang Beach",
+    image: "https://live.staticflickr.com/65535/53548845075_af96bf3725_z.jpg",
+    size: "wide",
+  },
+  {
+    id: "soge_beach",
+    description: "Soge Beach",
+    image: "https://live.staticflickr.com/65535/53550749633_eccbcd6d40_z.jpg",
+    size: "wide",
+  },
+  {
+    id: "pacitan_city",
+    description: "Pacitan City",
+    image: "https://live.staticflickr.com/65535/53550999590_a6a7814552_z.jpg",
+    size: "tall",
+  },
+  {
+    id: "srau_beach",
+    description: "Srau Beach",
+    image: "https://live.staticflickr.com/65535/53550557246_8f085290e9_z.jpg",
+    size: "wide",
+  },
+  {
+    id: "banyu_tibo_beach",
+    description: "Banyu Tibo Beach",
+    image: "https://live.staticflickr.com/65535/53550890169_1fe33e0968_z.jpg",
+    size: "tall",
+  },
+  {
+    id: "kasap_beach",
+    description: "Kasap Beach",
+    image: "https://live.staticflickr.com/65535/53550561491_6ee451dbaa_z.jpg",
+    size: "big",
+  },
+  {
+    id: "banyu_tibo_beach",
+    description: "Banyu Tibo Beach",
+    image: "https://live.staticflickr.com/65535/53550890169_1fe33e0968_z.jpg",
+    size: "tall",
+  },
+  {
+    id: "sempu_island",
+    description: "Sempu Island",
+    image: "https://live.staticflickr.com/65535/53547463669_546fe0f7ea_o.jpg",
+    size: "big",
+  },
+  {
+    id: "malang_city",
+    description: "Malang City",
+    image: "https://live.staticflickr.com/65535/53547495389_bfe1d31730_b.jpg",
+    size: "wide",
+  },
+  {
+    id: "alun_alun_tugu",
+    description: "Alun-Alun Tugu",
+    image: "https://live.staticflickr.com/65535/53547508294_3ac643e9d9_b.jpg",
+    size: "tall",
+  },
+  {
+    id: "banyu_tibo_beach",
+    description: "Banyu Tibo Beach",
+    image: "https://live.staticflickr.com/65535/53550890169_1fe33e0968_z.jpg",
+    size: "tall",
+  },
+  {
+    id: "the_coban_rondo",
+    description: "The Coban Rondo",
+    image: "https://live.staticflickr.com/65535/53547617675_804505affa_b.jpg",
+    size: "big",
+  },
+  {
+    id: "sumber_umbulan",
+    description: "Sumber Umbulan",
+    image: "https://live.staticflickr.com/65535/53547531039_82534a40a9_z.jpg",
+    size: "tall",
+  },
+  {
+    id: "banyu_tibo_beach",
+    description: "Banyu Tibo Beach",
+    image: "https://live.staticflickr.com/65535/53550890169_1fe33e0968_z.jpg",
+    size: "tall",
+  },
+  {
+    id: "asmara_bay",
+    description: "Asmara Bay",
+    image: "https://live.staticflickr.com/65535/53546325802_66512a899a_z.jpg",
+    size: "tall",
+  },
+  {
+    id: "malang_city_night",
+    description: "Malang City Night",
+    image: "https://live.staticflickr.com/65535/53547389293_a762ff6095_z.jpg",
+    size: "wide",
+  },
+  {
+    id: "penataran_temple",
+    description: "Penataran Temple",
+    image: "https://live.staticflickr.com/65535/53551133663_43b5e3c799_h.jpg",
+    size: "tall",
+  },
+  {
+    id: "kelud_mount",
+    description: "Kelud Mountain",
+    image: "https://live.staticflickr.com/65535/53551280524_1356d67567_h.jpg",
+    size: "big",
+  },
+  {
+    id: "watu_ondo_waterfall",
+    description: "Watu Ondo Waterfall",
+    image: "https://live.staticflickr.com/65535/53550946086_3ef245354b_o.jpg",
+    size: "tall",
+  },
+  {
+    id: "wilis_mountain",
+    description: "Wilis Mountain",
+    image: "https://live.staticflickr.com/65535/53550130542_e969d5f3c2_o.jpg",
+    size: "big",
+  },
+  {
+    id: "garden_cafe",
+    description: "Garden Cafe",
+    image: "https://live.staticflickr.com/65535/53550993806_b965c0f069_o.jpg",
+    size: "wide",
+  },
+  {
+    id: "dolo_waterfall",
+    description: "Dolo Waterfall",
+    image: "https://live.staticflickr.com/65535/53551426045_d595ec4215_o.jpg",
+    size: "tall",
+  },
+  {
+    id: "onga'an",
+    description: "Ong'an Hill",
+    image: "https://live.staticflickr.com/65535/53550977541_09a130e37e_o.jpg",
+    size: "tall",
+  },
+  {
+    id: "selomangleng_caves",
+    description: "Selomangleng Caves",
+    image: "https://live.staticflickr.com/65535/53550111077_202b1a7757_o.jpg",
+    size: "big",
+  },
+];
+
+export default destinations;
