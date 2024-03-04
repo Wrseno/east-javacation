@@ -208,7 +208,7 @@
     <div
       class="mx-auto bg-background bg-cover bg-center aspect-widescreen relative"
     >
-      <div class="image-hero">
+      <div class="image-hero h-full">
         <video
           autoplay
           loop
@@ -231,8 +231,8 @@
         </video>
       </div>
       <div class="grid">
-        <div class="w-full absolute top-[30%] md:left-[5%] lg:w-1/2 md:w-[80%]">
-          <div class="text-white text-center md:text-left">
+        <div class="w-full absolute top-[20%] md:left-[4%]">
+          <div class="text-white text-center md:text-left lg:w-1/2 md:w-[80%]">
             <h3 class="font-bold inline text-2xl md:text-5xl lg:text-5xl">
               Adventure in
             </h3>
@@ -266,14 +266,16 @@
               </div>
             </div>
           </div>
+          <div
+            class="container w-full max-w-screen-xl mx-auto grid items-center my-24"
+          >
+            <div
+              id="weather-header"
+              class="mx-auto md:w-full text-white text-shadow fade-in"
+            ></div>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div
-      class="hidden md:block container w-full max-w-screen-xl mx-auto grid items-center my-8 px-4 md:px-12"
-    >
-      <div id="weather-header"></div>
     </div>
 
     <section
@@ -767,152 +769,181 @@
       </div>
     </section>
 
-    <section class="container max-w-screen-xl mx-auto my-8 px-4 md:px-12">
+    <section class="container max-w-screen-xl mx-auto my-8 px-4">
       <h2 class="font-bold text-2xl md:text-4xl my-4 mt-20">
         Destination Highlight
       </h2>
       <div class="grid md:grid-cols-3 gap-6 md:gap-4 aspect-widescreen">
         <div class="relative overflow-hidden rounded fade-in">
-          <img
-            loading="lazy"
-            src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/bromo-optimaze-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960985107"
-            alt="Image"
-            class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
-          />
-          <div
-            class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
-          >
-            <h3 class="text-sm md:text-md font-semibold text-white">
-              Mount Bromo
-            </h3>
-          </div>
+          <a href="/destinations/?openModal=modal1">
+            <img
+              loading="lazy"
+              src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/bromo-optimaze-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960985107"
+              alt="Image"
+              class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3 class="text-sm md:text-lg font-semibold text-white">
+                Mount Bromo
+              </h3>
+              <p class="text-white">Kabupaten Probolinggo</p>
+            </div>
+          </a>
         </div>
         <div class="grid gap-6 md:gap-4">
           <div class="relative overflow-hidden rounded fade-in">
-            <img
-              loading="lazy"
-              src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/kawah-ijen-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960983660"
-              alt="Image"
-              class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
-            />
-            <div
-              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
-            >
-              <h3 class="text-sm md:text-md font-semibold text-white">
-                Ijen Crater
-              </h3>
-            </div>
+            <a href="/destinations/?openModal=modal2">
+              <img
+                loading="lazy"
+                src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/kawah-ijen-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960983660"
+                alt="Image"
+                class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
+              />
+              <div
+                class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+              >
+                <h3 class="text-sm md:text-lg font-semibold text-white">
+                  Ijen Crater
+                </h3>
+                <p class="text-white">Kabupaten Banyuwangi</p>
+              </div>
+            </a>
           </div>
           <div class="relative overflow-hidden rounded fade-in">
-            <img
-              loading="lazy"
-              src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/de-djawatan-min-ezgif.com-optiwebp.webp?updatedAt=1708960985807"
-              alt="Image"
-              class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
-            />
-            <div
-              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
-            >
-              <h3 class="text-sm md:text-md font-semibold text-white">
-                De Djawatan Forest
-              </h3>
-            </div>
+            <a href="/destinations/?openModal=modal3">
+              <img
+                loading="lazy"
+                src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/de-djawatan-min-ezgif.com-optiwebp.webp?updatedAt=1708960985807"
+                alt="Image"
+                class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
+              />
+              <div
+                class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+              >
+                <h3 class="text-sm md:text-lg font-semibold text-white">
+                  De Djawatan Forest
+                </h3>
+                <p class="text-white">Kabupaten Banyuwangi</p>
+              </div>
+            </a>
           </div>
         </div>
         <div class="relative overflow-hidden rounded fade-in">
-          <img
-            loading="lazy"
-            src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/madakaripura-waterfall-min-ezgif.com-optiwebp.webp?updatedAt=1708960985526"
-            alt="Image"
-            class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
-          />
-          <div
-            class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
-          >
-            <h3 class="text-sm md:text-md font-semibold text-white">
-              Madakaripura Waterfall
-            </h3>
-          </div>
+          <a href="/destinations/?openModal=modal4">
+            <img
+              loading="lazy"
+              src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/madakaripura-waterfall-min-ezgif.com-optiwebp.webp?updatedAt=1708960985526"
+              alt="Image"
+              class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3 class="text-sm md:text-lg font-semibold text-white">
+                Madakaripura Waterfall
+              </h3>
+              <p class="text-white">Kabupaten Probolinggo</p>
+            </div>
+          </a>
         </div>
       </div>
       <div class="grid md:grid-cols-3 gap-6 md:gap-4 aspect-widescreen mt-4">
         <div class="grid gap-6 md:gap-4">
           <div class="relative overflow-hidden rounded fade-in">
-            <img
-              loading="lazy"
-              src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/wedi-klopo-beach-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960984535"
-              alt="Image"
-              class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
-            />
-            <div
-              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
-            >
-              <h3 class="text-sm md:text-md font-semibold text-white">
-                Wedi Klopo Beach
-              </h3>
-            </div>
+            <a href="/destinations/?openModal=modal5">
+              <img
+                loading="lazy"
+                src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/wedi-klopo-beach-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960984535"
+                alt="Image"
+                class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
+              />
+              <div
+                class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+              >
+                <h3 class="text-sm md:text-lg font-semibold text-white">
+                  Wedi Klopo Beach
+                </h3>
+                <p class="text-white">Kabupaten Malang</p>
+              </div>
+            </a>
           </div>
           <div class="relative overflow-hidden rounded fade-in">
-            <img
-              loading="lazy"
-              src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/gunung-kelud-min-ezgif.com-optiwebp.webp?updatedAt=1708960983047"
-              alt="Image"
-              class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
-            />
-            <div
-              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
-            >
-              <h3 class="text-sm md:text-md font-semibold text-white">
-                Mount Kelud
-              </h3>
-            </div>
+            <a href="/destinations/?openModal=modal6">
+              <img
+                loading="lazy"
+                src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/gunung-kelud-min-ezgif.com-optiwebp.webp?updatedAt=1708960983047"
+                alt="Image"
+                class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
+              />
+              <div
+                class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+              >
+                <h3 class="text-sm md:text-lg font-semibold text-white">
+                  Mount Kelud
+                </h3>
+                <p class="text-white">Kabupaten Kediri</p>
+              </div>
+            </a>
           </div>
         </div>
         <div class="relative overflow-hidden rounded fade-in">
-          <img
-            loading="lazy"
-            src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/Tumpak_sewu-min-ezgif.com-optiwebp.webp?updatedAt=1708960984277"
-            alt="Image"
-            class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
-          />
-          <div
-            class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
-          >
-            <h3 class="text-sm md:text-md font-semibold text-white">
-              Tumpak Sewu Waterfall
-            </h3>
-          </div>
+          <a href="/destinations/?openModal=modal7">
+            <img
+              loading="lazy"
+              src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/Tumpak_sewu-min-ezgif.com-optiwebp.webp?updatedAt=1708960984277"
+              alt="Image"
+              class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3
+                class="text-sm md:text-md lg:text-lg font-semibold text-white"
+              >
+                Tumpak Sewu Waterfall
+              </h3>
+              <p class="text-white">Kabupaten Lumajang</p>
+            </div>
+          </a>
         </div>
         <div class="grid gap-6 md:gap-4">
           <div class="relative overflow-hidden rounded fade-in">
-            <img
-              loading="lazy"
-              src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/pantai-papuma-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960985371"
-              alt="Image"
-              class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
-            />
-            <div
-              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
-            >
-              <h3 class="text-sm md:text-md font-semibold text-white">
-                Papuma Beach
-              </h3>
-            </div>
+            <a href="/destinations/?openModal=modal8">
+              <img
+                loading="lazy"
+                src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/pantai-papuma-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960985371"
+                alt="Image"
+                class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
+              />
+              <div
+                class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+              >
+                <h3 class="text-sm md:text-lg font-semibold text-white">
+                  Papuma Beach
+                </h3>
+                <p class="text-white">Jember</p>
+              </div>
+            </a>
           </div>
           <div class="relative overflow-hidden rounded fade-in">
-            <img
-              loading="lazy"
-              src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/kawah-bondowoso-min.webp?updatedAt=1708960985131"
-              alt="Image"
-              class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
-            />
-            <div
-              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
-            >
-              <h3 class="text-sm md:text-md font-semibold text-white">
-                Bondowoso Carter
-              </h3>
-            </div>
+            <a href="/destinations/?openModal=modal9">
+              <img
+                loading="lazy"
+                src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/kawah-bondowoso-min.webp?updatedAt=1708960985131"
+                alt="Image"
+                class="w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
+              />
+              <div
+                class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+              >
+                <h3 class="text-sm md:text-lg font-semibold text-white">
+                  Bondowoso Carter
+                </h3>
+                <p class="text-white">Kabupaten Bondowoso</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -1061,7 +1092,6 @@
         }
       });
     </script>
-
     <script src="/assets/js/app.js"></script>
     <script src="/assets/js/weather.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>

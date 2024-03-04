@@ -32,15 +32,18 @@ img {
     grid-auto-flow: dense;
 }
 
+.grid-wrapper .normal {
+    grid-row: span 1;
+}
+
 .grid-wrapper .wide {
-    grid-column: span 2;
+    grid-row: span 2;
 }
 
 .grid-wrapper .tall {
-    grid-row: span 2;
+    grid-row: span 3;
 }
 
-.grid-wrapper .big {
+.grid-wrapper .wides {
     grid-column: span 2;
-    grid-row: span 2;
 }

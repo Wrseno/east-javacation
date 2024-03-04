@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/masonary.css" />
     <!-- Konfigurasi -->
     <script src="/tailwind.config.js"></script>
     <script src="/assets/js/colorTheme.js"></script>
@@ -76,7 +77,7 @@
                 <button
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="dropdownNavbar"
-                  class="flex items-center justify-between w-full py-2 px-3 text-mixed100 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto dark:focus:text-white md:dark:hover:bg-transparent"
+                  class="flex items-center justify-between w-full py-2 px-3 text-mixed100 md:text-white dark:text-white rounded md:hover:bg-transparent md:border-0 md:p-0 md:w-auto md:dark:hover:bg-transparent"
                 >
                   What to Visit
                   <svg
@@ -98,7 +99,7 @@
                 <!-- Dropdown menu -->
                 <div
                   id="dropdownNavbar"
-                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-mixed100 dark:divide-gray-600"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-mixed200 dark:divide-gray-600"
                 >
                   <ul
                     class="py-2 text-gray-700 dark:text-gray-100"
@@ -107,14 +108,14 @@
                     <li>
                       <a
                         href="/destinations"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed200/[0.2] dark:hover:text-white"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed100/[0.2] dark:hover:text-white"
                         >Destinations</a
                       >
                     </li>
                     <li>
                       <a
                         href="/city"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed200/[0.2] dark:hover:text-white"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed100/[0.2] dark:hover:text-white"
                         >City</a
                       >
                     </li>
@@ -207,63 +208,63 @@
         src="https://i.pinimg.com/originals/e1/fa/c9/e1fac9b2318d4645cdd5e9dbb53aac97.jpg"
         class="object-cover lg:w-full image-hero"
       />
-      <div class="absolute w-full top-[40%] text-shadow">
-        <h1 class="text-white font-bold text-5xl md:text-6xl text-center">
+      <div class="absolute w-full top-[30%] text-shadow">
+        <h1 class="text-white font-bold text-4xl md:text-6xl text-center">
           Local Quirkiness
         </h1>
-        <h2 class="text-white text-center text-4xl md:text-4xl">
-          <span id="gallery"></span>
+        <h2 class="text-white text-center text-xl md:text-3xl">
+          <span id="local-quirkiness"></span>
         </h2>
+      </div>
+      <div class="w-full grid absolute bottom-0 my-10 md:left-[4%]">
+        <div
+          id="weather-header"
+          class="mx-auto md:w-full text-white text-shadow fade-in"
+        ></div>
       </div>
     </div>
 
-    <section
-      class="block container max-w-screen-xl mx-auto mt-8 mb-16 px-4 md:px-12"
-    >
-      <div class="grid grid-cols-3 gap-4">
-        <div>
-          <h2 class="text-xl font-bold">Tari Gandrung</h2>
-          <div class="w-[80%] h-[2px] bg-mixed100 dark:bg-gray-100 mb-4"></div>
-          <img
-            src="https://awsimages.detik.net.id/community/media/visual/2023/01/19/tari-gandrung-banyuwangi_169.jpeg?w=600&q=90"
-            alt=""
-            class="w-full h-[70%] rounded"
-          />
-          <p>
-            Gandrung dance is a typical Banyuwangi dance performed as a
-            manifestation of community gratitude after harvest.
-          </p>
-        </div>
-        <div>
-          <h2 class="text-xl font-bold">Tari Remo</h2>
-          <div class="w-[80%] h-[2px] bg-mixed100 dark:bg-gray-100 mb-4"></div>
-          <img
-            src="https://www.suarasurabaya.net/wp-content/uploads/2019/11/potretd34630_clip2.jpg"
-            alt=""
-            class="w-full h-[70%] rounded"
-          />
-          <p>
-            Remo dance is a traditional dance originating from Jombang and is
-            referred to by the local community as ngremo dance.
-          </p>
-        </div>
-        <div>
-          <h2 class="text-xl font-bold">Tari Sangkal</h2>
-          <div class="w-[80%] h-[2px] bg-mixed100 dark:bg-gray-100 mb-4"></div>
-          <img
-            src="https://ketik.co.id/assets/upload/20230819114743img-20230819-1147000.webp"
-            alt=""
-            class="w-full h-[70%] rounded"
-          />
-          <p>
-            The muang sangkal dance originates from Sumenep Regency. Literally,
-            this dance aims to get rid of disasters.
-          </p>
-        </div>
-      </div>
+    <section class="block container max-w-screen-xl mx-auto mt-8 mb-16">
+      <div id="grid-dances" class="grid-wrapper px-4"></div>
     </section>
 
-    <!-- <footer
+    <div
+      class="bg-background bg-cover bg-center aspect-widescreen relative my-32 px-0"
+    >
+      <img
+        src="https://cdn0-production-images-kly.akamaized.net/TRjRv0eViPPsmSViR1FyPiC6xdY=/0x810:5028x3644/1200x675/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3483824/original/081090300_1623815166-shutterstock_1961342572.jpg"
+        class="object-cover lg:w-full image-middle"
+      />
+      <div
+        class="absolute bottom-0 p-40 bg-gradient-to-t from-gray-100 to-transparent dark:bg-gradient-to-t dark:from-mixed100 dark:to-transparent w-full"
+      ></div>
+      <div
+        class="w-full absolute top-[35%] text-center text-shadow lg:px-40 text-white"
+      >
+        <h3 class="font-bold text-xl md:text-4xl">
+          Discover the delights among the world-famous traditional cuisine of
+          East Java.
+        </h3>
+        <p>
+          East Java has many delicious and well-known traditional foods such as
+          rawon, soto lamongan, rujak cingur, etc. Make your tour even more
+          memorable.
+        </p>
+      </div>
+    </div>
+
+    <section class="block container max-w-screen-xl mx-auto mt-8 mb-16">
+      <h2 class="text-2xl md:text-4xl font-semibold mx-4">
+        East Java specialty foods
+      </h2>
+      <p class="mx-4 mb-8">
+        Discover a variety of delicious East Java specialties, with a variety of
+        appetizing spices.
+      </p>
+      <div id="grid-foods" class="grid-wrapper px-4"></div>
+    </section>
+
+    <footer
       class="container max-w-screen-xl mx-auto p-4 bg-gray-100 dark:bg-mixed200"
     >
       <div class="grid md:grid-cols-2 gap-4">
@@ -372,16 +373,17 @@
       <div class="text-center mt-4">
         <p>&copy; 2024 East Javacation</p>
       </div>
-    </footer> -->
+    </footer>
 
     <script>
-      let typedSlogan = new Typed("#slogan", {
-        strings: ["Discover Nature's Beauty and Cultural Wonders!"],
+      let typedGallery = new Typed("#local-quirkiness", {
+        strings: ["Discover the uniqueness of East Java"],
         typeSpeed: 50,
         loop: true,
       });
     </script>
 
+    <script src="/assets/js/LocalQuirkinessGrid.js" type="module"></script>
     <script src="/assets/js/app.js"></script>
     <script src="/assets/js/weather.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>

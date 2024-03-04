@@ -16,188 +16,188 @@
 </head>
 
 <body class="poppins-regular bg-white text-mixed100 dark:bg-mixed100 dark:text-white duration-300">
-    <header class="container max-w-full mx-auto">
-        <nav id="nav" class="w-full z-30">
-          <div
-            class="max-w-full mx-auto flex flex-wrap items-center justify-between p-4 absolute w-full px-4 md:px-12 text-white dark:bg-transparent"
-            id="navChild"
+  <header class="container max-w-full mx-auto">
+    <nav id="nav" class="w-full z-30">
+      <div
+        class="max-w-full mx-auto flex flex-wrap items-center justify-between p-4 absolute w-full px-4 md:px-12 text-white dark:bg-transparent"
+        id="navChild"
+      >
+        <a
+          href="/"
+          class="flex items-center space-x-3 rtl:space-x-reverse z-10"
+        >
+          <span
+            class="self-center text-lg md:text-2xl font-semibold whitespace-nowrap"
+            >East Javacation</span
           >
-            <a
-              href="/"
-              class="flex items-center space-x-3 rtl:space-x-reverse z-10"
-            >
-              <span
-                class="self-center text-lg md:text-2xl font-semibold whitespace-nowrap"
-                >East Javacation</span
+        </a>
+
+        <button
+          data-collapse-toggle="navbar-dropdown"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center rounded-lg md:hidden z-10"
+          aria-controls="navbar-dropdown"
+          aria-expanded="false"
+        >
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+
+        <div
+          class="hidden w-full md:block md:w-auto z-10"
+          id="navbar-dropdown"
+        >
+          <ul
+            class="bg-white text-mixed100 dark:bg-mixed100 dark:text-white md:bg-transparent dark:md:bg-transparent right-0 flex flex-col font-medium p-4 md:p-0 mt-4 border md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 rounded-md items-center"
+          >
+            <li>
+              <a href="/" class="block py-2 px-3 md:p-0 md:text-white"
+                >Home</a
               >
-            </a>
-  
-            <button
-              data-collapse-toggle="navbar-dropdown"
-              type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center rounded-lg md:hidden z-10"
-              aria-controls="navbar-dropdown"
-              aria-expanded="false"
-            >
-              <svg
-                class="w-5 h-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
+            </li>
+
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full py-2 px-3 text-mixed100 md:text-white dark:text-white rounded md:hover:bg-transparent md:border-0 md:p-0 md:w-auto md:dark:hover:bg-transparent"
               >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-            </button>
-  
-            <div
-              class="hidden w-full md:block md:w-auto z-10"
-              id="navbar-dropdown"
-            >
-              <ul
-                class="bg-white text-mixed100 dark:bg-mixed100 dark:text-white md:bg-transparent dark:md:bg-transparent right-0 flex flex-col font-medium p-4 md:p-0 mt-4 border md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 rounded-md items-center"
+                What to Visit
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-mixed200 dark:divide-gray-600"
               >
-                <li>
-                  <a href="/" class="block py-2 px-3 md:p-0 md:text-white"
-                    >Home</a
-                  >
-                </li>
-  
-                <li>
-                  <button
-                    id="dropdownNavbarLink"
-                    data-dropdown-toggle="dropdownNavbar"
-                    class="flex items-center justify-between w-full py-2 px-3 text-mixed100 md:text-white dark:text-white rounded md:hover:bg-transparent md:border-0 md:p-0 md:w-auto md:dark:hover:bg-transparent"
-                  >
-                    What to Visit
-                    <svg
-                      class="w-2.5 h-2.5 ms-2.5"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 10 6"
+                <ul
+                  class="py-2 text-gray-700 dark:text-gray-100"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="/destinations"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed100/[0.2] dark:hover:text-white"
+                      >Destinations</a
                     >
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="m1 1 4 4 4-4"
-                      />
-                    </svg>
-                  </button>
-                  <!-- Dropdown menu -->
-                  <div
-                    id="dropdownNavbar"
-                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-mixed200 dark:divide-gray-600"
-                  >
-                    <ul
-                      class="py-2 text-gray-700 dark:text-gray-100"
-                      aria-labelledby="dropdownLargeButton"
+                  </li>
+                  <li>
+                    <a
+                      href="/city"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed100/[0.2] dark:hover:text-white"
+                      >City</a
                     >
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed100/[0.2] dark:hover:text-white"
-                          >Destinations</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed100/[0.2] dark:hover:text-white"
-                          >City</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-  
-                <li>
-                  <a
-                    href="/local-quirkiness"
-                    class="block py-2 px-3 md:p-0 md:text-white"
-                    >Local Quirkiness</a
-                  >
-                </li>
-  
-                <li>
-                  <a href="/gallery" class="block py-2 px-3 md:p-0 md:text-white"
-                    >Gallery</a
-                  >
-                </li>
-  
-                <li class="md:hidden">
-                  <button
-                    id="theme-toggle"
-                    type="button"
-                    class="md:text-white rounded-lg text-sm p-2.5 z-30"
-                  >
-                    <svg
-                      id="theme-toggle-dark"
-                      class="hidden w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                      ></path>
-                    </svg>
-                    <svg
-                      id="theme-toggle-light"
-                      class="hidden w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-            </div>
-  
-            <button
-              type="button"
-              class="hidden md:block theme-toggle md:text-white rounded-lg text-sm p-2.5 z-30"
-            >
-              <svg
-                class="theme-toggle-dark-icon hidden w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <a
+                href="/local-quirkiness"
+                class="block py-2 px-3 md:p-0 md:text-white"
+                >Local Quirkiness</a
               >
-                <path
-                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                ></path>
-              </svg>
-              <svg
-                class="theme-toggle-light-icon hidden w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
+            </li>
+
+            <li>
+              <a href="/gallery" class="block py-2 px-3 md:p-0 md:text-white"
+                >Gallery</a
               >
-                <path
-                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </nav>
-      </header>
+            </li>
+
+            <li class="md:hidden">
+              <button
+                id="theme-toggle"
+                type="button"
+                class="md:text-white rounded-lg text-sm p-2.5 z-30"
+              >
+                <svg
+                  id="theme-toggle-dark"
+                  class="hidden w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                  ></path>
+                </svg>
+                <svg
+                  id="theme-toggle-light"
+                  class="hidden w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          type="button"
+          class="hidden md:block theme-toggle md:text-white rounded-lg text-sm p-2.5 z-30"
+        >
+          <svg
+            class="theme-toggle-dark-icon hidden w-5 h-5"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+            ></path>
+          </svg>
+          <svg
+            class="theme-toggle-light-icon hidden w-5 h-5"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
 
     <div class="bg-background bg-cover bg-center aspect-widescreen">
         <img src="https://live.staticflickr.com/65535/53551053825_4d9c214cce_k.jpg"

@@ -1,4 +1,4 @@
-import destinations from "./data.js";
+import {destinations} from "./data.js";
 
 let gallery = document.querySelector("#grid-gallery");
 
@@ -11,14 +11,14 @@ destinations.map((item) => {
             >
               <img
                 src=${item.image}
-                alt=${item.description} 
+                alt=${item.title} 
                 class="w-full h-full rounded hover:rounded transition duration-300 cursor-pointer fade-in"
               />
               <div
                 class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
               >
                 <h3 class="text-sm md:text-md font-semibold text-white text-start">
-                  ${item.description}
+                  ${item.title}
                 </h3>
               </div>
             </div>
@@ -32,7 +32,7 @@ destinations.map((item) => {
                   <div class="text-center">
                     <img
                       src=${item.image}
-                      alt=${item.description}
+                      alt=${item.title}
                       class="w-full h-full rounded"
                     />
                     <div
@@ -41,7 +41,7 @@ destinations.map((item) => {
                       <h3
                         class="text-sm md:text-md font-semibold text-white text-start"
                       >
-                        ${item.description}
+                        ${item.title}
                       </h3>
                     </div>
                     <button

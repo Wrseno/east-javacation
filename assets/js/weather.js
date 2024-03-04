@@ -3,25 +3,28 @@ async function apiWeather() {
 
   const pathName = window.location.pathname;
   if (
-    pathName === "/city/surabaya/" ||
+    pathName === "/city" ||
+    pathName === "/city/" ||
     pathName === "/city/surabaya" ||
+    pathName === "/city/surabaya/" ||
     pathName === "/" ||
     pathName === "/gallery" ||
-    pathName === "/gallery/"
+    pathName === "/gallery/" ||
+    pathName === "/local-quirkiness" ||
+    pathName === "/local-quirkiness/" ||
+    pathName === "/destinations" ||
+    pathName === "/destinations/"
   ) {
     url = "https://cuaca-gempa-rest-api.vercel.app/weather/jawa-timur/surabaya";
-  } else if (pathName === "/city/malang/" || pathName === "/city/malang") {
+  } else if (pathName === "/city/malang") {
     url =
       "https://cuaca-gempa-rest-api.vercel.app/weather/jawa-timur/kabupaten-malang";
   } else if (pathName === "/city/pacitan/" || pathName === "/city/pacitan") {
     url = "https://cuaca-gempa-rest-api.vercel.app/weather/jawa-timur/pacitan";
-  } else if (
-    pathName === "/city/probolinggo/" ||
-    pathName === "/city/probolinggo"
-  ) {
+  } else if (pathName === "/city/probolinggo") {
     url =
       "https://cuaca-gempa-rest-api.vercel.app/weather/jawa-timur/kabupaten-probolinggo";
-  } else if (pathName === "/city/kediri/" || pathName === "/city/kediri") {
+  } else if (pathName === "/city/kediri") {
     url =
       "https://cuaca-gempa-rest-api.vercel.app/weather/jawa-timur/kabupaten-kediri";
   }
@@ -54,7 +57,7 @@ async function apiWeather() {
   const weather = document.getElementById("weather");
   const weatherHeader = document.getElementById("weather-header");
 
-  weather.innerHTML = " ";
+  weather.innerHTML = "";
 
   if (matchingWeather.length > 0) {
     weather.innerHTML = `
@@ -80,22 +83,33 @@ async function apiWeather() {
       "<p>Weather information is not available at the moment.</p>";
   }
 
-  if (matchingWeather.length > 0) {
-    weatherHeader.innerHTML = `
-          <div class="flex items-center md:text-sm lg:text-base">
+  if (
+    pathName === "/" ||
+    pathName === "/destinations/" ||
+    pathName === "/destinations" ||
+    pathName === "/city/" ||
+    pathName === "/city" ||
+    pathName === "/local-quirkiness/" ||
+    pathName === "/local-quirkiness" ||
+    pathName === "/gallery/" ||
+    pathName === "/gallery"
+  ) {
+    if (matchingWeather.length > 0) {
+      weatherHeader.innerHTML = `
+          <div class="flex items-center text-sm lg:text-base">
             <h2 class="text-2xl mb-2">Weather in <span class="font-bold">${
               data.data.description
             }</span>
             </h2>
-            <div class="md:w-[60%] lg:w-[75%] h-[1px] bg-mixed100 dark:bg-gray-50"></div>
+            <div class="w-[35%] md:w-[60%] lg:w-[70%] h-[1px] bg-gray-100 dark:bg-gray-50 shadow"></div>
           </div>
-          <div class="grid md:grid-cols-4">
+          <div class="grid grid-cols-4 text-sm lg:text-base">
             <p>Humidity</p>
             <p>Tempereature</p>
             <p>Weather</p>
             <p>Wind</p>
           </div>
-          <div class="grid md:grid-cols-4">
+          <div class="grid grid-cols-4 text-sm lg:text-base">
             ${matchingWeather
               .map(
                 (item) => `
@@ -108,11 +122,32 @@ async function apiWeather() {
               .join("")}
           </div>
     `;
-  } else {
-    weather.innerHTML =
-      "<p>Weather information is not available at the moment.</p>";
+    } else {
+      weatherHeader.innerHTML =
+        "<p>Weather information is not available at the moment.</p>";
+    }
   }
 }
+
+var lastReloadHour = new Date().getHours();
+
+function checkReload() {
+  var currentHour = new Date().getHours();
+
+  if (
+    (currentHour == 0 ||
+      currentHour == 6 ||
+      currentHour == 12 ||
+      currentHour == 18) &&
+    lastReloadHour != currentHour
+  ) {
+    window.location.reload();
+    lastReloadHour = currentHour;
+  }
+}
+
+// Panggil fungsi checkReload() secara berkala
+setInterval(checkReload, 60000);
 
 function getCurrentTimeFormatted() {
   const currentDate = new Date();

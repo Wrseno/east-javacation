@@ -34,37 +34,13 @@ body {
     overflow: hidden;
 }
 
-.pin_container {
-    margin: 0;
-    padding: 0;
-    width: 80vw;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: grid;
-    grid-template-columns: repeat(auto-fill, var(--card_width));
-    grid-auto-rows: var(--row_increment);
-    justify-content: center;
-    background-color: black;
-}
-
-.card {
-    padding: 0;
-    margin: 15px 10px;
-    border-radius: var(--card_border_radius);
-    background-color: red;
-}
-
-.card_small {
-    grid-row-end: span var(--card_small);
-}
-
-.card_medium {
-    grid-row-end: span var(--card_medium);
-}
-
-.card_large {
-    grid-row-end: span var(--card_large);
+.image-middle {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 50%, transparent 100%);
+    overflow: hidden;
 }
 
 .fade-in {
@@ -86,96 +62,3 @@ body {
 .border-gradient-primary {
     border-image-source: linear-gradient(to left, #43cea2, #185a9d);
 }
-
-
-/* @media screen and (min-width: 768px) {
-    .grid-gallery {
-        max-width: 1200px;
-    }
-
-    .grid-item {
-        width: 200px;
-        height: 150px;
-        text-align: center;
-    }
-
-    .md-grid-item--width2 {
-        width: 20%;
-    }
-
-    .md-grid-item--width3 {
-        width: 30%;
-    }
-
-    .md-grid-item--width4 {
-        width: 40%;
-    }
-
-    .md-grid-item--width5 {
-        width: 49.5%;
-    }
-
-    .md-grid-item--height2 {
-        height: 200px;
-    }
-
-    .md-grid-item--height3 {
-        height: 300px;
-    }
-
-    .md-grid-item--height4 {
-        height: 400px;
-    }
-}
-
-
-@media screen and (min-width: 1200px) {
-    .grid-gallery {
-        max-width: 1200px;
-    }
-
-    .grid-item {
-        width: 200px;
-        height: 150px;
-    }
-
-    .lg-grid-item--width2 {
-        width: 300px;
-    }
-
-    .lg-grid-item--width3 {
-        width: 400px;
-    }
-
-    .lg-grid-item--width4 {
-        width: 500px;
-    }
-
-    .lg-grid-item--width5 {
-        width: 600px;
-    }
-
-    .lg-grid-item--width6 {
-        width: 700px;
-    }
-
-    .lg-grid-item--width7 {
-        width: 800px;
-    }
-
-    .lg-grid-item--width8 {
-        width: 900px;
-    }
-
-    .lg-grid-item--height2 {
-        height: 300px;
-    }
-
-    .lg-grid-item--height3 {
-        height: 450px;
-    }
-
-    .lg-grid-item--height4 {
-        height: 600px;
-    }
-} */

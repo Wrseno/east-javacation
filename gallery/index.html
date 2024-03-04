@@ -203,26 +203,30 @@
       </nav>
     </header>
 
-    <div class="bg-background bg-cover bg-center aspect-widescreen relative">
+    <div class="bg-background bg-cover bg-center aspect-widescreen">
       <img
         src="https://ik.imagekit.io/rnatrnn6r/City/surabaya.webp?updatedAt=1709017665036"
-        class="object-cover lg:w-full image-hero"
+        class="object-cover lg:w-full image-hero h-lvh"
       />
-      <div class="absolute w-full top-[40%] text-shadow">
-        <h1 class="text-white font-bold text-5xl md:text-6xl text-center">
-          Gallery
-        </h1>
-        <h2 class="text-white text-center text-4xl md:text-4xl">
-          <span id="gallery"></span>
-        </h2>
+      <div
+        class="absolute w-full top-[30%] text-shadow md:left-[12%] lg:left-[25%] text-center text-white"
+      >
+        <div class="lg:w-1/2 md:w-[80%]">
+          <h1 class="font-bold text-4xl md:text-6xl text-center">Gallery</h1>
+          <h2 class="text-center text-xl md:text-3xl">
+            <span id="gallery"></span>
+          </h2>
+        </div>
+      </div>
+      <div class="w-full grid absolute bottom-0 my-10 md:left-[4%]">
+        <div
+          id="weather-header"
+          class="mx-auto md:w-full text-white text-shadow fade-in"
+        ></div>
       </div>
     </div>
 
-    <section
-      class="container max-w-screen-xl mx-auto my-8 px-4"
-      data-carousel="static"
-      id="controls-carousel"
-    >
+    <section class="container max-w-screen-xl mx-auto my-8 px-4">
       <div class="grid-wrapper" id="grid-gallery"></div>
     </section>
 
@@ -339,15 +343,15 @@
 
     <script>
       let typedGallery = new Typed("#gallery", {
-        strings: ["Capturing Amazing Moments: <br> Our Visual Gallery"],
+        strings: ["Capturing Amazing Moments"],
         typeSpeed: 50,
         loop: true,
       });
     </script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/GalleriesGrid.js" type="module"></script>
     <script src="/assets/js/weather.js"></script>
-    <script src="/assets/js/galleries.js" type="module"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
   </body>
 </html>

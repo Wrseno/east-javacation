@@ -15,6 +15,7 @@
     <!-- Konfigurasi -->
     <script src="/tailwind.config.js"></script>
     <script src="/assets/js/colorTheme.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
 
   <body
@@ -208,21 +209,25 @@
         src="https://live.staticflickr.com/8780/28327864142_2193947065_h.jpg"
         class="object-cover lg:w-full image-hero h-lvh"
       />
-    </div>
-
-    <section
-      class="container max-w-screen-xl mx-auto my-8 px-4 md:px-12"
-      id="how-to-start"
-    >
-      <div class="text-center">
-        <h1 class="text-4xl lg:text-6xl font-bold my-4 md:mt-12">
-          City in East Java
-        </h1>
-        <div class="mb-12">
-          <h3 class="text-2xl">5 Popular City Destination</h3>
-          <hr class="my-2 border-1" />
+      <div
+        class="w-full absolute top-[30%] md:left-[12%] lg:left-[25%] text-center text-white text-shadow"
+      >
+        <div class="lg:w-1/2 md:w-[80%]">
+          <h1 class="text-4xl lg:text-6xl font-bold">City in East Java</h1>
+          <h3 class="text-xl md:text-3xl">
+            <span id="cities-slogan"></span>
+          </h3>
         </div>
       </div>
+      <div class="w-full grid absolute bottom-0 my-10 md:left-[4%]">
+        <div
+          id="weather-header"
+          class="mx-auto md:w-full text-white text-shadow fade-in"
+        ></div>
+      </div>
+    </div>
+
+    <section class="container max-w-screen-xl mx-auto my-8 px-4 md:px-12">
       <div class="mb-6">
         <h1 class="text-4xl">Explore more about East Java</h1>
         <p class="mt-3">
@@ -233,11 +238,8 @@
         </p>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <div
-          class="relative overflow-hidden rounded h-[400px]"
-          data-aos="fade-righ t"
-        >
-          <a href="surabaya">
+        <div class="relative overflow-hidden rounded h-[400px]">
+          <a href="/city/surabaya">
             <img
               loading="lazy"
               src="https://ik.imagekit.io/rnatrnn6r/surabaya-min.jpeg?updatedAt=1708522806906"
@@ -250,15 +252,14 @@
               <h3 class="text-lg md:text-xl font-semibold text-white">
                 Surabaya City
               </h3>
-              <p>The largest city in East Java and second in Indonesia.</p>
+              <p class="text-white">
+                The largest city in East Java and second in Indonesia.
+              </p>
             </div>
           </a>
         </div>
-        <div
-          class="relative overflow-hidden rounded h-[400px]"
-          data-aos="fade-righ t"
-        >
-          <a href="malang">
+        <div class="relative overflow-hidden rounded h-[400px]">
+          <a href="/city/malang">
             <img
               loading="lazy"
               src="https://ik.imagekit.io/rnatrnn6r/City/malang.jpg?updatedAt=1709017757960"
@@ -271,18 +272,15 @@
               <h3 class="text-lg md:text-xl font-semibold text-white">
                 Malang City
               </h3>
-              <p>Nature's Beauty, and Culinary Delights</p>
+              <p class="text-white">Nature's Beauty, and Culinary Delights</p>
             </div>
           </a>
         </div>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-3">
-        <div
-          class="relative overflow-hidden rounded h-[400px]"
-          data-aos="fade-righ t"
-        >
-          <a href="pacitan">
+        <div class="relative overflow-hidden rounded h-[400px]">
+          <a href="/city/pacitan">
             <img
               loading="lazy"
               src="https://ik.imagekit.io/rnatrnn6r/City/pacitan.webp?updatedAt=1709017827374"
@@ -295,15 +293,14 @@
               <h3 class="text-lg md:text-xl font-semibold text-white">
                 Pacitan City
               </h3>
-              <p>Warm hospitality and welcoming community.</p>
+              <p class="text-white">
+                Warm hospitality and welcoming community.
+              </p>
             </div>
           </a>
         </div>
-        <div
-          class="relative overflow-hidden rounded h-[400px]"
-          data-aos="fade-righ t"
-        >
-          <a href="probolinggo">
+        <div class="relative overflow-hidden rounded h-[400px]">
+          <a href="/city/probolinggo">
             <img
               loading="lazy"
               src="https://ik.imagekit.io/rnatrnn6r/City/probolinggo.webp?updatedAt=1709017921365"
@@ -316,15 +313,12 @@
               <h3 class="text-lg md:text-xl font-semibold text-white">
                 Probolinggo City
               </h3>
-              <p>Where Culture Meets the Sea..</p>
+              <p class="text-white">Where Culture Meets the Sea..</p>
             </div>
           </a>
         </div>
-        <div
-          class="relative overflow-hidden rounded h-[400px]"
-          data-aos="fade-righ t"
-        >
-          <a href="kediri">
+        <div class="relative overflow-hidden rounded h-[400px]">
+          <a href="/city/kediri">
             <img
               loading="lazy"
               src="https://ik.imagekit.io/rnatrnn6r/City/kediri.webp?updatedAt=1709017972562"
@@ -337,7 +331,7 @@
               <h3 class="text-lg md:text-xl font-semibold text-white">
                 Kediri City
               </h3>
-              <p>Where Past Meets Present.</p>
+              <p class="text-white">Where Past Meets Present.</p>
             </div>
           </a>
         </div>
@@ -346,7 +340,7 @@
 
     <section class="container max-w-screen-xl mx-auto my-8 px-4 md:px-12">
       <hr class="my-12" />
-      <div class="relative overflow-hidden rounded" data-aos="fade-righ t">
+      <div class="relative overflow-hidden rounded">
         <img
           loading="lazy"
           src="https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/kawah-ijen-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960983660"
@@ -357,12 +351,14 @@
           <h3
             class="text-xl md:text-3xl lg:text-5xl font-bold text-white drop-shadow-xl"
           >
-            Destination Highlight
+            Destination in East Java
           </h3>
           <div
-            class="w-[140px] p-3 bg-gradient-to-r from-secondary to-primary rounded mt-3"
+            class="w-1/3 text-center p-3 bg-gradient-to-r from-secondary to-primary rounded mt-3"
           >
-            <a href="/destinations/" class="font-semibold">Discover More</a>
+            <a href="/destinations/" class="font-semibold text-white"
+              >Discover More</a
+            >
           </div>
         </div>
       </div>
@@ -477,6 +473,13 @@
       </div>
     </footer>
 
+    <script>
+      let typedSlogan = new Typed("#cities-slogan", {
+        strings: ["Visit 5 popular destination cities"],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
     <script src="/assets/js/app.js"></script>
     <script src="/assets/js/weather.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
