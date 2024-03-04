@@ -1,5 +1,4 @@
 import {destinations} from "./data.js";
-console.log(destinations);
 
 let destinationsGrid = document.querySelector("#destinations-grid");
 

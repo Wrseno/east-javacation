@@ -206,22 +206,18 @@
       </nav>
     </header>
 
-    <div class="bg-background bg-cover bg-center aspect-widescreen">
+    <div class="bg-background bg-cover bg-center aspect-widescreen relative">
       <img
         src="https://live.staticflickr.com/65535/53550946086_3ef245354b_o.jpg"
-        class="object-cover lg:w-full image-hero h-lvh"
+        class="object-cover lg:w-full image-hero h-lvh lg:h-full"
       />
-      <div
-        class="w-full absolute top-[30%] md:left-[12%] lg:left-[25%] text-center text-white text-shadow"
-      >
-        <div class="lg:w-1/2 md:w-[80%]">
-          <h1 class="text-4xl lg:text-6xl font-bold">Destinations</h1>
-          <h3 class="text-xl md:text-3xl">
-            <span id="destinations-slogan"></span>
-          </h3>
-        </div>
+      <div class="w-full absolute top-[30%] text-center text-white text-shadow">
+        <h1 class="text-4xl lg:text-6xl font-bold">Destinations</h1>
+        <h3 class="text-xl md:text-3xl">
+          <span id="destinations-slogan"></span>
+        </h3>
       </div>
-      <div class="w-full grid absolute bottom-0 my-10 md:left-[4%]">
+      <div class="w-full grid absolute bottom-0 my-16 md:left-[4%]">
         <div
           id="weather-header"
           class="mx-auto md:w-full text-white text-shadow fade-in"

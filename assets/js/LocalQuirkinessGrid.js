@@ -93,6 +93,7 @@ foods.map((item) => {
                 src=${item.image_url}
                 alt=${item.title} 
                 class="object-cover w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
+                loading="lazy"
               />
               <div
                 class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"

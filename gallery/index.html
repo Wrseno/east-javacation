@@ -203,22 +203,18 @@
       </nav>
     </header>
 
-    <div class="bg-background bg-cover bg-center aspect-widescreen">
+    <div class="bg-background bg-cover bg-center aspect-widescreen relative">
       <img
         src="https://ik.imagekit.io/rnatrnn6r/City/surabaya.webp?updatedAt=1709017665036"
-        class="object-cover lg:w-full image-hero h-lvh"
+        class="object-cover lg:w-full image-hero h-lvh lg:h-full"
       />
-      <div
-        class="absolute w-full top-[30%] text-shadow md:left-[12%] lg:left-[25%] text-center text-white"
-      >
-        <div class="lg:w-1/2 md:w-[80%]">
-          <h1 class="font-bold text-4xl md:text-6xl text-center">Gallery</h1>
-          <h2 class="text-center text-xl md:text-3xl">
-            <span id="gallery"></span>
-          </h2>
-        </div>
+      <div class="absolute w-full top-[30%] text-shadow text-center text-white">
+        <h1 class="font-bold text-4xl md:text-6xl text-center">Gallery</h1>
+        <h2 class="text-center text-xl md:text-3xl">
+          <span id="gallery"></span>
+        </h2>
       </div>
-      <div class="w-full grid absolute bottom-0 my-10 md:left-[4%]">
+      <div class="w-full grid absolute bottom-0 my-16 md:left-[4%]">
         <div
           id="weather-header"
           class="mx-auto md:w-full text-white text-shadow fade-in"
@@ -230,9 +226,7 @@
       <div class="grid-wrapper" id="grid-gallery"></div>
     </section>
 
-    <footer
-      class="container max-w-screen-xl mx-auto p-4 bg-gray-100 dark:bg-mixed200"
-    >
+    <footer class="mx-auto p-4 bg-gray-100 dark:bg-mixed200">
       <div class="grid md:grid-cols-2 gap-4">
         <div>
           <a

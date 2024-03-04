@@ -14,6 +14,7 @@
     <!-- Konfigurasi -->
     <script src="/tailwind.config.js"></script>
     <script src="/assets/js/colorTheme.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
 
   <body
@@ -207,6 +208,20 @@
         src="https://ik.imagekit.io/rnatrnn6r/City/surabaya.webp?updatedAt=1709017665036"
         class="object-cover lg:w-full image-hero"
       />
+      <div class="absolute w-full top-[30%] text-shadow">
+        <h1 class="text-white font-bold text-4xl md:text-6xl text-center">
+          Surabaya
+        </h1>
+        <h2 class="text-white text-center text-xl md:text-3xl">
+          <span id="surabaya-city"></span>
+        </h2>
+      </div>
+      <div class="w-full grid absolute bottom-0 my-16 md:left-[4%]">
+        <div
+          id="weather-header"
+          class="mx-auto md:w-full text-white text-shadow fade-in"
+        ></div>
+      </div>
     </div>
 
     <section
@@ -1034,6 +1049,14 @@
         <p>&copy; 2024 East Javacation</p>
       </div>
     </footer>
+
+    <script>
+      let typedGallery = new Typed("#surabaya-city", {
+        strings: ["Explore Surabaya City"],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
 
     <script src="/assets/js/app.js"></script>
     <script src="/assets/js/weather.js"></script>

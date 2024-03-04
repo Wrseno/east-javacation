@@ -13,6 +13,7 @@ destinations.map((item) => {
                 src=${item.image}
                 alt=${item.title} 
                 class="w-full h-full rounded hover:rounded transition duration-300 cursor-pointer fade-in"
+                loading="lazy"
               />
               <div
                 class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
@@ -34,6 +35,7 @@ destinations.map((item) => {
                       src=${item.image}
                       alt=${item.title}
                       class="w-full h-full rounded"
+                      loading="lazy"
                     />
                     <div
                       class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
