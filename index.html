@@ -230,50 +230,43 @@
           />
         </video>
       </div>
-      <div class="grid">
-        <div class="w-full absolute top-[20%] md:left-[4%]">
-          <div class="text-white text-center md:text-left lg:w-1/2 md:w-[80%]">
-            <h3 class="font-bold inline text-2xl md:text-5xl lg:text-5xl">
-              Adventure in
-            </h3>
-            <h2 class="font-bold inline text-2xl md:text-5xl lg:text-5xl">
-              East Java
-            </h2>
-            <h3 class="text-sm tracking-wider text-lg md:text-xl lg:text-2xl">
-              <span id="slogan"></span>
-            </h3>
-            <p class="text-md hidden md:block my-4">
-              Discover a World of Natural Wonders and Cultural Treasures, where
-              breathtaking landscapes meet captivating heritage. Embark on a
-              journey filled with lush forests, majestic mountains, and ancient
-              sites steeped in history.
-            </p>
-            <div
-              class="text-center flex gap-4 mx-auto my-4 text-sm justify-center md:justify-start"
+      <div class="w-full absolute top-[20%] px-12">
+        <div class="text-white text-center md:text-left lg:w-1/2 md:w-[80%]">
+          <h3 class="font-bold inline text-2xl md:text-5xl lg:text-5xl">
+            Adventure in
+          </h3>
+          <h2 class="font-bold inline text-2xl md:text-5xl lg:text-5xl">
+            East Java
+          </h2>
+          <h3 class="text-sm tracking-wider text-lg md:text-xl lg:text-2xl">
+            <span id="slogan"></span>
+          </h3>
+          <p class="text-md hidden md:block my-4">
+            Discover a World of Natural Wonders and Cultural Treasures, where
+            breathtaking landscapes meet captivating heritage. Embark on a
+            journey filled with lush forests, majestic mountains, and ancient
+            sites steeped in history.
+          </p>
+          <div
+            class="text-center flex gap-4 mx-auto my-4 text-sm justify-center md:justify-start"
+          >
+            <button
+              onclick="goToTravelTips()"
+              class="font-semibold w-[150px] p-2 bg-gradient-to-r from-primary to-secondary rounded"
             >
-              <button
-                onclick="goToTravelTips()"
-                class="font-semibold w-[150px] p-2 bg-gradient-to-r from-primary to-secondary rounded"
+              Travel Tips
+            </button>
+            <div
+              class="w-[150px] p-2 border-gradient border-gradient-primary rounded"
+            >
+              <a href="/destinations/" class="font-semibold"
+                >Find Destination</a
               >
-                Travel Tips
-              </button>
-              <div
-                class="w-[150px] p-2 border-gradient border-gradient-primary rounded"
-              >
-                <a href="/destinations/" class="font-semibold"
-                  >Find Destination</a
-                >
-              </div>
             </div>
           </div>
-          <div
-            class="container w-full max-w-screen-xl mx-auto grid items-center my-24"
-          >
-            <div
-              id="weather-header"
-              class="mx-auto md:w-full text-white text-shadow fade-in"
-            ></div>
-          </div>
+        </div>
+        <div class="w-full grid my-24">
+          <div id="weather-header" class="text-white text-shadow fade-in"></div>
         </div>
       </div>
     </div>
@@ -347,9 +340,7 @@
       class="mx-auto relative w-full mt-24 duration-3000"
       data-carousel="slide"
     >
-      <!-- Carousel wrapper -->
       <div class="relative h-screen md:h-[450px] overflow-hidden text-white">
-        <!-- Item 1 -->
         <div
           class="hidden duration-700 ease-in-out"
           data-carousel-item="active"
@@ -395,7 +386,7 @@
             alt="..."
           />
         </div>
-        <!-- Item 2 -->
+
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <div class="absolute top-6 left-6 md:top-16 md:left-20 z-10 lg:w-2/3">
             <h2 class="font-bold text-4xl md:text-6xl text-shadow mb-6">
@@ -436,7 +427,7 @@
             alt="..."
           />
         </div>
-        <!-- Item 3 -->
+
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <div class="absolute top-6 left-6 md:top-16 md:left-20 z-10 lg:w-2/3">
             <h2 class="font-bold text-4xl md:text-6xl text-shadow mb-6">
@@ -479,7 +470,7 @@
             alt="..."
           />
         </div>
-        <!-- Item 4 -->
+
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <div class="absolute top-6 left-6 md:top-16 md:left-20 z-10 lg:w-2/3">
             <h2 class="font-bold text-4xl md:text-6xl text-shadow mb-6">
@@ -523,7 +514,7 @@
             alt="..."
           />
         </div>
-        <!-- Item 5 -->
+
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <div class="absolute top-6 left-6 md:top-16 md:left-20 z-10 lg:w-2/3">
             <h2 class="font-bold text-4xl md:text-6xl text-shadow mb-6">

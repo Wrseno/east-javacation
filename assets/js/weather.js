@@ -97,29 +97,43 @@ async function apiWeather() {
     if (matchingWeather.length > 0) {
       weatherHeader.innerHTML = `
           <div class="flex items-center text-sm lg:text-base">
-            <h2 class="text-2xl mb-2">Weather in <span class="font-bold">${
+            <h2 class="text-xl md:text-2xl mb-2">Weather in <span class="font-bold">${
               data.data.description
             }</span>
             </h2>
             <div class="w-[35%] md:w-[60%] lg:w-[70%] h-[1px] bg-gray-100 dark:bg-gray-50 shadow"></div>
           </div>
-          <div class="grid grid-cols-4 text-sm lg:text-base">
-            <p>Humidity</p>
-            <p>Tempereature</p>
-            <p>Weather</p>
-            <p>Wind</p>
+          <div class="hidden md:block">
+            <div class="grid grid-cols-4 text-sm lg:text-base">
+              <p>Humidity</p>
+              <p>Tempereature</p>
+              <p>Weather</p>
+              <p>Wind</p>
+            </div>
+            <div class="grid grid-cols-4 text-sm lg:text-base">
+              ${matchingWeather
+                .map(
+                  (item) => `
+                  ${item.ms ? `<p>${item.ms}</p>` : ""}
+                  ${item.celcius ? `<p>${item.celcius}</p>` : ""}
+                  ${item.name ? `<p>${translateWeather(item.name)}</p>` : ""}
+                  ${item.value ? `<p>${item.value}</p>` : ""}
+                  `
+                )
+                .join("")}
           </div>
-          <div class="grid grid-cols-4 text-sm lg:text-base">
-            ${matchingWeather
-              .map(
-                (item) => `
-                ${item.ms ? `<p>${item.ms}</p>` : ""}
-                ${item.celcius ? `<p>${item.celcius}</p>` : ""}
-                ${item.name ? `<p>${translateWeather(item.name)}</p>` : ""}
-                ${item.value ? `<p>${item.value}</p>` : ""}
-                `
-              )
-              .join("")}
+            <div class="md:hidden grid grid-cols-2 gap-2">
+              <p>Humidity</p>
+              <p>${matchingWeather.find((item) => item.ms)?.ms ?? ""}</p>
+              <p>Weather</p>
+              <p>${matchingWeather.find((item) => item.name)?.name ?? ""}</p>
+              <p>Celcius</p>
+              <p>${
+                matchingWeather.find((item) => item.celcius)?.celcius ?? ""
+              }</p>
+              <p>Wind</p>
+              <p>${matchingWeather.find((item) => item.value)?.value ?? ""}</p>
+            </div>
           </div>
     `;
     } else {
