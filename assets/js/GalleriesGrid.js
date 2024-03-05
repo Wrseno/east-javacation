@@ -9,7 +9,7 @@ const generateGalleryHTML = (items) => {
           <div
               data-modal-target="${item.id}"
               data-modal-toggle="${item.id}"
-              class="${item.size} image-wrapper relative overflow-hidden fade-in"
+              class="${item.size} image-wrapper relative overflow-hidden"
             >
               <img
                 src=${item.image_url}
@@ -20,9 +20,10 @@ const generateGalleryHTML = (items) => {
               <div
                 class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
               >
-                <h3 class="text-sm md:text-md font-semibold text-white text-start">
+                <h3 class="text-xl font-semibold text-white text-start">
                   ${item.title}
                 </h3>
+                <p class="text-start text-white">${item.city}</p>
               </div>
             </div>
             <div
@@ -43,10 +44,11 @@ const generateGalleryHTML = (items) => {
                       class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
                     >
                       <h3
-                        class="text-sm md:text-md font-semibold text-white text-start"
+                        class="text-xl font-semibold text-white text-start"
                       >
                         ${item.title}
                       </h3>
+                      <p class="text-start">${item.city}</p>
                     </div>
                     <button
                       data-modal-hide="${item.id}"
@@ -78,8 +80,10 @@ const generateGalleryHTML = (items) => {
     .join("");
 };
 
-gallery.innerHTML = `
-  ${generateGalleryHTML(dances)}
-  ${generateGalleryHTML(destinations)}
-  ${generateGalleryHTML(foods)}
-`;
+document.addEventListener("DOMContentLoaded", () => {
+  gallery.innerHTML = `
+    ${generateGalleryHTML(dances)}
+    ${generateGalleryHTML(destinations)}
+    ${generateGalleryHTML(foods)}
+    `;
+});

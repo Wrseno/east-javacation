@@ -40,7 +40,7 @@ destinations.map((item) => {
                     />
                 </div>
                 <div class="p-6 col-span-2">
-                    <h1 class="text-2xl">${item.title}</h1>
+                    <h1 class="text-2xl font-semibold">${item.title}</h1>
                     <p class="text-white mb-4">${item.city}</p>
                     <p>
                     ${item.description}

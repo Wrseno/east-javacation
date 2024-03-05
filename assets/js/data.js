@@ -16,7 +16,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53547636755_9b29f32323_z.jpg",
     size: "wide",
     modal: "modal1",
-    city: "Probolinggo District",
+    city: "Probolinggo",
     gmaps_url: "https://maps.app.goo.gl/kz5zrbaCHz4UG7Zz8",
   },
   {
@@ -34,7 +34,7 @@ export const destinations = [
       "https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/kawah-ijen-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960983660",
     size: "tall",
     modal: "modal2",
-    city: "Banyuwangi District",
+    city: "Banyuwangi",
     gmaps_url: "https://maps.app.goo.gl/xF7mMx33MVSKcmX2A",
   },
   {
@@ -51,7 +51,7 @@ export const destinations = [
       "https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/kawah-bondowoso-min.webp?updatedAt=1708960985131",
     size: "wide",
     modal: "modal3",
-    city: "Bondowoso District",
+    city: "Bondowoso",
     gmaps_url: "https://maps.app.goo.gl/xF7mMx33MVSKcmX2A",
   },
   {
@@ -66,7 +66,7 @@ export const destinations = [
       "https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/Tumpak_sewu-min-ezgif.com-optiwebp.webp?updatedAt=1708960984277",
     size: "tall",
     modal: "modal4",
-    city: "Lumajang District",
+    city: "Lumajang",
     gmaps_url: "https://maps.app.goo.gl/onM1nUDahZoRroVRA",
   },
   {
@@ -83,7 +83,7 @@ export const destinations = [
       "https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/wedi-klopo-beach-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960984535",
     size: "wide",
     modal: "modal5",
-    city: "Malang District",
+    city: "Malang",
     gmaps_url: "https://maps.app.goo.gl/rJwtDmAC5enrspkH7",
   },
   {
@@ -98,7 +98,7 @@ export const destinations = [
       "https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/pantai-papuma-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960985371",
     size: "wide",
     modal: "modal6",
-    city: "Jember District",
+    city: "Jember",
     gmaps_url: "https://maps.app.goo.gl/9fxfyzCYBKtYEdwF7",
   },
   {
@@ -115,7 +115,7 @@ export const destinations = [
       "https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/de-djawatan-min-ezgif.com-optiwebp.webp?updatedAt=1708960985807",
     size: "tall",
     modal: "modal7",
-    city: "Banyuwangi District",
+    city: "Banyuwangi",
     gmaps_url: "https://maps.app.goo.gl/M34m9GdqeKHKxfCG8",
   },
   {
@@ -126,7 +126,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53534764925_f4005b3893_b.jpg",
     size: "wide",
     modal: "modal8",
-    city: "Surabaya City",
+    city: "Surabaya",
     gmaps_url: "https://maps.app.goo.gl/uj7gVHZhNxoqtv3q9",
   },
   {
@@ -137,7 +137,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53534345831_323fa1d1d4_b.jpg",
     size: "tall",
     modal: "modal9",
-    city: "Surabaya City",
+    city: "Surabaya",
     gmaps_url: "https://maps.app.goo.gl/QH8U94gmmN2J6v6Q8",
   },
   {
@@ -148,7 +148,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53534764940_1082d44159_b.jpg",
     size: "tall",
     modal: "modal10",
-    city: "Surabaya City",
+    city: "Surabaya",
     gmaps_url: "https://maps.app.goo.gl/er9AsMAgKMQTAuoJ9",
   },
   {
@@ -160,7 +160,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53534661804_efd155babe_b.jpg",
     size: "wide",
     modal: "modal11",
-    city: "Surabaya City",
+    city: "Surabaya",
     gmaps_url: "https://maps.app.goo.gl/wsYwA6n56Da6W2mn6",
   },
   {
@@ -172,7 +172,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53534661834_abfb016639_b.jpg",
     size: "tall",
     modal: "modal12",
-    city: "Malang City",
+    city: "Malang",
     gmaps_url: "https://maps.app.goo.gl/K49e6Xpsyzjh2Q1p6",
   },
   {
@@ -183,7 +183,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53534345921_5de0e096f2_b.jpg",
     size: "tall",
     modal: "modal13",
-    city: "Surabaya City",
+    city: "Surabaya",
     gmaps_url: "https://maps.app.goo.gl/oF86xTR4deD2Mom69",
   },
   {
@@ -195,7 +195,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53534345851_9a77120e36_b.jpg",
     size: "wide",
     modal: "modal14",
-    city: "Surabaya City",
+    city: "Surabaya",
     gmaps_url: "https://maps.app.goo.gl/N97Bx5mzVyYMLfsM9",
   },
   {
@@ -212,7 +212,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53533458637_1a18ac34aa_b.jpg",
     size: "tall",
     modal: "modal15",
-    city: "Surabaya City",
+    city: "Surabaya",
     gmaps_url: "https://maps.app.goo.gl/XTtyFw21xJy7NGuHA",
   },
   {
@@ -231,7 +231,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53551214988_fe4be29501_o.jpg",
     size: "tall",
     modal: "modal16",
-    city: "Probolinggo District",
+    city: "Probolinggo",
     gmaps_url: "https://maps.app.goo.gl/QFWBHt2E48uUE8pP8",
   },
   {
@@ -243,7 +243,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53551225138_6f887bf4d4_o.jpg",
     size: "wide",
     modal: "modal17",
-    city: "Malang District",
+    city: "Malang",
     gmaps_url: "https://maps.app.goo.gl/nvqP5KM9eWenyT8ZA",
   },
   {
@@ -255,7 +255,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53551478580_3915d21fcc_o.jpg",
     size: "tall",
     modal: "modal18",
-    city: "Probolinggo District",
+    city: "Probolinggo",
     gmaps_url: "https://maps.app.goo.gl/gSGv8NinKYTTktRs5",
   },
   {
@@ -267,7 +267,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53550163642_beae68ff65_o.jpg",
     size: "wide",
     modal: "modal19",
-    city: "Probolinggo District",
+    city: "Probolinggo",
     gmaps_url: "https://maps.app.goo.gl/AH4f8cMY7zrrYKqS6",
   },
   {
@@ -279,7 +279,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53550171647_6e49b0f28e_o.jpg",
     size: "tall",
     modal: "modal20",
-    city: "Probolinggo City",
+    city: "Probolinggo",
     gmaps_url: "https://maps.app.goo.gl/Rn9VUU7bmfDEdrAAA",
   },
   {
@@ -291,7 +291,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53551374304_9318ad0f9b_k.jpg",
     size: "tall",
     modal: "modal21",
-    city: "Probolinggo District",
+    city: "Probolinggo",
     gmaps_url: "https://maps.app.goo.gl/YRJE7oer9ymtpUFb7",
   },
   {
@@ -303,7 +303,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53551384379_21c3a09481_k.jpg",
     size: "wide",
     modal: "modal22",
-    city: "Probolinggo District",
+    city: "Probolinggo",
     gmaps_url: "https://maps.app.goo.gl/ehzQqxmvqBvdtm5x5",
   },
   {
@@ -315,7 +315,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53550181787_09a93b19c7_h.jpg",
     size: "tall",
     modal: "modal23",
-    city: "Probolinggo District",
+    city: "Probolinggo",
     gmaps_url: "https://maps.app.goo.gl/crV1WVpo2qMiR1Lw9",
   },
   {
@@ -327,7 +327,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53548845110_df46b51294_z.jpg",
     size: "wide",
     modal: "modal24",
-    city: "Pacitan District",
+    city: "Pacitan",
     gmaps_url: "https://maps.app.goo.gl/amw3aJaYXaNkXXZP7",
   },
   {
@@ -339,7 +339,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53548737189_9accffa707_z.jpg",
     size: "tall",
     modal: "modal25",
-    city: "Pacitan District",
+    city: "Pacitan",
     gmaps_url: "https://maps.app.goo.gl/Ts5Vwaia5AwFnHCd7",
   },
   {
@@ -351,7 +351,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53548845075_af96bf3725_z.jpg",
     size: "wide",
     modal: "modal26",
-    city: "Pacitan District",
+    city: "Pacitan",
     gmaps_url: "https://maps.app.goo.gl/h2M6sSa7StFnRqM7A",
   },
   {
@@ -363,19 +363,19 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53550749633_eccbcd6d40_z.jpg",
     size: "wide",
     modal: "modal27",
-    city: "Pacitan District",
+    city: "Pacitan",
     gmaps_url: "https://maps.app.goo.gl/2dYeQ3o9HtFuM5N6A",
   },
   {
     id: "pacitan_city",
-    title: "Pacitan City",
+    title: "Pacitan",
     description:
       "Pacitan City, located in East Java, Indonesia, is known for its stunning coastal scenery and rich cultural heritage. With its beautiful beaches, such as Teleng Ria and Klayar, it attracts tourists seeking relaxation and adventure alike. The city is also famous for its traditional Javanese cuisine, including seafood dishes like grilled fish and soto ayam (chicken soup). Pacitan is a place where visitors can immerse themselves in the beauty of nature, enjoy delicious local food, and experience the warmth of Javanese hospitality.",
     image_url:
       "https://live.staticflickr.com/65535/53550999590_a6a7814552_z.jpg",
     size: "tall",
     modal: "modal28",
-    city: "Pacitan District",
+    city: "Pacitan",
     gmaps_url: "https://maps.app.goo.gl/FiAegdiTLoj5cukbA",
   },
   {
@@ -387,7 +387,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53550557246_8f085290e9_z.jpg",
     size: "wide",
     modal: "modal29",
-    city: "Pacitan District",
+    city: "Pacitan",
     gmaps_url: "https://maps.app.goo.gl/jARX677TUNMTWTWQ7",
   },
   {
@@ -398,7 +398,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53550890169_1fe33e0968_z.jpg",
     size: "tall",
     modal: "modal30",
-    city: "Pacitan District",
+    city: "Pacitan",
     gmaps_url: "https://maps.app.goo.gl/NmSd67NJ5cCEmbuf9",
   },
   {
@@ -410,7 +410,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53550561491_6ee451dbaa_z.jpg",
     size: "tall",
     modal: "modal31",
-    city: "Pacitan District",
+    city: "Pacitan",
     gmaps_url: "https://maps.app.goo.gl/jF7gsRLzHjPwuiWa9",
   },
   {
@@ -422,12 +422,12 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53547463669_d938577dc9_b.jpg",
     size: "tall",
     modal: "modal32",
-    city: "Malang District",
+    city: "Malang",
     gmaps_url: "https://maps.app.goo.gl/nZaPTMubNBJGwLux8",
   },
   {
     id: "malang_city",
-    title: "Malang City",
+    title: "Malang",
     description: `Malang City is a vibrant city located in East Java,
     Indonesia. It's known for its cool climate,
     beautiful landscapes, and rich cultural heritage.
@@ -440,7 +440,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53547495389_bfe1d31730_b.jpg",
     size: "wide",
     modal: "modal33",
-    city: "Malang City",
+    city: "Malang",
     gmaps_url: "https://maps.app.goo.gl/fj1ZGwS35qRkPMW36",
   },
   {
@@ -452,7 +452,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53547508294_3ac643e9d9_b.jpg",
     size: "tall",
     modal: "modal34",
-    city: "Malang City",
+    city: "Malang",
     gmaps_url: "https://maps.app.goo.gl/dzkZrrPio5XAqbGC8",
   },
   {
@@ -471,7 +471,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53547617675_804505affa_b.jpg",
     size: "tall",
     modal: "modal35",
-    city: "Malang District",
+    city: "Malang",
     gmaps_url: "https://maps.app.goo.gl/ddmqzaqo7Zi61KxKA",
   },
   {
@@ -492,7 +492,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53547531039_82534a40a9_z.jpg",
     size: "tall",
     modal: "modal36",
-    city: "Malang District",
+    city: "Malang",
     gmaps_url: "https://maps.app.goo.gl/5AuHUWWwiSnrbzNo6",
   },
   {
@@ -504,7 +504,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53546325802_66512a899a_z.jpg",
     size: "tall",
     modal: "modal37",
-    city: "Malang District",
+    city: "Malang",
     gmaps_url: "https://maps.app.goo.gl/CbZMdsgZbPuS5U8P6",
   },
   {
@@ -516,7 +516,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53547389293_a762ff6095_z.jpg",
     size: "wide",
     modal: "modal38",
-    city: "Malang City",
+    city: "Malang",
     gmaps_url: "https://maps.app.goo.gl/Do5VYWJcivy9sZUD7",
   },
   {
@@ -528,7 +528,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53551133663_43b5e3c799_h.jpg",
     size: "tall",
     modal: "modal39",
-    city: "Blitar District",
+    city: "Blitar",
     gmaps_url: "https://maps.app.goo.gl/cVeYbUso2LeBhsUs5",
   },
   {
@@ -548,7 +548,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53551280524_1356d67567_h.jpg",
     size: "tall",
     modal: "modal40",
-    city: "Blitar District",
+    city: "Blitar",
     gmaps_url: "https://maps.app.goo.gl/CQ8gLu3uf4G9Kuh19",
   },
   {
@@ -560,7 +560,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53550946086_3ef245354b_o.jpg",
     size: "tall",
     modal: "modal41",
-    city: "Tuban District",
+    city: "Tuban",
     gmaps_url: "https://maps.app.goo.gl/MhpLKCk7ZFYcAqx39",
   },
   {
@@ -572,7 +572,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53550130542_e969d5f3c2_o.jpg",
     size: "tall",
     modal: "modal42",
-    city: "Ponorogo District",
+    city: "Ponorogo",
     gmaps_url: "https://maps.app.goo.gl/4dX1oKkApx9LNpGL6",
   },
   {
@@ -584,7 +584,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53550993806_b965c0f069_o.jpg",
     size: "wide",
     modal: "modal43",
-    city: "Malang City",
+    city: "Malang",
     gmaps_url: "https://maps.app.goo.gl/DYSs7fQhx8GNR2Rx6",
   },
   {
@@ -596,7 +596,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53551426045_d595ec4215_o.jpg",
     size: "tall",
     modal: "modal44",
-    city: "Kediri District",
+    city: "Kediri",
     gmaps_url: "https://maps.app.goo.gl/aUvVwNymU78QJm8f7",
   },
   {
@@ -608,7 +608,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53550977541_09a130e37e_o.jpg",
     size: "tall",
     modal: "modal45",
-    city: "Kediri District",
+    city: "Kediri",
     gmaps_url: "https://maps.app.goo.gl/BocKpYrA373QqWYq8",
   },
   {
@@ -620,7 +620,7 @@ export const destinations = [
       "https://live.staticflickr.com/65535/53550111077_202b1a7757_o.jpg",
     size: "tall",
     modal: "modal46",
-    city: "Pacitan City",
+    city: "Pacitan",
     gmaps_url: "https://maps.app.goo.gl/kLYJ9Hi36z4Nf6GC8",
   },
 ];
@@ -640,90 +640,12 @@ export const dances = [
     size: "tall",
   },
   {
-    id: "jejer_gandrung",
-    title: "Jejer Gandrung",
-    description: `Jejer Gandrung is a traditional dance originating from the Banyuwangi region of East Java, Indonesia. 
-    It is performed by female dancers wearing traditional Javanese attire and often involves graceful movements accompanied by traditional Javanese music. 
-    The dance typically depicts themes of love, gratitude, and devotion.`,
-    city: "",
-    image_url:
-      "https://cdn0-production-images-kly.akamaized.net/yLHC9mQeJQjWTdJU5j6tWSWFntY=/800x1066/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3471364/original/068530200_1622649062-tari_gandrung.jpg",
-    size: "wide",
-  },
-
-  {
-    id: "tari_tiban",
-    title: "Tari Tiban",
-    description: `Tari Tiban is a traditional dance from the Madura region of Indonesia. 
-    It is performed during traditional ceremonies and celebrations, featuring intricate footwork and hand movements. 
-    The dance is characterized by its lively and energetic rhythm, accompanied by traditional Madurese music.`,
-    city: "",
-    image_url:
-      "https://www.goodnewsfromindonesia.id/uploads/images/2023/11/0508392023-hari-tari-0334.jpg",
-    size: "tall",
-  },
-  {
-    id: "topeng_malangan",
-    title: "Topeng Malangan",
-    description: `Topeng Malangan is a traditional mask dance from Malang, East Java, Indonesia. 
-    It involves performers wearing colorful masks depicting various characters, such as kings, queens, warriors, and mythological figures. 
-    The dance often tells stories from Javanese folklore and mythology and is accompanied by traditional Javanese music and narration.`,
-    city: "",
-    image_url:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Menari_Topeng_Malang.jpg/2560px-Menari_Topeng_Malang.jpg",
-    size: "wide",
-  },
-  {
-    id: "tari_jaranan",
-    title: "Tari Jaranan Buto",
-    description: `Tari Jaranan, also known as the Jaran Kepang dance, is a traditional Javanese dance originating from the Java region of Indonesia. 
-    It is performed by dancers riding decorated horse figures made from woven bamboo or rattan. 
-    The dance often involves trance-like movements and is accompanied by traditional Javanese music and chanting.`,
-    city: "",
-    image_url: "https://jadesta.kemenparekraf.go.id/imgpost/60379.jpg",
-    size: "tall",
-  },
-  {
-    id: "reog_kendang",
-    title: "Reog Kendang",
-    description: `Reog Kendang is a traditional dance and performance art originating from the Ponorogo region of East Java, Indonesia. 
-    It is known for its vibrant and colorful costumes, elaborate masks, and dynamic movements. 
-    The dance often involves a large lion-like mask known as "Singa Barong" and a group of dancers performing acrobatic feats to the accompaniment of traditional Javanese music.`,
-    city: "",
-    image_url:
-      "https://assets-a1.kompasiana.com/items/album/2020/05/06/ctq6inuwcaect8d-5eb2d257d541df45dd6b0982.jpg",
-    size: "tall",
-  },
-  {
-    id: "tari_remo",
-    title: "Tari Remo",
-    description: `Tari Remo is a traditional dance originating from the Remo region of East Java, Indonesia. 
-    It is characterized by its lively and rhythmic movements, often performed by female dancers wearing vibrant costumes adorned with sequins and beads. 
-    The dance typically portrays themes of joy, celebration, and unity, and is accompanied by upbeat Javanese music.`,
-    city: "",
-    image_url:
-      "https://www.suarasurabaya.net/wp-content/uploads/2019/11/potretd34630_clip2.jpg",
-    size: "wide",
-  },
-
-  {
-    id: "tari_glipang",
-    title: "Tari Glipang",
-    description: `Tari Glipang is a traditional dance from the Nganjuk region of East Java, Indonesia. 
-    It is characterized by its slow and graceful movements, often depicting themes of nature, beauty, and spirituality. 
-    The dance is performed by female dancers wearing traditional Javanese attire adorned with intricate patterns and accessories.`,
-    city: "",
-    image_url:
-      "https://nnc-media.netralnews.com/IMG-Netral-News-User-222-N4SM3ZPXQ1.jpg",
-    size: "tall",
-  },
-  {
     id: "tari_gambu",
     title: "Tari Gambu",
     description: `Tari Gambu is a traditional dance originating from the Madura region of Indonesia. 
     It is performed during various cultural events and ceremonies, featuring dancers wearing colorful costumes and elaborate headpieces. 
     The dance is accompanied by traditional Madurese music and often involves rhythmic movements and gestures symbolizing aspects of Madurese culture and tradition.`,
-    city: "",
+    city: "Madura",
     image_url:
       "https://asset-2.tstatic.net/tribunnewswiki/foto/bank/images/Tari-Gambu-1.jpg",
     size: "wide",
@@ -735,10 +657,86 @@ export const dances = [
     It is performed by male dancers wearing traditional attire and carrying bamboo poles known as "sangkal." 
     The dance involves intricate footwork and movements, often depicting scenes of daily life, agricultural activities, or mythical stories. 
     It is accompanied by traditional Javanese music and percussion instruments.`,
-    city: "",
+    city: "Sumenep",
     image_url:
       "https://tribratanews.polri.go.id/web/image/blog.post/46957/image",
     size: "wide",
+  },
+  {
+    id: "topeng_malangan",
+    title: "Topeng Malangan",
+    description: `Topeng Malangan is a traditional mask dance from Malang, East Java, Indonesia. 
+    It involves performers wearing colorful masks depicting various characters, such as kings, queens, warriors, and mythological figures. 
+    The dance often tells stories from Javanese folklore and mythology and is accompanied by traditional Javanese music and narration.`,
+    city: "Malang",
+    image_url:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Menari_Topeng_Malang.jpg/2560px-Menari_Topeng_Malang.jpg",
+    size: "tall",
+  },
+  {
+    id: "tari_jaranan",
+    title: "Tari Jaranan Buto",
+    description: `Tari Jaranan, also known as the Jaran Kepang dance, is a traditional Javanese dance originating from the Java region of Indonesia. 
+    It is performed by dancers riding decorated horse figures made from woven bamboo or rattan. 
+    The dance often involves trance-like movements and is accompanied by traditional Javanese music and chanting.`,
+    city: "Malang",
+    image_url: "https://jadesta.kemenparekraf.go.id/imgpost/60379.jpg",
+    size: "tall",
+  },
+  {
+    id: "reog_kendang",
+    title: "Reog Kendang",
+    description: `Reog Kendang is a traditional dance and performance art originating from the Ponorogo region of East Java, Indonesia. 
+    It is known for its vibrant and colorful costumes, elaborate masks, and dynamic movements. 
+    The dance often involves a large lion-like mask known as "Singa Barong" and a group of dancers performing acrobatic feats to the accompaniment of traditional Javanese music.`,
+    city: "Tulungagung",
+    image_url:
+      "https://assets-a1.kompasiana.com/items/album/2020/05/06/ctq6inuwcaect8d-5eb2d257d541df45dd6b0982.jpg",
+    size: "tall",
+  },
+  {
+    id: "tari_tiban",
+    title: "Tari Tiban",
+    description: `Tari Tiban is a traditional dance from the Madura region of Indonesia. 
+    It is performed during traditional ceremonies and celebrations, featuring intricate footwork and hand movements. 
+    The dance is characterized by its lively and energetic rhythm, accompanied by traditional Madurese music.`,
+    city: "Tulungagung",
+    image_url:
+      "https://www.goodnewsfromindonesia.id/uploads/images/2023/11/0508392023-hari-tari-0334.jpg",
+    size: "tall",
+  },
+  {
+    id: "jejer_gandrung",
+    title: "Jejer Gandrung",
+    description: `Jejer Gandrung is a traditional dance originating from the Banyuwangi region of East Java, Indonesia. 
+    It is performed by female dancers wearing traditional Javanese attire and often involves graceful movements accompanied by traditional Javanese music. 
+    The dance typically depicts themes of love, gratitude, and devotion.`,
+    city: "Banyuwangi",
+    image_url:
+      "https://cdn0-production-images-kly.akamaized.net/yLHC9mQeJQjWTdJU5j6tWSWFntY=/800x1066/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3471364/original/068530200_1622649062-tari_gandrung.jpg",
+    size: "tall",
+  },
+  {
+    id: "tari_glipang",
+    title: "Tari Glipang",
+    description: `Tari Glipang is a traditional dance from the Nganjuk region of East Java, Indonesia. 
+    It is characterized by its slow and graceful movements, often depicting themes of nature, beauty, and spirituality. 
+    The dance is performed by female dancers wearing traditional Javanese attire adorned with intricate patterns and accessories.`,
+    city: "Probolinggo",
+    image_url:
+      "https://nnc-media.netralnews.com/IMG-Netral-News-User-222-N4SM3ZPXQ1.jpg",
+    size: "normal",
+  },
+  {
+    id: "tari_remo",
+    title: "Tari Remo",
+    description: `Tari Remo is a traditional dance originating from the Remo region of East Java, Indonesia. 
+    It is characterized by its lively and rhythmic movements, often performed by female dancers wearing vibrant costumes adorned with sequins and beads. 
+    The dance typically portrays themes of joy, celebration, and unity, and is accompanied by upbeat Javanese music.`,
+    city: "Jombang",
+    image_url:
+      "https://www.suarasurabaya.net/wp-content/uploads/2019/11/potretd34630_clip2.jpg",
+    size: "normal",
   },
 ];
 
@@ -751,7 +749,7 @@ export const foods = [
     In addition, shallots, garlic, galangal, coriander, lemongrass, and kunir are also added to add to the flavor of the rawon sauce.
     The rawon filling itself is generally beef cut into small pieces, and stewed with spices. 
     This rawon dish is even more delicious when eaten with additional short bean sprouts, spring onions, crackers, chili sauce, and rice.`,
-    city: "",
+    city: "Ponorogo",
     image_url:
       "https://cdn0-production-images-kly.akamaized.net/TRjRv0eViPPsmSViR1FyPiC6xdY=/0x810:5028x3644/1200x675/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3483824/original/081090300_1623815166-shutterstock_1961342572.jpg",
     size: "tall",
@@ -763,7 +761,7 @@ export const foods = [
     As the name implies, this food contains cingur or slices of cow's mouth that have been boiled until tender.
     In addition to cingur, this salad from Surabaya consists of sliced fruits such as cucumber, bengkuang, young mango, pineapple, kedondong, as well as vegetables such as sprouts, kale, and long beans. 
     All of them are put together, then doused with a seasoning made from peanuts, chili, and long beans.`,
-    city: "",
+    city: "Surabaya",
     image_url:
       "https://ebtyz3wv58z.exactdn.com/wp-content/uploads/2023/06/C22.jpg?strip=all&lossy=1&ssl=1",
     size: "wide",
@@ -774,8 +772,9 @@ export const foods = [
     title: "Lontong Balap",
     description: `It is made with rice cake, bean sprouts, fried tofu, lentho, and topped with a dash of sweet soy sauce, fried shallots and chili sauce. 
     Lentho itself is a fritter made from black-eyed pea.`,
-    city: "",
-    image_url: "https://www.sasa.co.id/medias/page_medias/lontong_balap.jpg",
+    city: "Surabaya",
+    image_url:
+      "https://ik.imagekit.io/rnatrnn6r/lontong_balap.webp?updatedAt=1709609473541",
     size: "tall",
   },
   {
@@ -785,7 +784,7 @@ export const foods = [
     The umbrella-like shape of its leaves is the basic ingredient of pecel semanggi.
     In addition to clover leaves, this food can also be added with sprouts, kale, and uli crackers. 
     For pecel semanggi sauce, it is made from chili, lemongrass, vegetable starfruit, and a little coconut sugar which is kneaded together.`,
-    city: "",
+    city: "Surabaya",
     image_url:
       "https://cdn-2.tstatic.net/travel/foto/bank/images/pecel-semanggi.jpg",
     size: "wide",
@@ -798,7 +797,7 @@ export const foods = [
     By making it into lontong kupang, you can taste its deliciousness.
     A portion of lontong kupang usually consists of rice cake, cassava lento, kupang clam satay with petis-based. 
     You will also need gravy to complete this East Java specialty.`,
-    city: "",
+    city: "Sidoarjo",
     image_url:
       "https://cdn0-production-images-kly.akamaized.net/_QqaNbAJmt8_QFdF5LFJgw0UxFw=/0x3069:4160x5414/500x281/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3911576/original/001955400_1642842581-shutterstock_2058946475.jpg",
     size: "wide",
@@ -810,7 +809,7 @@ export const foods = [
     Warm rice, sambal terasi, and fresh vegetables make this dish complete.
     To process this dish so that the duck meat is not tough and not fishy, you need to soak the processed duck meat with spices before frying it. 
     Once fried then eaten, the meat will be soft and savory.`,
-    city: "",
+    city: "Surabaya",
     image_url:
       "https://asset.kompas.com/crops/WhmmF0b4678whQdBKddOYHmhxXU=/21x0:989x645/750x500/data/photo/2023/02/23/63f6e1fa4a0fa.jpeg",
     size: "tall",
@@ -821,7 +820,7 @@ export const foods = [
     description: `This food is made from tofu as the name suggests. 
     This East Javanese specialty is then added with rice cake, bean sprouts and pickles. 
     Not to forget, the tofu tek dish is doused with appetizing peanut sauce.`,
-    city: "",
+    city: "Lamongan",
     image_url:
       "https://asset.kompas.com/crops/hIDTupAmU56ytPNxDos4rizFrkw=/175x79:975x613/750x500/data/photo/2022/05/06/6274a029b12d7.jpg",
     size: "tall",
@@ -832,7 +831,7 @@ export const foods = [
     description: `East Java has several famous soto, such as soto Lamongan, soto Madura, and soto Jombang. 
     Although they are both soto, they all have different characteristics.
     Such as soto Lamongan which is known for its koyanya sprinkles, soto Madura which has a yellow sauce without coconut milk, and soto Jombang whose sauce is not too thick.`,
-    city: "",
+    city: "Lamongan",
     image_url:
       "https://cdn1.katadata.co.id/media/images/thumb/2021/11/12/Soto_ayam_Lamongan-2021_11_12-07_11_23_a43683d33b40f413228d54e3c6ed4a2f_960x640_thumb.jpg",
     size: "tall",
@@ -844,7 +843,7 @@ export const foods = [
     The dish and gravy of bakwan Malang is similar to meatballs in general. 
     However, the difference is that bakwan Malang has additional fried dumplings filled with flour dough mixed with ground meat or fish.
     The savory taste of bakwan Malang is incomplete without the addition of celery leaves, fried onions, sweet soy sauce, and chili sauce.`,
-    city: "",
+    city: "Malang",
     image_url:
       "https://asset.kompas.com/crops/IiCqGGNl50Pf7TXTdtUZTKJ5Qp8=/0x339:1200x1139/750x500/data/photo/2021/11/17/6194ce2bf1647.jpeg",
     size: "tall",
@@ -856,7 +855,7 @@ export const foods = [
     Originating from Lamongan and Surabaya, this dish tends to be spicy and sweet.
     One portion of Surabaya's mixed tofu usually contains boiled potatoes, yellow noodles, rice cake, bean sprouts, pieces of kikil, half-cooked fried tofu, and lettuce leaves. 
     Not to forget, the special sauce mixed with petis adds to the flavor of this dish.`,
-    city: "",
+    city: "Lamongan",
     image_url:
       "https://img-global.cpcdn.com/recipes/36b957caf6511372/680x482cq70/tahu-campur-suroboyo-foto-resep-utama.jpg",
     size: "wide",
@@ -867,7 +866,7 @@ export const foods = [
     description: `This dish originates from Gresik, East Java. 
     In a portion of nasi krawu, you can get beef fillings such as meat stew, beef offal, chili paste, and a sprinkling of serundeng. 
     For the way it is served, nasi krawu also still uses banana leaves.`,
-    city: "",
+    city: "Gresik",
     image_url:
       "https://asset.kompas.com/crops/ZsjVbaAlagVNJ4bYq6d5Pb6O9e0=/0x0:1000x667/750x500/data/photo/2022/09/19/6328795f2851e.jpg",
     size: "wide",
@@ -879,7 +878,7 @@ export const foods = [
     The mixed flavors make this food refreshing.
     This Banyuwangi specialty also contains pieces of beef and tripe. 
     To find rujak soto, tourists can get it at roadside stalls.`,
-    city: "",
+    city: "Banyuwangi",
     image_url:
       "https://pusakaindonesia.id/wp-content/uploads/2023/10/383686148.webp",
     size: "tall",
@@ -890,7 +889,7 @@ export const foods = [
     description: `Bandeng Asap can be found in Surabaya, East Java. 
     This food is processed milkfish cooked by smoking. 
     Smoked milkfish itself is able to survive and last for several days, because it is often used as souvenirs by visiting tourists.`,
-    city: "",
+    city: "Sidoarjo",
     image_url: "https://storage.nu.or.id/storage/post/16_9/mid/1625757099.jpeg",
     size: "wide",
   },
@@ -900,19 +899,19 @@ export const foods = [
     description: `Nasi tempong, also known as sego tempong, originates from Banyuwangi. 
     Tempong rice consists of vegetables that have been boiled, such as spinach, kenikir, basil leaves, tofu, tempeh, as well as fried foods such as corn bakwan and jambal fish.
     As a complement, tempong rice is eaten with a splash of peanut sauce mixed with kencur or chili paste.`,
-    city: "",
+    city: "Banyuwangi",
     image_url:
       "https://asset.kompas.com/crops/NIJh-ec_4INXTYjUXickv1iK1Uo=/0x83:1000x750/750x500/data/photo/2023/11/20/655aa53b16af4.jpeg",
     size: "tall",
   },
   {
-    id: "sate_madure",
+    id: "sate_madura",
     title: "Sate Madura",
     description: `As the name implies, this East Java specialty comes from the Madura region. 
     Madura satay is like chicken satay doused in peanut sauce in general. 
     But what makes this satay more delicious is the peanut sauce which is sometimes hazelnut sauce.
     In addition, the characteristic of Madura satay is also burned with charcoal sprinkled with lime juice.`,
-    city: "",
+    city: "Madura",
     image_url:
       "https://wiratech.co.id/wp-content/uploads/2019/02/bumbu-sate-madura.jpg",
     size: "wide",
