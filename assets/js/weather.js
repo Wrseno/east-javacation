@@ -16,15 +16,18 @@ async function apiWeather() {
     pathName === "/destinations/"
   ) {
     url = "https://cuaca-gempa-rest-api.vercel.app/weather/jawa-timur/surabaya";
-  } else if (pathName === "/city/malang") {
+  } else if (pathName === "/city/malang/" || pathName === "/city/malang") {
     url =
       "https://cuaca-gempa-rest-api.vercel.app/weather/jawa-timur/kabupaten-malang";
   } else if (pathName === "/city/pacitan/" || pathName === "/city/pacitan") {
     url = "https://cuaca-gempa-rest-api.vercel.app/weather/jawa-timur/pacitan";
-  } else if (pathName === "/city/probolinggo") {
+  } else if (
+    pathName === "/city/probolinggo/" ||
+    pathName === "/city/probolinggo"
+  ) {
     url =
       "https://cuaca-gempa-rest-api.vercel.app/weather/jawa-timur/kabupaten-probolinggo";
-  } else if (pathName === "/city/kediri") {
+  } else if (pathName === "/city/kediri/" || pathName === "/city/kediri") {
     url =
       "https://cuaca-gempa-rest-api.vercel.app/weather/jawa-timur/kabupaten-kediri";
   }
@@ -92,18 +95,27 @@ async function apiWeather() {
     pathName === "/local-quirkiness/" ||
     pathName === "/local-quirkiness" ||
     pathName === "/gallery/" ||
-    pathName === "/gallery"
+    pathName === "/gallery" ||
+    pathName === "/city/surabaya/" ||
+    pathName === "/city/surabaya" ||
+    pathName === "/city/malang/" ||
+    pathName === "/city/malang" ||
+    pathName === "/city/kediri/" ||
+    pathName === "/city/kediri" ||
+    pathName === "/city/pacitan/" ||
+    pathName === "/city/pacitan" ||
+    pathName === "/city/probolinggo/" ||
+    pathName === "/city/probolinggo"
   ) {
     if (matchingWeather.length > 0) {
       weatherHeader.innerHTML = `
-          <div class="flex items-center text-sm lg:text-base">
+          <div class="grid grid-cols-4 items-center text-sm lg:text-base">
             <h2 class="text-xl md:text-2xl mb-2">Weather in <span class="font-bold">${
               data.data.description
             }</span>
             </h2>
-            <div class="w-[35%] md:w-[60%] lg:w-[70%] h-[1px] bg-gray-100 dark:bg-gray-50 shadow"></div>
+            <div class="col-span-3 h-[1px] bg-gray-100 dark:bg-gray-50 shadow"></div>
           </div>
-          <div class="hidden md:block">
             <div class="grid grid-cols-4 text-sm lg:text-base">
               <p>Humidity</p>
               <p>Tempereature</p>
@@ -121,19 +133,6 @@ async function apiWeather() {
                   `
                 )
                 .join("")}
-          </div>
-            <div class="md:hidden grid grid-cols-2 gap-2">
-              <p>Humidity</p>
-              <p>${matchingWeather.find((item) => item.ms)?.ms ?? ""}</p>
-              <p>Weather</p>
-              <p>${matchingWeather.find((item) => item.name)?.name ?? ""}</p>
-              <p>Celcius</p>
-              <p>${
-                matchingWeather.find((item) => item.celcius)?.celcius ?? ""
-              }</p>
-              <p>Wind</p>
-              <p>${matchingWeather.find((item) => item.value)?.value ?? ""}</p>
-            </div>
           </div>
     `;
     } else {

@@ -1,18 +1,20 @@
-import {destinations} from "./data.js";
+import {destinations, dances, foods} from "./data.js";
 
 let gallery = document.querySelector("#grid-gallery");
 
-destinations.map((item) => {
-  gallery.innerHTML += `
-        <div
+const generateGalleryHTML = (items) => {
+  return items
+    .map((item) => {
+      return `
+          <div
               data-modal-target="${item.id}"
               data-modal-toggle="${item.id}"
-              class="${item.size} image-wrapper relative overflow-hidden"
+              class="${item.size} image-wrapper relative overflow-hidden fade-in"
             >
               <img
-                src=${item.image}
+                src=${item.image_url}
                 alt=${item.title} 
-                class="w-full h-full rounded hover:rounded transition duration-300 cursor-pointer fade-in"
+                class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer"
                 loading="lazy"
               />
               <div
@@ -32,9 +34,9 @@ destinations.map((item) => {
                 <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                   <div class="text-center">
                     <img
-                      src=${item.image}
+                      src=${item.image_url}
                       alt=${item.title}
-                      class="w-full h-full rounded"
+                      class="object-cover w-full h-full rounded"
                       loading="lazy"
                     />
                     <div
@@ -72,4 +74,12 @@ destinations.map((item) => {
               </div>
             </div>
     `;
-});
+    })
+    .join("");
+};
+
+gallery.innerHTML = `
+  ${generateGalleryHTML(dances)}
+  ${generateGalleryHTML(destinations)}
+  ${generateGalleryHTML(foods)}
+`;

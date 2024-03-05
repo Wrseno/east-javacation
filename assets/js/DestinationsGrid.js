@@ -5,9 +5,9 @@ let destinationsGrid = document.querySelector("#destinations-grid");
 destinations.map((item) => {
   destinationsGrid.innerHTML += `
         <div data-modal-target=${item.modal} data-modal-toggle=${item.modal} 
-        class="${item.size} relative overflow-hidden image-wrapper fade-in ">
+        class="${item.size} relative overflow-hidden image-wrapper fade-in">
             <img
-            src=${item.image}
+            src=${item.image_url}
             alt=${item.title}
             loading="lazy"
             class="object-cover w-full h-full hover:scale-125 transition duration-300 cursor-pointer"
@@ -33,7 +33,7 @@ destinations.map((item) => {
                 <div class="grid grid-cols-1 lg:grid-cols-4">
                 <div class="col-span-2">
                     <img
-                    src=${item.image}
+                    src=${item.image_url}
                     alt=${item.title}
                     loading="lazy"
                     class="object-cover w-full h-full"

@@ -14,6 +14,7 @@
     <!-- Konfigurasi -->
     <script src="/tailwind.config.js"></script>
     <script src="/assets/js/colorTheme.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
 
   <body
@@ -202,11 +203,25 @@
       </nav>
     </header>
 
-    <div class="bg-background bg-cover bg-center aspect-widescreen">
+    <div class="bg-background bg-cover bg-center aspect-widescreen relative">
       <img
-        src="https://ik.imagekit.io/rnatrnn6r/malang-min.jpg?updatedAt=1708522806465"
-        class="object-cover lg:w-full image-hero"
+        src="https://live.staticflickr.com/65535/53547508294_3ac643e9d9_b.jpg"
+        class="object-cover lg:w-full image-hero h-lvh lg:h-full"
       />
+      <div class="absolute w-full top-[30%] text-shadow">
+        <h1 class="text-white font-bold text-4xl md:text-6xl text-center">
+          Malang
+        </h1>
+        <h2 class="text-white text-center text-xl md:text-3xl">
+          <span id="malang-city"></span>
+        </h2>
+      </div>
+      <div class="w-full grid px-12 absolute bottom-0 my-16">
+        <div
+          id="weather-header"
+          class="md:w-full text-white text-shadow fade-in hidden md:block"
+        ></div>
+      </div>
     </div>
 
     <section
@@ -1051,6 +1066,13 @@
       </div>
     </footer>
 
+    <script>
+      let typedGallery = new Typed("#malang-city", {
+        strings: ["Nature's Beauty, and Culinary Delights"],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
     <script src="/assets/js/app.js"></script>
     <script src="/assets/js/weather.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>

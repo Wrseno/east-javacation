@@ -203,10 +203,10 @@
       </nav>
     </header>
 
-    <div class="bg-background bg-cover bg-center aspect-widescreen">
+    <div class="bg-background bg-cover bg-center aspect-widescreen relative">
       <img
         src="https://ik.imagekit.io/rnatrnn6r/City/surabaya.webp?updatedAt=1709017665036"
-        class="object-cover lg:w-full image-hero"
+        class="object-cover lg:w-full image-hero h-lvh lg:h-full"
       />
       <div class="absolute w-full top-[30%] text-shadow">
         <h1 class="text-white font-bold text-4xl md:text-6xl text-center">
@@ -216,10 +216,10 @@
           <span id="surabaya-city"></span>
         </h2>
       </div>
-      <div class="w-full grid absolute bottom-0 my-16 md:left-[4%]">
+      <div class="w-full grid px-12 absolute bottom-0 my-16">
         <div
           id="weather-header"
-          class="mx-auto md:w-full text-white text-shadow fade-in"
+          class="md:w-full text-white text-shadow fade-in hidden md:block"
         ></div>
       </div>
     </div>
@@ -1052,7 +1052,7 @@
 
     <script>
       let typedGallery = new Typed("#surabaya-city", {
-        strings: ["Explore Surabaya City"],
+        strings: ["The largest city in East Java."],
         typeSpeed: 50,
         loop: true,
       });

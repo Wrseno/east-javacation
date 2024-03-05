@@ -20,13 +20,10 @@ dances.map((item) => {
               <div
                 class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
               >
-                <h3 class="text-sm md:text-lg font-semibold text-white text-start">
+                <h3 class="text-lg md:text-2xl font-semibold text-white text-start">
                   ${item.title}
                 </h3>
-                <p class="text-white text-sm">${item.description.substring(
-                  0,
-                  50
-                )}..</p>
+                <p class="text-white">${item.description.substring(0, 50)}..</p>
               </div>
             </div>
             <div
@@ -98,13 +95,10 @@ foods.map((item) => {
               <div
                 class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
               >
-                <h3 class="text-sm md:text-lg font-semibold text-white text-start">
+                <h3 class="text-lg md:text-2xl font-semibold text-white text-start">
                   ${item.title}
                 </h3>
-                <p class="text-white text-sm">${item.description.substring(
-                  0,
-                  50
-                )}..</p>
+                <p class="text-white">${item.description.substring(0, 50)}..</p>
               </div>
             </div>
             <div

@@ -12,8 +12,9 @@ export const destinations = [
     breathtaking view, many visitors climb up to the crater's
     edge.
     `,
-    image: "https://live.staticflickr.com/65535/53547636755_9b29f32323_z.jpg",
-    size: "tall",
+    image_url:
+      "https://live.staticflickr.com/65535/53547636755_9b29f32323_z.jpg",
+    size: "wide",
     modal: "modal1",
     city: "Probolinggo District",
     gmaps_url: "https://maps.app.goo.gl/kz5zrbaCHz4UG7Zz8",
@@ -29,7 +30,7 @@ export const destinations = [
     volcano, even though it's hard work. The place is really
     pretty, with green hills all around.`,
     title: "Ijen Crater",
-    image:
+    image_url:
       "https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/kawah-ijen-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960983660",
     size: "tall",
     modal: "modal2",
@@ -46,7 +47,7 @@ export const destinations = [
     Visitors can hike or drive to the edge of the crater to
     admire the breathtaking views of the surrounding area.`,
     title: "Bondowoso Carter",
-    image:
+    image_url:
       "https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/kawah-bondowoso-min.webp?updatedAt=1708960985131",
     size: "wide",
     modal: "modal3",
@@ -61,7 +62,7 @@ export const destinations = [
     cascading down from lush green cliffs, creating a
     breathtaking sight.`,
     title: "Tumpak Sewu",
-    image:
+    image_url:
       "https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/Tumpak_sewu-min-ezgif.com-optiwebp.webp?updatedAt=1708960984277",
     size: "tall",
     modal: "modal4",
@@ -78,7 +79,7 @@ export const destinations = [
     trees, giving it a tropical feel. It's a great place
     to unwind and enjoy the natural beauty of Indonesia!`,
     title: "Wedi Klopo Beach",
-    image:
+    image_url:
       "https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/wedi-klopo-beach-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960984535",
     size: "wide",
     modal: "modal5",
@@ -93,7 +94,7 @@ export const destinations = [
     overlook the ocean. Visitors can relax on the beach, swim
     in the calm waters, or explore the surrounding area.`,
     title: "Papuma Beach",
-    image:
+    image_url:
       "https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/pantai-papuma-min-ezgif.com-jpg-to-webp-converter.webp?updatedAt=1708960985371",
     size: "wide",
     modal: "modal6",
@@ -110,7 +111,7 @@ export const destinations = [
     see lots of plants and animals there. It's a
     peaceful place to relax away from the busy city.`,
     title: "De Djawatan Forest",
-    image:
+    image_url:
       "https://ik.imagekit.io/rnatrnn6r/Popular%20Destinations%20WDC/de-djawatan-min-ezgif.com-optiwebp.webp?updatedAt=1708960985807",
     size: "tall",
     modal: "modal7",
@@ -121,7 +122,8 @@ export const destinations = [
     id: "tunjungan_street",
     title: "Tunjangan Street",
     description: `Tunjungan Street is a well-known street located in Surabaya, the capital city of East Java, Indonesia. It's often considered one of the main streets and a bustling area in the city. Tunjungan Street is famous for its historical significance, vibrant atmosphere, and diverse range of shops, restaurants, and entertainment venues. It's a popular destination for both locals and tourists alike, offering a glimpse into Surabaya's rich cultural heritage and modern urban life.`,
-    image: "https://live.staticflickr.com/65535/53534764925_f4005b3893_b.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53534764925_f4005b3893_b.jpg",
     size: "wide",
     modal: "modal8",
     city: "Surabaya City",
@@ -131,7 +133,8 @@ export const destinations = [
     id: "mangrove_forest",
     title: "Mangrove Forest Wonorejo",
     description: `Mangrove forests are unique coastal ecosystems found in tropical and subtropical regions, characterized by salt-tolerant trees, shrubs, and other vegetation. These forests thrive in brackish water along coastlines, estuaries, and tidal flats, playing crucial roles in protecting coastlines from erosion, providing habitats for diverse marine life, and serving as nurseries for fish and other aquatic species.`,
-    image: "https://live.staticflickr.com/65535/53534345831_323fa1d1d4_b.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53534345831_323fa1d1d4_b.jpg",
     size: "tall",
     modal: "modal9",
     city: "Surabaya City",
@@ -141,7 +144,8 @@ export const destinations = [
     id: "bamboo_forrest",
     title: "Bamboo Forrest",
     description: `The Bamboo Forest, also known as a bamboo grove, is a dense cluster of tall bamboo plants that create a serene and picturesque environment. Found in various parts of the world, particularly in Asia, these forests are characterized by their towering bamboo stalks, which can grow to impressive heights. Walking through a bamboo forest, you're enveloped in a tranquil atmosphere, with sunlight filtering through the dense canopy of leaves, casting mesmerizing patterns on the forest floor.`,
-    image: "https://live.staticflickr.com/65535/53534764940_1082d44159_b.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53534764940_1082d44159_b.jpg",
     size: "tall",
     modal: "modal10",
     city: "Surabaya City",
@@ -152,7 +156,8 @@ export const destinations = [
     title: "House of Sampoerna",
     description:
       "The House of Sampoerna is a historic site located in Surabaya, Indonesia, renowned for its significance in Indonesian culture and heritage. Originally a cigarette factory established by Liem Seeng Tee in 1913, it has since been transformed into a museum and cultural center. The complex showcases the history of Sampoerna, one of Indonesia's largest cigarette companies, offering insights into the tobacco industry's development in the region. ",
-    image: "https://live.staticflickr.com/65535/53534661804_efd155babe_b.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53534661804_efd155babe_b.jpg",
     size: "wide",
     modal: "modal11",
     city: "Surabaya City",
@@ -163,7 +168,8 @@ export const destinations = [
     title: "Dipo Lokomotif",
     description:
       "Dipo Lokomotif is a technology used in railway systems that allows locomotives to be serviced and repaired quickly and efficiently. It consists of a pit where the locomotive can be lowered for maintenance, inspection, and repairs. This system streamlines the process by providing easy access to the undercarriage and other critical components of the locomotive, reducing downtime and improving overall operational efficiency for railway companies.",
-    image: "https://live.staticflickr.com/65535/53534661834_abfb016639_b.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53534661834_abfb016639_b.jpg",
     size: "tall",
     modal: "modal12",
     city: "Malang City",
@@ -173,7 +179,8 @@ export const destinations = [
     id: "monumen_jalesveva_jayamahe",
     title: "Monumen Jalesvevajayamahe",
     description: `Monumen Jalesveva Jayamahe is a prominent naval monument located in Surabaya, Indonesia. It stands as a tribute to the Indonesian Navy's victory and heroism during the Battle of the Arafura Sea in 1962. The monument's name translates to "Glory to the Victorious Seas" in Sanskrit, symbolizing the nation's maritime strength and pride. Its design features a towering central pillar surrounded by water, with a golden eagle perched on top, representing Indonesia's sovereignty and naval prowess. The monument serves as a reminder of the sacrifices made by the Indonesian Navy to defend the nation's waters and uphold its maritime heritage.`,
-    image: "https://live.staticflickr.com/65535/53534345921_5de0e096f2_b.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53534345921_5de0e096f2_b.jpg",
     size: "tall",
     modal: "modal13",
     city: "Surabaya City",
@@ -184,7 +191,8 @@ export const destinations = [
     title: "De Javasche Bank",
     description:
       "De Javasche Bank, often abbreviated as DJB, was the central bank of the Dutch East Indies, which is now Indonesia, established in 1828 by the Dutch colonial government. It served as the issuer of currency, regulator of monetary policy, and custodian of the colonial financial system. De Javasche Bank played a crucial role in facilitating trade, managing finances, and stabilizing the economy during the colonial era.",
-    image: "https://live.staticflickr.com/65535/53534345851_9a77120e36_b.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53534345851_9a77120e36_b.jpg",
     size: "wide",
     modal: "modal14",
     city: "Surabaya City",
@@ -200,7 +208,8 @@ export const destinations = [
     hustle and bustle of the city. The village is home to
     friendly locals who engage in farming and handicrafts,
     preserving their cultural heritage.`,
-    image: "https://live.staticflickr.com/65535/53533458637_1a18ac34aa_b.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53533458637_1a18ac34aa_b.jpg",
     size: "tall",
     modal: "modal15",
     city: "Surabaya City",
@@ -218,9 +227,10 @@ export const destinations = [
     It's a real adventure! And the sound of the
     waterfall is so peaceful. Everyone who loves nature
     should see it!`,
-    image: "https://live.staticflickr.com/65535/53551214988_fe4be29501_o.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53551214988_fe4be29501_o.jpg",
     size: "tall",
-    modal: "modal6",
+    modal: "modal16",
     city: "Probolinggo District",
     gmaps_url: "https://maps.app.goo.gl/QFWBHt2E48uUE8pP8",
   },
@@ -229,8 +239,9 @@ export const destinations = [
     title: "Sumber Maron Waterfall",
     description:
       "Sumber Maron Waterfall is a serene natural wonder tucked away in the lush greenery of East Java, Indonesia. Cascading gracefully from a height of about 30 meters, this picturesque waterfall offers a refreshing escape for nature lovers and adventure seekers alike. Surrounded by towering trees and vibrant flora, the waterfall creates a tranquil atmosphere perfect for relaxation and rejuvenation. Visitors can enjoy swimming in the cool, crystal-clear pools beneath the falls or simply bask in the beauty of the surrounding landscape. ",
-    image: "https://live.staticflickr.com/65535/53551225138_6f887bf4d4_o.jpg",
-    size: "tall",
+    image_url:
+      "https://live.staticflickr.com/65535/53551225138_6f887bf4d4_o.jpg",
+    size: "wide",
     modal: "modal17",
     city: "Malang District",
     gmaps_url: "https://maps.app.goo.gl/nvqP5KM9eWenyT8ZA",
@@ -240,7 +251,8 @@ export const destinations = [
     title: "Gili Ketapang",
     description:
       "Gili Ketapang is a small island located off the coast of Probolinggo, Indonesia, known for its pristine beaches, crystal-clear waters, and vibrant marine life. It offers a tranquil escape from the hustle and bustle of city life, attracting travelers seeking relaxation and adventure. With its picturesque scenery and opportunities for snorkeling, diving, and beachcombing, Gili Ketapang has become a popular destination for tourists looking to immerse themselves in nature and experience the beauty of Indonesia's tropical paradise.",
-    image: "https://live.staticflickr.com/65535/53551478580_3915d21fcc_o.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53551478580_3915d21fcc_o.jpg",
     size: "tall",
     modal: "modal18",
     city: "Probolinggo District",
@@ -251,7 +263,8 @@ export const destinations = [
     title: "Probolinggo Square",
     description:
       "Probolinggo Square is a vibrant marketplace located in Probolinggo, Indonesia, bustling with diverse stalls and vendors offering everything from fresh produce to handicrafts. It serves as a central hub for locals to gather, socialize, and shop for daily essentials. The square is often filled with the lively sounds of bargaining and laughter, creating a lively atmosphere that captures the essence of the local community's daily life and culture.",
-    image: "https://live.staticflickr.com/65535/53550163642_beae68ff65_o.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53550163642_beae68ff65_o.jpg",
     size: "wide",
     modal: "modal19",
     city: "Probolinggo District",
@@ -262,7 +275,8 @@ export const destinations = [
     title: "Beejay Bakau Resort",
     description:
       "Beejay Bakau Resort is a serene getaway nestled in the heart of nature, offering a tranquil escape from the hustle and bustle of everyday life. Located amidst lush mangrove forests, the resort provides guests with a unique opportunity to immerse themselves in the beauty of the natural world while enjoying comfortable accommodations and modern amenities. With eco-friendly practices and a focus on sustainability, Beejay Bakau Resort strives to provide an unforgettable experience for visitors seeking relaxation and rejuvenation in a harmonious environment.",
-    image: "https://live.staticflickr.com/65535/53550171647_6e49b0f28e_o.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53550171647_6e49b0f28e_o.jpg",
     size: "tall",
     modal: "modal20",
     city: "Probolinggo City",
@@ -273,7 +287,8 @@ export const destinations = [
     title: "Ranu Agung",
     description:
       "Ranu Agung is a volcanic lake located on the island of Java in Indonesia. It sits within the scenic landscape of Bromo Tengger Semeru National Park. The lake is renowned for its stunning beauty, surrounded by steep cliffs and lush greenery, making it a popular destination for tourists and hikers alike. Its serene waters offer a peaceful retreat amidst the rugged terrain of the park, attracting visitors seeking relaxation and natural beauty.",
-    image: "https://live.staticflickr.com/65535/53551374304_9318ad0f9b_k.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53551374304_9318ad0f9b_k.jpg",
     size: "tall",
     modal: "modal21",
     city: "Probolinggo District",
@@ -284,7 +299,8 @@ export const destinations = [
     title: "Seruni Point",
     description:
       "Seruni Point is a picturesque spot located in Indonesia, known for its breathtaking views and serene atmosphere. Situated amidst lush greenery and overlooking vast expanses of blue ocean, Seruni Point offers visitors a tranquil escape from the hustle and bustle of everyday life. Whether you're seeking relaxation or adventure, this idyllic destination beckons with its natural beauty and opportunities for exploration, making it a must-visit for anyone looking to unwind and reconnect with nature in a stunning setting.",
-    image: "https://live.staticflickr.com/65535/53551384379_21c3a09481_k.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53551384379_21c3a09481_k.jpg",
     size: "wide",
     modal: "modal22",
     city: "Probolinggo District",
@@ -295,7 +311,8 @@ export const destinations = [
     title: "Mayangan Fortress",
     description:
       "Mayangan Fortress, located in Indonesia, is a historical site famous for its strategic significance and architectural marvel. Built during the Majapahit Empire in the 14th century, the fortress served as a stronghold against invaders and played a crucial role in defending the kingdom. Its sturdy walls and strategic location atop a hill provided a vantage point for surveillance and defense. ",
-    image: "https://live.staticflickr.com/65535/53550181787_09a93b19c7_h.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53550181787_09a93b19c7_h.jpg",
     size: "tall",
     modal: "modal23",
     city: "Probolinggo District",
@@ -306,7 +323,8 @@ export const destinations = [
     title: "Teleng Ria Beach",
     description:
       "Teleng Ria Beach, located in Pacitan, Indonesia, is renowned for its breathtaking natural beauty and tranquil atmosphere. With its soft white sands and crystal-clear turquoise waters, it offers visitors a perfect escape from the hustle and bustle of city life. Surrounded by lush green cliffs and swaying palm trees, the beach provides ample opportunities for swimming, sunbathing, and snorkeling.",
-    image: "https://live.staticflickr.com/65535/53548845110_df46b51294_z.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53548845110_df46b51294_z.jpg",
     size: "wide",
     modal: "modal24",
     city: "Pacitan District",
@@ -317,7 +335,8 @@ export const destinations = [
     title: "Gong Caves",
     description:
       "The Gong Caves, located in Pacitan, East Java, are an intricate network of limestone caverns renowned for their stunning stalactite and stalagmite formations. These caves, carved out by water over millions of years, offer a mesmerizing display of natural beauty with colorful rock formations resembling various shapes and figures. Visitors can explore the caves via well-lit pathways, marveling at the intricate patterns and formations created by nature's slow artistry. Gong Caves provide a fascinating glimpse into the Earth's geological history, making them a popular destination for tourists seeking to experience the wonders of nature's sculptural masterpieces.",
-    image: "https://live.staticflickr.com/65535/53548737189_9accffa707_z.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53548737189_9accffa707_z.jpg",
     size: "tall",
     modal: "modal25",
     city: "Pacitan District",
@@ -328,7 +347,8 @@ export const destinations = [
     title: "Watu Karung Beach",
     description:
       "Watu Karung Beach is a beautiful coastal destination located in Pacitan, Indonesia, renowned for its stunning natural scenery and tranquil atmosphere. With its pristine white sandy shores, clear turquoise waters, and dramatic rock formations dotting the coastline, Watu Karang offers a picturesque setting for relaxation and beach activities. Visitors can enjoy swimming, sunbathing, and exploring the caves and cliffs that characterize the area.",
-    image: "https://live.staticflickr.com/65535/53548845075_af96bf3725_z.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53548845075_af96bf3725_z.jpg",
     size: "wide",
     modal: "modal26",
     city: "Pacitan District",
@@ -339,7 +359,8 @@ export const destinations = [
     title: "Soge Beach",
     description:
       "Soge Beach is a beautiful coastal spot known for its golden sands and clear blue waters, located in a tranquil cove surrounded by lush greenery. With its gentle waves perfect for swimming and sunbathing, it offers a relaxing escape for visitors seeking a serene seaside retreat. The beach is often praised for its pristine environment, making it a popular destination for nature lovers and families alike. Amenities such as beachfront cafes and rental services for water sports equipment are available, ensuring a delightful experience for all who visit this idyllic coastal gem.",
-    image: "https://live.staticflickr.com/65535/53550749633_eccbcd6d40_z.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53550749633_eccbcd6d40_z.jpg",
     size: "wide",
     modal: "modal27",
     city: "Pacitan District",
@@ -350,7 +371,8 @@ export const destinations = [
     title: "Pacitan City",
     description:
       "Pacitan City, located in East Java, Indonesia, is known for its stunning coastal scenery and rich cultural heritage. With its beautiful beaches, such as Teleng Ria and Klayar, it attracts tourists seeking relaxation and adventure alike. The city is also famous for its traditional Javanese cuisine, including seafood dishes like grilled fish and soto ayam (chicken soup). Pacitan is a place where visitors can immerse themselves in the beauty of nature, enjoy delicious local food, and experience the warmth of Javanese hospitality.",
-    image: "https://live.staticflickr.com/65535/53550999590_a6a7814552_z.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53550999590_a6a7814552_z.jpg",
     size: "tall",
     modal: "modal28",
     city: "Pacitan District",
@@ -361,7 +383,8 @@ export const destinations = [
     title: "Srau Beach",
     description:
       "Srau Beach is a picturesque coastal area located in Pacitan, Indonesia, known for its stunning white sands and clear turquoise waters. It's a popular spot for locals and tourists alike, offering opportunities for swimming, sunbathing, and enjoying various water activities such as snorkeling and surfing. The beach is surrounded by lush greenery and limestone cliffs, providing a serene and tranquil atmosphere perfect for relaxation and enjoying nature's beauty. ",
-    image: "https://live.staticflickr.com/65535/53550557246_8f085290e9_z.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53550557246_8f085290e9_z.jpg",
     size: "wide",
     modal: "modal29",
     city: "Pacitan District",
@@ -371,7 +394,8 @@ export const destinations = [
     id: "banyu_tibo_beach",
     title: "Banyu Tibo Beach",
     description: `Banyu Tibo Beach is a picturesque coastal destination located in Pacitan, Indonesia, known for its pristine sandy shores and crystal-clear waters. Nestled amidst lush greenery and rugged cliffs, the beach offers a serene retreat for visitors seeking relaxation and natural beauty. The name "Banyu Tibo" translates to "clear water" in the local Javanese language, reflecting the transparency of the ocean here. Visitors can enjoy activities such as swimming, sunbathing, and beachcombing while taking in the stunning scenery.`,
-    image: "https://live.staticflickr.com/65535/53550890169_1fe33e0968_z.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53550890169_1fe33e0968_z.jpg",
     size: "tall",
     modal: "modal30",
     city: "Pacitan District",
@@ -382,7 +406,8 @@ export const destinations = [
     title: "Kasap Beach",
     description:
       "Kasap Beach is a picturesque stretch of coastline located in Pacitan, renowned for its crystal-clear waters and golden sands. Nestled along the Mediterranean Sea, it offers a tranquil escape for sun-seekers and nature lovers alike. With its gentle waves and scenic surroundings, Kasap Beach is the perfect spot for swimming, snorkeling, and simply unwinding under the warm sun. Whether you're looking to relax by the water's edge or explore the underwater world, Kasap Beach promises a delightful retreat amidst nature's beauty.",
-    image: "https://live.staticflickr.com/65535/53550561491_6ee451dbaa_z.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53550561491_6ee451dbaa_z.jpg",
     size: "tall",
     modal: "modal31",
     city: "Pacitan District",
@@ -393,7 +418,8 @@ export const destinations = [
     title: "Sempu Island",
     description:
       "Sempu Island, located in East Java, Indonesia, is a hidden gem boasting stunning natural beauty. Accessible only by boat, it offers lush forests, pristine beaches, and a mesmerizing turquoise lagoon called Segara Anakan. The island is a haven for nature lovers and adventurers, with opportunities for hiking through dense forests, camping under the stars, and swimming in the crystal-clear waters of its secluded beaches. It's a paradise off the beaten path, perfect for those seeking tranquility and unspoiled landscapes amidst the hustle and bustle of modern life.",
-    image: "https://live.staticflickr.com/65535/53547463669_d938577dc9_b.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53547463669_d938577dc9_b.jpg",
     size: "tall",
     modal: "modal32",
     city: "Malang District",
@@ -410,7 +436,8 @@ export const destinations = [
     the ancient kingdoms of Java. The city is also
     famous for its delicious local cuisine, such as
     bakso (meatball soup) and rawon (beef soup).`,
-    image: "https://live.staticflickr.com/65535/53547495389_bfe1d31730_b.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53547495389_bfe1d31730_b.jpg",
     size: "wide",
     modal: "modal33",
     city: "Malang City",
@@ -421,7 +448,8 @@ export const destinations = [
     title: "Alun-Alun Tugu",
     description:
       "Alun-Alun Tugu is a central square located in Malang, Indonesia, known for its cultural significance and vibrant atmosphere. It serves as a gathering place for locals and tourists alike, featuring traditional Javanese architecture, lush greenery, and various recreational activities. The square is flanked by iconic landmarks such as the Tugu Monument, a towering stone structure symbolizing the city's heritage and resilience. Visitors can enjoy leisurely strolls, street performances, and sampling delicious street food from nearby vendors, immersing themselves in the rich culture and charm of Malang.",
-    image: "https://live.staticflickr.com/65535/53547508294_3ac643e9d9_b.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53547508294_3ac643e9d9_b.jpg",
     size: "tall",
     modal: "modal34",
     city: "Malang City",
@@ -439,7 +467,8 @@ export const destinations = [
     great place for families and friends to have an
     adventure together and see who can navigate the maze
     the fastest!`,
-    image: "https://live.staticflickr.com/65535/53547617675_804505affa_b.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53547617675_804505affa_b.jpg",
     size: "tall",
     modal: "modal35",
     city: "Malang District",
@@ -459,7 +488,8 @@ export const destinations = [
     picnics and nature walks, where visitors can immerse
     themselves in the beauty of the Indonesian
     countryside.`,
-    image: "https://live.staticflickr.com/65535/53547531039_82534a40a9_z.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53547531039_82534a40a9_z.jpg",
     size: "tall",
     modal: "modal36",
     city: "Malang District",
@@ -470,7 +500,8 @@ export const destinations = [
     title: "Asmara Beach",
     description:
       "Asmara Beach is a beautiful coastal area located in Malang, East Java, known for its stunning scenery and historical significance. Asmara Bay boasts crystal-clear waters and picturesque beaches, making it a popular destination for tourists and locals alike. Beyond its natural beauty, the bay holds cultural importance as well, with nearby historical sites such as the ancient city of Asmara, which features well-preserved colonial architecture and vibrant markets.",
-    image: "https://live.staticflickr.com/65535/53546325802_66512a899a_z.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53546325802_66512a899a_z.jpg",
     size: "tall",
     modal: "modal37",
     city: "Malang District",
@@ -481,7 +512,8 @@ export const destinations = [
     title: "Malang City Night",
     description:
       "Malang City Night is a lively spectacle that unfolds when the sun sets in the Indonesian city of Malang. The streets come to life with vibrant colors, bustling markets, and the aroma of delicious street food wafting through the air. People gather in the city center, enjoying the warmth of community as they explore the array of stalls selling everything from traditional crafts to modern gadgets. The night is illuminated by a kaleidoscope of lights from shops and street vendors, creating an enchanting atmosphere for locals and visitors alike to immerse themselves in the charm and energy of Malang after dark.",
-    image: "https://live.staticflickr.com/65535/53547389293_a762ff6095_z.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53547389293_a762ff6095_z.jpg",
     size: "wide",
     modal: "modal38",
     city: "Malang City",
@@ -492,7 +524,8 @@ export const destinations = [
     title: "Penataran Temple",
     description:
       "Penataran Temple, located in East Java, Indonesia, is a significant Hindu temple complex dating back to the 12th century. It's renowned for its grand architecture and intricate stone carvings, showcasing the pinnacle of ancient Javanese craftsmanship. Dedicated to the Hindu god Shiva, Penataran served as a center for worship and cultural activities during its heyday. The temple's layout follows a series of terraces, leading to the central sanctuary where rituals were performed. Today, Penataran Temple stands as a testament to Indonesia's rich cultural and religious heritage, attracting visitors from around the world seeking to marvel at its historical and architectural wonders.",
-    image: "https://live.staticflickr.com/65535/53551133663_43b5e3c799_h.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53551133663_43b5e3c799_h.jpg",
     size: "tall",
     modal: "modal39",
     city: "Blitar District",
@@ -511,7 +544,8 @@ export const destinations = [
     Kelud also attracts tourists who are interested in
     witnessing its natural beauty and learning about its
     geological history.`,
-    image: "https://live.staticflickr.com/65535/53551280524_1356d67567_h.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53551280524_1356d67567_h.jpg",
     size: "tall",
     modal: "modal40",
     city: "Blitar District",
@@ -522,7 +556,8 @@ export const destinations = [
     title: "Watu Ondo Waterfall",
     description:
       "Watu Ondo Waterfall is a breathtaking natural wonder located in East Java, Indonesia. It cascades gracefully over rugged cliffs amidst lush greenery, creating a mesmerizing sight for visitors. The waterfall is renowned for its crystal-clear turquoise pools, inviting travelers to take a refreshing dip in its cool waters. Surrounded by the tranquility of nature, Watu Ondo offers a serene escape from the hustle and bustle of everyday life, making it a must-visit destination for those seeking both adventure and relaxation in Indonesia's stunning landscapes.",
-    image: "https://live.staticflickr.com/65535/53550946086_3ef245354b_o.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53550946086_3ef245354b_o.jpg",
     size: "tall",
     modal: "modal41",
     city: "Tuban District",
@@ -533,7 +568,8 @@ export const destinations = [
     title: "Wilis Mountain",
     description:
       "Willis Mountain is a prominent geological feature located in Ponorogo, East Java. It's known for its unique geological composition, primarily consisting of a rare type of igneous rock called nepheline syenite. This rock formation has attracted attention due to its commercial potential, particularly in industries like construction and ceramics.",
-    image: "https://live.staticflickr.com/65535/53550130542_e969d5f3c2_o.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53550130542_e969d5f3c2_o.jpg",
     size: "tall",
     modal: "modal42",
     city: "Ponorogo District",
@@ -544,7 +580,8 @@ export const destinations = [
     title: "Garden Cafe",
     description:
       "Garden Cafe is a cozy eatery nestled in the heart of town, known for its charming ambiance and delicious homemade dishes. With a menu brimming with fresh salads, hearty sandwiches, and flavorful soups, it's a favorite spot for locals and visitors alike seeking a taste of wholesome comfort food. The cafe's lush garden patio provides a serene setting for patrons to enjoy their meals amidst blooming flowers and greenery, making it a perfect retreat for those looking to unwind and savor a delightful culinary experience in a picturesque setting.",
-    image: "https://live.staticflickr.com/65535/53550993806_b965c0f069_o.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53550993806_b965c0f069_o.jpg",
     size: "wide",
     modal: "modal43",
     city: "Malang City",
@@ -555,7 +592,8 @@ export const destinations = [
     title: "Dolo Waterfall",
     description:
       "Dolo Waterfall is a beautiful natural wonder located in Indonesia. It's a picturesque cascade of water flowing down rocky cliffs surrounded by lush greenery. Visitors are greeted with the soothing sound of water splashing against rocks as they hike through the scenic trail to reach the waterfall. Dolo is not just a sight to behold but also a refreshing escape from the hustle and bustle of city life, offering a serene atmosphere for relaxation and enjoyment amidst nature's beauty.",
-    image: "https://live.staticflickr.com/65535/53551426045_d595ec4215_o.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53551426045_d595ec4215_o.jpg",
     size: "tall",
     modal: "modal44",
     city: "Kediri District",
@@ -566,7 +604,8 @@ export const destinations = [
     title: "Ongakan Hill",
     description:
       "Ong'ano Hill is a significant geological formation located in western Kenya, near the shores of Lake Victoria. It's revered by the local Luo community as a sacred site, deeply intertwined with their cultural and spiritual beliefs. The hill holds historical importance as it's believed to be the birthplace of the Luo people's ancestors according to their mythology. Additionally, it serves as a center for rituals and ceremonies, symbolizing unity and connection to their heritage. ",
-    image: "https://live.staticflickr.com/65535/53550977541_09a130e37e_o.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53550977541_09a130e37e_o.jpg",
     size: "tall",
     modal: "modal45",
     city: "Kediri District",
@@ -577,7 +616,8 @@ export const destinations = [
     title: "Selomangleng Caves",
     description:
       "Selomangleng Caves are a fascinating natural wonder located in Pacitan, Indonesia. These caves are renowned for their stunning limestone formations, underground rivers, and intriguing rock formations. Visitors can explore the caves' chambers, marvel at the stalactites and stalagmites, and even take a refreshing dip in the crystal-clear pools within. The caves also hold cultural significance, as they are believed to have been used as a meditation site by ancient Javanese monks. ",
-    image: "https://live.staticflickr.com/65535/53550111077_202b1a7757_o.jpg",
+    image_url:
+      "https://live.staticflickr.com/65535/53550111077_202b1a7757_o.jpg",
     size: "tall",
     modal: "modal46",
     city: "Pacitan City",
@@ -597,7 +637,7 @@ export const dances = [
     city: "Ponorogo",
     image_url:
       "https://i.pinimg.com/originals/e1/fa/c9/e1fac9b2318d4645cdd5e9dbb53aac97.jpg",
-    size: "normal",
+    size: "tall",
   },
   {
     id: "jejer_gandrung",
@@ -620,7 +660,7 @@ export const dances = [
     city: "",
     image_url:
       "https://www.goodnewsfromindonesia.id/uploads/images/2023/11/0508392023-hari-tari-0334.jpg",
-    size: "wide",
+    size: "tall",
   },
   {
     id: "topeng_malangan",
@@ -631,7 +671,7 @@ export const dances = [
     city: "",
     image_url:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Menari_Topeng_Malang.jpg/2560px-Menari_Topeng_Malang.jpg",
-    size: "normal",
+    size: "wide",
   },
   {
     id: "tari_jaranan",
@@ -641,7 +681,18 @@ export const dances = [
     The dance often involves trance-like movements and is accompanied by traditional Javanese music and chanting.`,
     city: "",
     image_url: "https://jadesta.kemenparekraf.go.id/imgpost/60379.jpg",
-    size: "wide",
+    size: "tall",
+  },
+  {
+    id: "reog_kendang",
+    title: "Reog Kendang",
+    description: `Reog Kendang is a traditional dance and performance art originating from the Ponorogo region of East Java, Indonesia. 
+    It is known for its vibrant and colorful costumes, elaborate masks, and dynamic movements. 
+    The dance often involves a large lion-like mask known as "Singa Barong" and a group of dancers performing acrobatic feats to the accompaniment of traditional Javanese music.`,
+    city: "",
+    image_url:
+      "https://assets-a1.kompasiana.com/items/album/2020/05/06/ctq6inuwcaect8d-5eb2d257d541df45dd6b0982.jpg",
+    size: "tall",
   },
   {
     id: "tari_remo",
@@ -654,17 +705,7 @@ export const dances = [
       "https://www.suarasurabaya.net/wp-content/uploads/2019/11/potretd34630_clip2.jpg",
     size: "wide",
   },
-  {
-    id: "reog_kendang",
-    title: "Reog Kendang",
-    description: `Reog Kendang is a traditional dance and performance art originating from the Ponorogo region of East Java, Indonesia. 
-    It is known for its vibrant and colorful costumes, elaborate masks, and dynamic movements. 
-    The dance often involves a large lion-like mask known as "Singa Barong" and a group of dancers performing acrobatic feats to the accompaniment of traditional Javanese music.`,
-    city: "",
-    image_url:
-      "https://assets-a1.kompasiana.com/items/album/2020/05/06/ctq6inuwcaect8d-5eb2d257d541df45dd6b0982.jpg",
-    size: "normal",
-  },
+
   {
     id: "tari_glipang",
     title: "Tari Glipang",
@@ -674,7 +715,7 @@ export const dances = [
     city: "",
     image_url:
       "https://nnc-media.netralnews.com/IMG-Netral-News-User-222-N4SM3ZPXQ1.jpg",
-    size: "normal",
+    size: "tall",
   },
   {
     id: "tari_gambu",
@@ -685,7 +726,7 @@ export const dances = [
     city: "",
     image_url:
       "https://asset-2.tstatic.net/tribunnewswiki/foto/bank/images/Tari-Gambu-1.jpg",
-    size: "wides",
+    size: "wide",
   },
   {
     id: "tari_sangkal",
@@ -697,7 +738,7 @@ export const dances = [
     city: "",
     image_url:
       "https://tribratanews.polri.go.id/web/image/blog.post/46957/image",
-    size: "wides",
+    size: "wide",
   },
 ];
 
@@ -713,7 +754,7 @@ export const foods = [
     city: "",
     image_url:
       "https://cdn0-production-images-kly.akamaized.net/TRjRv0eViPPsmSViR1FyPiC6xdY=/0x810:5028x3644/1200x675/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3483824/original/081090300_1623815166-shutterstock_1961342572.jpg",
-    size: "normal",
+    size: "tall",
   },
   {
     id: "rujak_cingur",
@@ -735,7 +776,7 @@ export const foods = [
     Lentho itself is a fritter made from black-eyed pea.`,
     city: "",
     image_url: "https://www.sasa.co.id/medias/page_medias/lontong_balap.jpg",
-    size: "normal",
+    size: "tall",
   },
   {
     id: "pecel_semanggi",
@@ -772,7 +813,7 @@ export const foods = [
     city: "",
     image_url:
       "https://asset.kompas.com/crops/WhmmF0b4678whQdBKddOYHmhxXU=/21x0:989x645/750x500/data/photo/2023/02/23/63f6e1fa4a0fa.jpeg",
-    size: "normal",
+    size: "tall",
   },
   {
     id: "tahu_tek",
@@ -783,7 +824,7 @@ export const foods = [
     city: "",
     image_url:
       "https://asset.kompas.com/crops/hIDTupAmU56ytPNxDos4rizFrkw=/175x79:975x613/750x500/data/photo/2022/05/06/6274a029b12d7.jpg",
-    size: "normal",
+    size: "tall",
   },
   {
     id: "soto_lamongan",
@@ -794,7 +835,7 @@ export const foods = [
     city: "",
     image_url:
       "https://cdn1.katadata.co.id/media/images/thumb/2021/11/12/Soto_ayam_Lamongan-2021_11_12-07_11_23_a43683d33b40f413228d54e3c6ed4a2f_960x640_thumb.jpg",
-    size: "wides",
+    size: "tall",
   },
   {
     id: "bakwan_malang",
@@ -806,7 +847,7 @@ export const foods = [
     city: "",
     image_url:
       "https://asset.kompas.com/crops/IiCqGGNl50Pf7TXTdtUZTKJ5Qp8=/0x339:1200x1139/750x500/data/photo/2021/11/17/6194ce2bf1647.jpeg",
-    size: "wide",
+    size: "tall",
   },
   {
     id: "tahu_campur",
@@ -818,7 +859,7 @@ export const foods = [
     city: "",
     image_url:
       "https://img-global.cpcdn.com/recipes/36b957caf6511372/680x482cq70/tahu-campur-suroboyo-foto-resep-utama.jpg",
-    size: "wides",
+    size: "wide",
   },
   {
     id: "nasi_krawu",
@@ -829,7 +870,7 @@ export const foods = [
     city: "",
     image_url:
       "https://asset.kompas.com/crops/ZsjVbaAlagVNJ4bYq6d5Pb6O9e0=/0x0:1000x667/750x500/data/photo/2022/09/19/6328795f2851e.jpg",
-    size: "wides",
+    size: "wide",
   },
   {
     id: "rujak_soto",
@@ -841,7 +882,7 @@ export const foods = [
     city: "",
     image_url:
       "https://pusakaindonesia.id/wp-content/uploads/2023/10/383686148.webp",
-    size: "wide",
+    size: "tall",
   },
   {
     id: "bandeng_asap",
@@ -851,7 +892,7 @@ export const foods = [
     Smoked milkfish itself is able to survive and last for several days, because it is often used as souvenirs by visiting tourists.`,
     city: "",
     image_url: "https://storage.nu.or.id/storage/post/16_9/mid/1625757099.jpeg",
-    size: "normal",
+    size: "wide",
   },
   {
     id: "nasi_tempong",
@@ -862,7 +903,7 @@ export const foods = [
     city: "",
     image_url:
       "https://asset.kompas.com/crops/NIJh-ec_4INXTYjUXickv1iK1Uo=/0x83:1000x750/750x500/data/photo/2023/11/20/655aa53b16af4.jpeg",
-    size: "normal",
+    size: "tall",
   },
   {
     id: "sate_madure",
@@ -874,6 +915,6 @@ export const foods = [
     city: "",
     image_url:
       "https://wiratech.co.id/wp-content/uploads/2019/02/bumbu-sate-madura.jpg",
-    size: "wides",
+    size: "wide",
   },
 ];

@@ -1,690 +1,1069 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Probolinggo City</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <!-- Konfigurasi -->
     <script src="/tailwind.config.js"></script>
     <script src="/assets/js/colorTheme.js"></script>
-    
-</head>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </head>
 
-<body class="poppins-regular bg-white text-mixed100 dark:bg-mixed100 dark:text-white duration-300">
-  <header class="container max-w-full mx-auto">
-    <nav id="nav" class="w-full z-30">
-      <div
-        class="max-w-full mx-auto flex flex-wrap items-center justify-between p-4 absolute w-full px-4 md:px-12 text-white dark:bg-transparent"
-        id="navChild"
-      >
-        <a
-          href="/"
-          class="flex items-center space-x-3 rtl:space-x-reverse z-10"
-        >
-          <span
-            class="self-center text-lg md:text-2xl font-semibold whitespace-nowrap"
-            >East Javacation</span
-          >
-        </a>
-
-        <button
-          data-collapse-toggle="navbar-dropdown"
-          type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center rounded-lg md:hidden z-10"
-          aria-controls="navbar-dropdown"
-          aria-expanded="false"
-        >
-          <svg
-            class="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
-        </button>
-
+  <body
+    class="poppins-regular bg-white text-mixed100 dark:bg-mixed100 dark:text-white duration-300"
+  >
+    <header class="container max-w-full mx-auto">
+      <nav id="nav" class="w-full z-30">
         <div
-          class="hidden w-full md:block md:w-auto z-10"
-          id="navbar-dropdown"
+          class="max-w-full mx-auto flex flex-wrap items-center justify-between p-4 absolute w-full px-4 md:px-12 text-white dark:bg-transparent"
+          id="navChild"
         >
-          <ul
-            class="bg-white text-mixed100 dark:bg-mixed100 dark:text-white md:bg-transparent dark:md:bg-transparent right-0 flex flex-col font-medium p-4 md:p-0 mt-4 border md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 rounded-md items-center"
+          <a
+            href="/"
+            class="flex items-center space-x-3 rtl:space-x-reverse z-10"
           >
-            <li>
-              <a href="/" class="block py-2 px-3 md:p-0 md:text-white"
-                >Home</a
-              >
-            </li>
+            <span
+              class="self-center text-lg md:text-2xl font-semibold whitespace-nowrap"
+              >East Javacation</span
+            >
+          </a>
 
-            <li>
-              <button
-                id="dropdownNavbarLink"
-                data-dropdown-toggle="dropdownNavbar"
-                class="flex items-center justify-between w-full py-2 px-3 text-mixed100 md:text-white dark:text-white rounded md:hover:bg-transparent md:border-0 md:p-0 md:w-auto md:dark:hover:bg-transparent"
-              >
-                What to Visit
-                <svg
-                  class="w-2.5 h-2.5 ms-2.5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 10 6"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 1 4 4 4-4"
-                  />
-                </svg>
-              </button>
-              <!-- Dropdown menu -->
-              <div
-                id="dropdownNavbar"
-                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-mixed200 dark:divide-gray-600"
-              >
-                <ul
-                  class="py-2 text-gray-700 dark:text-gray-100"
-                  aria-labelledby="dropdownLargeButton"
-                >
-                  <li>
-                    <a
-                      href="/destinations"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed100/[0.2] dark:hover:text-white"
-                      >Destinations</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/city"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed100/[0.2] dark:hover:text-white"
-                      >City</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
+          <button
+            data-collapse-toggle="navbar-dropdown"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center rounded-lg md:hidden z-10"
+            aria-controls="navbar-dropdown"
+            aria-expanded="false"
+          >
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
 
-            <li>
-              <a
-                href="/local-quirkiness"
-                class="block py-2 px-3 md:p-0 md:text-white"
-                >Local Quirkiness</a
-              >
-            </li>
-
-            <li>
-              <a href="/gallery" class="block py-2 px-3 md:p-0 md:text-white"
-                >Gallery</a
-              >
-            </li>
-
-            <li class="md:hidden">
-              <button
-                id="theme-toggle"
-                type="button"
-                class="md:text-white rounded-lg text-sm p-2.5 z-30"
-              >
-                <svg
-                  id="theme-toggle-dark"
-                  class="hidden w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="hidden w-full md:block md:w-auto z-10"
+            id="navbar-dropdown"
+          >
+            <ul
+              class="bg-white text-mixed100 dark:bg-mixed100 dark:text-white md:bg-transparent dark:md:bg-transparent right-0 flex flex-col font-medium p-4 md:p-0 mt-4 border md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 rounded-md items-center"
+            >
+              <li>
+                <a href="/" class="block py-2 px-3 md:p-0 md:text-white"
+                  >Home</a
                 >
-                  <path
-                    d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                  ></path>
-                </svg>
-                <svg
-                  id="theme-toggle-light"
-                  class="hidden w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
+              </li>
+
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 px-3 text-mixed100 md:text-white dark:text-white rounded md:hover:bg-transparent md:border-0 md:p-0 md:w-auto md:dark:hover:bg-transparent"
                 >
-                  <path
-                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-            </li>
-          </ul>
+                  What to Visit
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-mixed200 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-gray-700 dark:text-gray-100"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="/destinations"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed100/[0.2] dark:hover:text-white"
+                        >Destinations</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/city"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed100/[0.2] dark:hover:text-white"
+                        >City</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <a
+                  href="/local-quirkiness"
+                  class="block py-2 px-3 md:p-0 md:text-white"
+                  >Local Quirkiness</a
+                >
+              </li>
+
+              <li>
+                <a href="/gallery" class="block py-2 px-3 md:p-0 md:text-white"
+                  >Gallery</a
+                >
+              </li>
+
+              <li class="md:hidden">
+                <button
+                  id="theme-toggle"
+                  type="button"
+                  class="md:text-white rounded-lg text-sm p-2.5 z-30"
+                >
+                  <svg
+                    id="theme-toggle-dark"
+                    class="hidden w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                    ></path>
+                  </svg>
+                  <svg
+                    id="theme-toggle-light"
+                    class="hidden w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <button
+            type="button"
+            class="hidden md:block theme-toggle md:text-white rounded-lg text-sm p-2.5 z-30"
+          >
+            <svg
+              class="theme-toggle-dark-icon hidden w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+              ></path>
+            </svg>
+            <svg
+              class="theme-toggle-light-icon hidden w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
         </div>
+      </nav>
+    </header>
 
-        <button
-          type="button"
-          class="hidden md:block theme-toggle md:text-white rounded-lg text-sm p-2.5 z-30"
-        >
-          <svg
-            class="theme-toggle-dark-icon hidden w-5 h-5"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-            ></path>
-          </svg>
-          <svg
-            class="theme-toggle-light-icon hidden w-5 h-5"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
+    <div class="bg-background bg-cover bg-center aspect-widescreen relative">
+      <img
+        src="https://live.staticflickr.com/65535/53550775848_ac4f871c5d_k.jpg"
+        class="object-cover lg:w-full image-hero h-lvh lg:h-full"
+      />
+      <div class="absolute w-full top-[30%] text-shadow">
+        <h1 class="text-white font-bold text-4xl md:text-6xl text-center">
+          Probolinggo
+        </h1>
+        <h2 class="text-white text-center text-xl md:text-3xl">
+          <span id="probolinggo-city"></span>
+        </h2>
       </div>
-    </nav>
-  </header>
-
-    <div class="bg-background bg-cover bg-center aspect-widescreen">
-        <img src="https://live.staticflickr.com/65535/53550775848_ac4f871c5d_k.jpg"
-            class="object-cover lg:w-full image-hero">
+      <div class="w-full grid px-12 absolute bottom-0 my-16">
+        <div
+          id="weather-header"
+          class="md:w-full text-white text-shadow fade-in hidden md:block"
+        ></div>
+      </div>
     </div>
 
-    <section class=" container max-w-screen-xl mx-auto my-8 px-4 md:px-12" id="how-to-start">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-            <div class="col-span-2">
-                <div id="#history">
-                    <h1 class="text-4xl lg:text-6xl font-bold my-4 md:mt-12 " >Probolinggo : City of Mangrove</h1>
-                    <div class="mb-12">
-                        <h3 class="text-2xl " >Probolinggo : City in East Java</h3>
-                        <hr class="my-2 border-1" >
-                    </div>
-                    <p >Probolinggo City, nestled in East Java, Indonesia, is renowned for its natural beauty, cultural
-                        heritage, and vibrant
-                        atmosphere. Serving as a gateway to iconic destinations like Mount Bromo, the city offers a
-                        bustling urban center
-                        complemented by scenic landscapes and historical landmarks. From the lively Probolinggo Square
-                        to the serene mangrove
-                        forests that earned it the moniker "City of Mangrove," Probolinggo presents a diverse array of
-                        experiences for visitors.
-                        Its rich cultural heritage is reflected in its architecture, traditions, and culinary delights,
-                        inviting travelers to
-                        immerse themselves in the warmth of Javanese hospitality. Whether exploring bustling markets,
-                        enjoying outdoor
-                        adventures, or savoring local delicacies, Probolinggo City promises an unforgettable journey
-                        through the heart of East
-                        Java's charm and allure.
-                    </p>
-                    <h3 class="text-3xl my-6 ">History of Probolinggo</h3>
-                    <p>Probolinggo, situated in East Java, Indonesia, has a history steeped in maritime trade and
-                        cultural exchange. Initially
-                        established as a fishing village, Probolinggo's strategic location along the northern coast of
-                        Java made it a thriving
-                        port for trading ships navigating the waters of the Java Sea. Over time, the city grew into a
-                        bustling commercial
-                        center, attracting merchants and traders from across the archipelago and beyond. Its prosperity
-                        was further enhanced by
-                        the arrival of Chinese, Arab, and Indian settlers, who brought with them diverse cultural
-                        influences that enriched
-                        Probolinggo's social fabric and contributed to its cosmopolitan character.</p>
-                    <img src="https://live.staticflickr.com/65535/53551461280_0bbb390259_o.jpg" alt=""
-                        class="py-3 w-full">
-                    <p>During the colonial period, Probolinggo came under Dutch control as part of the Dutch East
-                        Indies, experiencing rapid
-                        urban development and modernization. The city's port facilities were expanded, and
-                        infrastructure projects were
-                        initiated to facilitate trade and transportation. Despite the challenges posed by World War II
-                        and Indonesia's struggle
-                        for independence, Probolinggo emerged as a key economic hub in East Java, with its maritime
-                        industry continuing to play
-                        a pivotal role in the region's economy. Today, Probolinggo stands as a testament to its storied
-                        past, with remnants of
-                        its maritime heritage and cultural diversity evident in its architecture, traditions, and way of
-                        life.</p>
-                </div>
-                <div id="destination">
-                    <h2 class="text-3xl my-6 mt-12 ">Popular Destination</h2>
-                    <div id="pacitan1">
-                        <h2 class="text-2xl my-3 ">1. Mount Bromo</h2>
-                        <p>Mount Bromo, situated in East Java, Indonesia, is one of the country's most famous natural
-                            attractions. This active
-                            volcano is part of the Tengger Massif and stands at an altitude of 2,329 meters (7,641 feet)
-                            above sea level. What makes
-                            Mount Bromo so captivating is its otherworldly landscape, characterized by a vast caldera
-                            surrounded by rugged terrain
-                            and towering cliffs. Visitors flock to Mount Bromo to witness the spectacular sunrise views
-                            over the caldera, where the
-                            morning light casts a golden glow over the volcanic landscape, creating a mesmerizing sight
-                            that is truly unforgettable.</p>
-                        <img class="py-3 w-full" src="https://live.staticflickr.com/65535/53551212593_353c3509c7_o.jpg"
-                            alt="">
-                        <p>Aside from its scenic beauty, Mount Bromo offers opportunities for outdoor adventures,
-                            including hiking, horseback
-                            riding, and 4x4 jeep tours. Many visitors opt to hike to the crater rim to peer into the
-                            smoking crater and take in
-                            panoramic views of the surrounding mountains and valleys. Additionally, the area surrounding
-                            Mount Bromo is home to the
-                            Tenggerese people, an indigenous community known for their rich cultural heritage and
-                            traditional way of life. Visitors
-                            can immerse themselves in the local culture by attending traditional ceremonies and
-                            exploring the villages scattered
-                            throughout the region. With its stunning vistas and cultural significance, Mount Bromo is a
-                            must-visit destination for
-                            travelers seeking to experience the beauty and diversity of Indonesia's natural landscape.
-                        </p>
-                    </div>
-                    <div id="pacitan2">
-                        <h2 class="text-2xl my-3 ">2. Madakaripura Waterfall</h2>
-                        <p>Hidden within the verdant forests of East Java, Madakaripura Waterfall is a mesmerizing
-                            cascade that plunges from a
-                            towering cliff into a serene pool below. The journey to reach this natural wonder is an
-                            adventure in itself, as visitors
-                            traverse narrow paths, wade through shallow streams, and navigate rocky terrain amidst the
-                            lush vegetation of the
-                            surrounding canyon.</p>
-                        <br>
-                        <p>Upon arriving at the base of the waterfall, travelers are greeted by the thunderous roar of
-                            cascading water and
-                            enveloped in a refreshing mist that fills the air. With its ethereal beauty and tranquil
-                            ambiance, Madakaripura offers a
-                            peaceful retreat where visitors can reconnect with nature and marvel at the sheer power and
-                            magnificence of Indonesia's
-                            natural landscapes.
-                        </p>
-                    </div>
-                    <div id="pacitan3">
-                        <h2 class="text-2xl my-3 ">3. Probolinggo Square</h2>
-                        <p>As the vibrant heart of the city, Probolinggo Square pulsates with energy and activity,
-                            attracting locals and visitors
-                            alike to its bustling streets and lively atmosphere. Here, travelers can immerse themselves
-                            in the vibrant culture of
-                            Probolinggo, exploring colorful market stalls selling a variety of goods, from fresh produce
-                            to traditional handicrafts
-                            and souvenirs.</p>
-                        <br>
-                        <p>Street food vendors offer an array of delicious local delicacies, tempting passersby with
-                            their aromatic offerings and
-                            savory snacks. Additionally, the square serves as a venue for community events, festivals,
-                            and cultural performances,
-                            providing entertainment and opportunities for socializing and relaxation amidst the dynamic
-                            urban landscape of
-                            Probolinggo.
-                        </p>
-                    </div>
-                    <div id="pacitan3">
-                        <h2 class="text-2xl my-3 ">4. Sumber Maron Waterfall</h2>
-                        <p>Nestled amidst the serene countryside surrounding Probolinggo, Sumber Maron Waterfall offers
-                            a tranquil escape from the
-                            hustle and bustle of city life. The journey to reach the waterfall takes visitors through
-                            picturesque landscapes of
-                            rolling hills, lush forests, and quaint villages, providing a scenic backdrop for outdoor
-                            exploration and adventure.</p>
-                        <br>
-                        <p>Upon arriving at the waterfall, travelers are rewarded with a breathtaking sight as the
-                            crystal-clear waters cascade
-                            gracefully down the rocky cliffs into a pristine pool below. Visitors can cool off with a
-                            refreshing swim in the cool
-                            waters, relax amidst the tranquil surroundings, or simply marvel at the natural beauty of
-                            the cascading falls. With its
-                            secluded location and untouched wilderness, Sumber Maron Waterfall offers a serene sanctuary
-                            where visitors can unwind
-                            and reconnect with the beauty of nature in Probolinggo.
-                        </p>
-                    </div>
-                </div>
+    <section
+      class="container max-w-screen-xl mx-auto my-8 px-4 md:px-12"
+      id="how-to-start"
+    >
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div class="col-span-2">
+          <div id="#history">
+            <h1 class="text-4xl lg:text-6xl font-bold my-4 md:mt-12">
+              Probolinggo : City of Mangrove
+            </h1>
+            <div class="mb-12">
+              <h3 class="text-2xl">Probolinggo : City in East Java</h3>
+              <hr class="my-2 border-1" />
             </div>
-            <div class="lg:grid-cols-4 mt-12 lg:ml-3">
-                <iframe class="sticky top-40 w-full h-80"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63250.64177660966!2d113.16027585506676!3d-7.772309965161512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7ad99c0c9e679%3A0x46c5d0faa7c56181!2sProbolinggo%2C%20Probolinggo%20City%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1708788268718!5m2!1sen!2sid"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>
+              Probolinggo City, nestled in East Java, Indonesia, is renowned for
+              its natural beauty, cultural heritage, and vibrant atmosphere.
+              Serving as a gateway to iconic destinations like Mount Bromo, the
+              city offers a bustling urban center complemented by scenic
+              landscapes and historical landmarks. From the lively Probolinggo
+              Square to the serene mangrove forests that earned it the moniker
+              "City of Mangrove," Probolinggo presents a diverse array of
+              experiences for visitors. Its rich cultural heritage is reflected
+              in its architecture, traditions, and culinary delights, inviting
+              travelers to immerse themselves in the warmth of Javanese
+              hospitality. Whether exploring bustling markets, enjoying outdoor
+              adventures, or savoring local delicacies, Probolinggo City
+              promises an unforgettable journey through the heart of East Java's
+              charm and allure.
+            </p>
+            <h3 class="text-3xl my-6">History of Probolinggo</h3>
+            <p>
+              Probolinggo, situated in East Java, Indonesia, has a history
+              steeped in maritime trade and cultural exchange. Initially
+              established as a fishing village, Probolinggo's strategic location
+              along the northern coast of Java made it a thriving port for
+              trading ships navigating the waters of the Java Sea. Over time,
+              the city grew into a bustling commercial center, attracting
+              merchants and traders from across the archipelago and beyond. Its
+              prosperity was further enhanced by the arrival of Chinese, Arab,
+              and Indian settlers, who brought with them diverse cultural
+              influences that enriched Probolinggo's social fabric and
+              contributed to its cosmopolitan character.
+            </p>
+            <img
+              src="https://live.staticflickr.com/65535/53551461280_0bbb390259_o.jpg"
+              alt=""
+              class="py-3 w-full"
+            />
+            <p>
+              During the colonial period, Probolinggo came under Dutch control
+              as part of the Dutch East Indies, experiencing rapid urban
+              development and modernization. The city's port facilities were
+              expanded, and infrastructure projects were initiated to facilitate
+              trade and transportation. Despite the challenges posed by World
+              War II and Indonesia's struggle for independence, Probolinggo
+              emerged as a key economic hub in East Java, with its maritime
+              industry continuing to play a pivotal role in the region's
+              economy. Today, Probolinggo stands as a testament to its storied
+              past, with remnants of its maritime heritage and cultural
+              diversity evident in its architecture, traditions, and way of
+              life.
+            </p>
+          </div>
+          <div id="destination">
+            <h2 class="text-3xl my-6 mt-12">Popular Destination</h2>
+            <div id="pacitan1">
+              <h2 class="text-2xl my-3">1. Mount Bromo</h2>
+              <p>
+                Mount Bromo, situated in East Java, Indonesia, is one of the
+                country's most famous natural attractions. This active volcano
+                is part of the Tengger Massif and stands at an altitude of 2,329
+                meters (7,641 feet) above sea level. What makes Mount Bromo so
+                captivating is its otherworldly landscape, characterized by a
+                vast caldera surrounded by rugged terrain and towering cliffs.
+                Visitors flock to Mount Bromo to witness the spectacular sunrise
+                views over the caldera, where the morning light casts a golden
+                glow over the volcanic landscape, creating a mesmerizing sight
+                that is truly unforgettable.
+              </p>
+              <img
+                class="py-3 w-full"
+                src="https://live.staticflickr.com/65535/53551212593_353c3509c7_o.jpg"
+                alt=""
+              />
+              <p>
+                Aside from its scenic beauty, Mount Bromo offers opportunities
+                for outdoor adventures, including hiking, horseback riding, and
+                4x4 jeep tours. Many visitors opt to hike to the crater rim to
+                peer into the smoking crater and take in panoramic views of the
+                surrounding mountains and valleys. Additionally, the area
+                surrounding Mount Bromo is home to the Tenggerese people, an
+                indigenous community known for their rich cultural heritage and
+                traditional way of life. Visitors can immerse themselves in the
+                local culture by attending traditional ceremonies and exploring
+                the villages scattered throughout the region. With its stunning
+                vistas and cultural significance, Mount Bromo is a must-visit
+                destination for travelers seeking to experience the beauty and
+                diversity of Indonesia's natural landscape.
+              </p>
             </div>
+            <div id="pacitan2">
+              <h2 class="text-2xl my-3">2. Madakaripura Waterfall</h2>
+              <p>
+                Hidden within the verdant forests of East Java, Madakaripura
+                Waterfall is a mesmerizing cascade that plunges from a towering
+                cliff into a serene pool below. The journey to reach this
+                natural wonder is an adventure in itself, as visitors traverse
+                narrow paths, wade through shallow streams, and navigate rocky
+                terrain amidst the lush vegetation of the surrounding canyon.
+              </p>
+              <br />
+              <p>
+                Upon arriving at the base of the waterfall, travelers are
+                greeted by the thunderous roar of cascading water and enveloped
+                in a refreshing mist that fills the air. With its ethereal
+                beauty and tranquil ambiance, Madakaripura offers a peaceful
+                retreat where visitors can reconnect with nature and marvel at
+                the sheer power and magnificence of Indonesia's natural
+                landscapes.
+              </p>
+            </div>
+            <div id="pacitan3">
+              <h2 class="text-2xl my-3">3. Probolinggo Square</h2>
+              <p>
+                As the vibrant heart of the city, Probolinggo Square pulsates
+                with energy and activity, attracting locals and visitors alike
+                to its bustling streets and lively atmosphere. Here, travelers
+                can immerse themselves in the vibrant culture of Probolinggo,
+                exploring colorful market stalls selling a variety of goods,
+                from fresh produce to traditional handicrafts and souvenirs.
+              </p>
+              <br />
+              <p>
+                Street food vendors offer an array of delicious local
+                delicacies, tempting passersby with their aromatic offerings and
+                savory snacks. Additionally, the square serves as a venue for
+                community events, festivals, and cultural performances,
+                providing entertainment and opportunities for socializing and
+                relaxation amidst the dynamic urban landscape of Probolinggo.
+              </p>
+            </div>
+            <div id="pacitan3">
+              <h2 class="text-2xl my-3">4. Sumber Maron Waterfall</h2>
+              <p>
+                Nestled amidst the serene countryside surrounding Probolinggo,
+                Sumber Maron Waterfall offers a tranquil escape from the hustle
+                and bustle of city life. The journey to reach the waterfall
+                takes visitors through picturesque landscapes of rolling hills,
+                lush forests, and quaint villages, providing a scenic backdrop
+                for outdoor exploration and adventure.
+              </p>
+              <br />
+              <p>
+                Upon arriving at the waterfall, travelers are rewarded with a
+                breathtaking sight as the crystal-clear waters cascade
+                gracefully down the rocky cliffs into a pristine pool below.
+                Visitors can cool off with a refreshing swim in the cool waters,
+                relax amidst the tranquil surroundings, or simply marvel at the
+                natural beauty of the cascading falls. With its secluded
+                location and untouched wilderness, Sumber Maron Waterfall offers
+                a serene sanctuary where visitors can unwind and reconnect with
+                the beauty of nature in Probolinggo.
+              </p>
+            </div>
+          </div>
         </div>
-        <hr class="my-6 border-1">
+        <div class="lg:grid-cols-4 mt-12 lg:ml-3">
+          <iframe
+            class="sticky top-40 w-full h-80"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63250.64177660966!2d113.16027585506676!3d-7.772309965161512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7ad99c0c9e679%3A0x46c5d0faa7c56181!2sProbolinggo%2C%20Probolinggo%20City%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1708788268718!5m2!1sen!2sid"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <hr class="my-6 border-1" />
     </section>
 
-    <section class="container max-w-screen-xl mx-auto my-8 px-4 md:px-12" id="gallery">
-        <h2 class="text-2xl md:text-3xl my-12 " >Probolinggo Gallery</h2>
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 text-center md:text-left overflow-x-hidden" data-carousel="static"
-            id="controls-carousel">
-            <div class="relative overflow-hidden rounded" >
-                <a data-modal-target="gallery1" data-modal-toggle="gallery1">
-                    <img src="https://live.staticflickr.com/65535/53551214988_fe4be29501_o.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Madakaripura Waterfall</h3>
-                    </div>
-                </a>
-                <div id="gallery1" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53551214988_fe4be29501_o.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Madakaripura
-                                        Waterfall
-                                    </h3>
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="gallery1" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section
+      class="container max-w-screen-xl mx-auto my-8 px-4 md:px-12"
+      id="gallery"
+    >
+      <h2 class="text-2xl md:text-3xl my-12">Probolinggo Gallery</h2>
+      <div
+        class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 text-center md:text-left overflow-x-hidden"
+        data-carousel="static"
+        id="controls-carousel"
+      >
+        <div class="relative overflow-hidden rounded">
+          <a data-modal-target="gallery1" data-modal-toggle="gallery1">
+            <img
+              src="https://live.staticflickr.com/65535/53551214988_fe4be29501_o.jpg"
+              alt=""
+              class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3
+                class="text-sm md:text-md font-semibold text-white text-start"
+              >
+                Madakaripura Waterfall
+              </h3>
             </div>
-
-            <div class="relative overflow-hidden rounded" >
-                <a data-modal-target="gallery2" data-modal-toggle="gallery2">
-                    <img src="https://live.staticflickr.com/65535/53550163642_beae68ff65_o.jpg" alt=""
-                        class="w-auto h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Probolinggo Square</h3>
-                    </div>
-                </a>
-                <div id="gallery2" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53550163642_beae68ff65_o.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Probolinggo
-                                        Square
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="gallery2" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-
-                            </div>
-                        </div>
-                    </div>
+          </a>
+          <div
+            id="gallery1"
+            tabindex="-1"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative p-4 w-full max-w-4xl max-h-full">
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="text-center">
+                  <img
+                    src="https://live.staticflickr.com/65535/53551214988_fe4be29501_o.jpg"
+                    alt=""
+                    class="w-full h-full rounded"
+                  />
+                  <div
+                    class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+                  >
+                    <h3
+                      class="text-sm md:text-md font-semibold text-white text-start"
+                    >
+                      Madakaripura Waterfall
+                    </h3>
+                  </div>
+                  <button
+                    data-modal-hide="gallery1"
+                    type="button"
+                    class="absolute top-0 right-0 p-4"
+                  >
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
                 </div>
+              </div>
             </div>
-
-            <div class="relative overflow-hidden rounded" >
-                <a data-modal-target="gallery3" data-modal-toggle="gallery3">
-                    <img src="https://live.staticflickr.com/65535/53551225138_6f887bf4d4_o.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Sumber Maron Waterfall</h3>
-                    </div>
-                </a>
-                <div id="gallery3" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53551225138_6f887bf4d4_o.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Sumber Maron
-                                        Waterfall
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="gallery3" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="relative overflow-hidden rounded" >
-                <a data-modal-target="gallery4" data-modal-toggle="gallery4">
-                    <img src="https://live.staticflickr.com/65535/53551478580_3915d21fcc_o.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Gili Ketapang
-                        </h3>
-                    </div>
-                </a>
-                <div id="gallery4" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53551478580_3915d21fcc_o.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Gili Ketapang
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="gallery4" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="relative overflow-hidden rounded" >
-                <a data-modal-target="gallery5" data-modal-toggle="gallery5">
-                    <img src="https://live.staticflickr.com/65535/53550171647_6e49b0f28e_o.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Beejay Bakau Resort</h3>
-                    </div>
-                </a>
-                <div id="gallery5" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53550171647_6e49b0f28e_o.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Beejay Bakau
-                                        Resort
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="gallery5" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="relative overflow-hidden rounded" >
-                <a data-modal-target="gallery6" data-modal-toggle="gallery6">
-                    <img src="https://live.staticflickr.com/65535/53551374304_9318ad0f9b_k.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Ranu Agung Lake
-                        </h3>
-                    </div>
-                </a>
-                <div id="gallery6" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53551374304_9318ad0f9b_k.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Ranu Agung Lake
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="gallery6" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="relative overflow-hidden rounded" >
-                <a data-modal-target="gallery7" data-modal-toggle="gallery7">
-                    <img src="https://live.staticflickr.com/65535/53551384379_21c3a09481_k.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Seruni Point</h3>
-                    </div>
-                </a>
-                <div id="gallery7" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53551384379_21c3a09481_k.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Seruni Point
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="gallery7" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="relative overflow-hidden rounded" >
-                <a data-modal-target="gallery8" data-modal-toggle="gallery8">
-                    <img src="https://live.staticflickr.com/65535/53550181787_09a93b19c7_h.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Mayangan Fotress</h3>
-                    </div>
-                </a>
-                <div id="gallery8" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53550181787_09a93b19c7_h.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Mayangan Fotress
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="gallery8" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="relative overflow-hidden rounded">
+          <a data-modal-target="gallery2" data-modal-toggle="gallery2">
+            <img
+              src="https://live.staticflickr.com/65535/53550163642_beae68ff65_o.jpg"
+              alt=""
+              class="w-auto h-full rounded hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3
+                class="text-sm md:text-md font-semibold text-white text-start"
+              >
+                Probolinggo Square
+              </h3>
+            </div>
+          </a>
+          <div
+            id="gallery2"
+            tabindex="-1"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative p-4 w-full max-w-4xl max-h-full">
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="text-center">
+                  <img
+                    src="https://live.staticflickr.com/65535/53550163642_beae68ff65_o.jpg"
+                    alt=""
+                    class="w-full h-full rounded"
+                  />
+                  <div
+                    class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+                  >
+                    <h3
+                      class="text-sm md:text-md font-semibold text-white text-start"
+                    >
+                      Probolinggo Square
+                    </h3>
+                  </div>
+                  <button
+                    data-modal-hide="gallery2"
+                    type="button"
+                    class="absolute top-0 right-0 p-4"
+                  >
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded">
+          <a data-modal-target="gallery3" data-modal-toggle="gallery3">
+            <img
+              src="https://live.staticflickr.com/65535/53551225138_6f887bf4d4_o.jpg"
+              alt=""
+              class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3
+                class="text-sm md:text-md font-semibold text-white text-start"
+              >
+                Sumber Maron Waterfall
+              </h3>
+            </div>
+          </a>
+          <div
+            id="gallery3"
+            tabindex="-1"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative p-4 w-full max-w-4xl max-h-full">
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="text-center">
+                  <img
+                    src="https://live.staticflickr.com/65535/53551225138_6f887bf4d4_o.jpg"
+                    alt=""
+                    class="w-full h-full rounded"
+                  />
+                  <div
+                    class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+                  >
+                    <h3
+                      class="text-sm md:text-md font-semibold text-white text-start"
+                    >
+                      Sumber Maron Waterfall
+                    </h3>
+                  </div>
+                  <button
+                    data-modal-hide="gallery3"
+                    type="button"
+                    class="absolute top-0 right-0 p-4"
+                  >
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded">
+          <a data-modal-target="gallery4" data-modal-toggle="gallery4">
+            <img
+              src="https://live.staticflickr.com/65535/53551478580_3915d21fcc_o.jpg"
+              alt=""
+              class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3
+                class="text-sm md:text-md font-semibold text-white text-start"
+              >
+                Gili Ketapang
+              </h3>
+            </div>
+          </a>
+          <div
+            id="gallery4"
+            tabindex="-1"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative p-4 w-full max-w-4xl max-h-full">
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="text-center">
+                  <img
+                    src="https://live.staticflickr.com/65535/53551478580_3915d21fcc_o.jpg"
+                    alt=""
+                    class="w-full h-full rounded"
+                  />
+                  <div
+                    class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+                  >
+                    <h3
+                      class="text-sm md:text-md font-semibold text-white text-start"
+                    >
+                      Gili Ketapang
+                    </h3>
+                  </div>
+                  <button
+                    data-modal-hide="gallery4"
+                    type="button"
+                    class="absolute top-0 right-0 p-4"
+                  >
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded">
+          <a data-modal-target="gallery5" data-modal-toggle="gallery5">
+            <img
+              src="https://live.staticflickr.com/65535/53550171647_6e49b0f28e_o.jpg"
+              alt=""
+              class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3
+                class="text-sm md:text-md font-semibold text-white text-start"
+              >
+                Beejay Bakau Resort
+              </h3>
+            </div>
+          </a>
+          <div
+            id="gallery5"
+            tabindex="-1"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative p-4 w-full max-w-4xl max-h-full">
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="text-center">
+                  <img
+                    src="https://live.staticflickr.com/65535/53550171647_6e49b0f28e_o.jpg"
+                    alt=""
+                    class="w-full h-full rounded"
+                  />
+                  <div
+                    class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+                  >
+                    <h3
+                      class="text-sm md:text-md font-semibold text-white text-start"
+                    >
+                      Beejay Bakau Resort
+                    </h3>
+                  </div>
+                  <button
+                    data-modal-hide="gallery5"
+                    type="button"
+                    class="absolute top-0 right-0 p-4"
+                  >
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded">
+          <a data-modal-target="gallery6" data-modal-toggle="gallery6">
+            <img
+              src="https://live.staticflickr.com/65535/53551374304_9318ad0f9b_k.jpg"
+              alt=""
+              class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3
+                class="text-sm md:text-md font-semibold text-white text-start"
+              >
+                Ranu Agung Lake
+              </h3>
+            </div>
+          </a>
+          <div
+            id="gallery6"
+            tabindex="-1"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative p-4 w-full max-w-4xl max-h-full">
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="text-center">
+                  <img
+                    src="https://live.staticflickr.com/65535/53551374304_9318ad0f9b_k.jpg"
+                    alt=""
+                    class="w-full h-full rounded"
+                  />
+                  <div
+                    class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+                  >
+                    <h3
+                      class="text-sm md:text-md font-semibold text-white text-start"
+                    >
+                      Ranu Agung Lake
+                    </h3>
+                  </div>
+                  <button
+                    data-modal-hide="gallery6"
+                    type="button"
+                    class="absolute top-0 right-0 p-4"
+                  >
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded">
+          <a data-modal-target="gallery7" data-modal-toggle="gallery7">
+            <img
+              src="https://live.staticflickr.com/65535/53551384379_21c3a09481_k.jpg"
+              alt=""
+              class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3
+                class="text-sm md:text-md font-semibold text-white text-start"
+              >
+                Seruni Point
+              </h3>
+            </div>
+          </a>
+          <div
+            id="gallery7"
+            tabindex="-1"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative p-4 w-full max-w-4xl max-h-full">
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="text-center">
+                  <img
+                    src="https://live.staticflickr.com/65535/53551384379_21c3a09481_k.jpg"
+                    alt=""
+                    class="w-full h-full rounded"
+                  />
+                  <div
+                    class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+                  >
+                    <h3
+                      class="text-sm md:text-md font-semibold text-white text-start"
+                    >
+                      Seruni Point
+                    </h3>
+                  </div>
+                  <button
+                    data-modal-hide="gallery7"
+                    type="button"
+                    class="absolute top-0 right-0 p-4"
+                  >
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded">
+          <a data-modal-target="gallery8" data-modal-toggle="gallery8">
+            <img
+              src="https://live.staticflickr.com/65535/53550181787_09a93b19c7_h.jpg"
+              alt=""
+              class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3
+                class="text-sm md:text-md font-semibold text-white text-start"
+              >
+                Mayangan Fotress
+              </h3>
+            </div>
+          </a>
+          <div
+            id="gallery8"
+            tabindex="-1"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative p-4 w-full max-w-4xl max-h-full">
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="text-center">
+                  <img
+                    src="https://live.staticflickr.com/65535/53550181787_09a93b19c7_h.jpg"
+                    alt=""
+                    class="w-full h-full rounded"
+                  />
+                  <div
+                    class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+                  >
+                    <h3
+                      class="text-sm md:text-md font-semibold text-white text-start"
+                    >
+                      Mayangan Fotress
+                    </h3>
+                  </div>
+                  <button
+                    data-modal-hide="gallery8"
+                    type="button"
+                    class="absolute top-0 right-0 p-4"
+                  >
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="mx-auto p-4 bg-gray-100 dark:bg-mixed200">
-        <div class="grid md:grid-cols-2 gap-4">
-          <div>
-            <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse z-10">
-              <span class="self-center text-lg md:text-2xl font-semibold whitespace-nowrap">East Javacation</span>
-            </a>
-            <p>Discover Nature's Beauty and Cultural Wonders!</p>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div>
+          <a
+            href="/"
+            class="flex items-center space-x-3 rtl:space-x-reverse z-10"
+          >
+            <span
+              class="self-center text-lg md:text-2xl font-semibold whitespace-nowrap"
+              >East Javacation</span
+            >
+          </a>
+          <p>Discover Nature's Beauty and Cultural Wonders!</p>
+        </div>
+        <div
+          class="bg-gray-300/[0.3] dark:bg-mixed300/[0.3] p-2 md:p-4 rounded"
+        >
+          <div id="weather" class="p-2"></div>
+          <div class="flex gap-2 mt-6 p-2">
+            <p>Source :</p>
+            <a href="https://data.bmkg.go.id/prakiraan-cuaca/" target="_blank"
+              >BMKG</a
+            >
+            <a
+              href="https://github.com/renomureza/cuaca-gempa-rest-api"
+              target="_blank"
+              >Rest API</a
+            >
           </div>
-          <div class="bg-gray-300/[0.3] dark:bg-mixed300/[0.3] p-2 md:p-4 rounded">
-            <div id="weather" class="p-2"></div>
-            <div class="flex gap-2 mt-6 p-2">
-              <p>Source : </p>
-              <a href="https://data.bmkg.go.id/prakiraan-cuaca/" target="_blank">BMKG</a>
-              <a href="https://github.com/renomureza/cuaca-gempa-rest-api" target="_blank">Rest API</a> 
-            </div>
-          </div>
         </div>
-        <h2 class="mt-6 mb-2">Social Media</h2>
-        <div class="flex flex-wrap gap-4 items-center">
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
-              <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-            </svg>
-          </a>
-        </div>
-        <div class="text-center mt-4">
-          <p>&copy; 2024 East Javacation</p>
-        </div>
-      </footer>
+      </div>
+      <h2 class="mt-6 mb-2">Social Media</h2>
+      <div class="flex flex-wrap gap-4 items-center">
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-instagram"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+            />
+          </svg>
+        </a>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-facebook"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+            />
+          </svg>
+        </a>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-tiktok"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"
+            />
+          </svg>
+        </a>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-youtube"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+            />
+          </svg>
+        </a>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-twitter-x"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="text-center mt-4">
+        <p>&copy; 2024 East Javacation</p>
+      </div>
+    </footer>
 
-     
+    <script>
+      let typedGallery = new Typed("#probolinggo-city", {
+        strings: ["Explore Probolinggo City"],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
+
     <script src="/assets/js/app.js"></script>
     <script src="/assets/js/weather.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
-</body>
-
+  </body>
 </html>

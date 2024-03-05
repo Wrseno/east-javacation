@@ -1,665 +1,1052 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pacitan City</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <!-- Konfigurasi -->
     <script src="/tailwind.config.js"></script>
     <script src="/assets/js/colorTheme.js"></script>
-    
-</head>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </head>
 
-<body class="poppins-regular bg-white text-mixed100 dark:bg-mixed100 dark:text-white duration-300">
-  <header class="container max-w-full mx-auto">
-    <nav id="nav" class="w-full z-30">
-      <div
-        class="max-w-full mx-auto flex flex-wrap items-center justify-between p-4 absolute w-full px-4 md:px-12 text-white dark:bg-transparent"
-        id="navChild"
-      >
-        <a
-          href="/"
-          class="flex items-center space-x-3 rtl:space-x-reverse z-10"
-        >
-          <span
-            class="self-center text-lg md:text-2xl font-semibold whitespace-nowrap"
-            >East Javacation</span
-          >
-        </a>
-
-        <button
-          data-collapse-toggle="navbar-dropdown"
-          type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center rounded-lg md:hidden z-10"
-          aria-controls="navbar-dropdown"
-          aria-expanded="false"
-        >
-          <svg
-            class="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
-        </button>
-
+  <body
+    class="poppins-regular bg-white text-mixed100 dark:bg-mixed100 dark:text-white duration-300"
+  >
+    <header class="container max-w-full mx-auto">
+      <nav id="nav" class="w-full z-30">
         <div
-          class="hidden w-full md:block md:w-auto z-10"
-          id="navbar-dropdown"
+          class="max-w-full mx-auto flex flex-wrap items-center justify-between p-4 absolute w-full px-4 md:px-12 text-white dark:bg-transparent"
+          id="navChild"
         >
-          <ul
-            class="bg-white text-mixed100 dark:bg-mixed100 dark:text-white md:bg-transparent dark:md:bg-transparent right-0 flex flex-col font-medium p-4 md:p-0 mt-4 border md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 rounded-md items-center"
+          <a
+            href="/"
+            class="flex items-center space-x-3 rtl:space-x-reverse z-10"
           >
-            <li>
-              <a href="/" class="block py-2 px-3 md:p-0 md:text-white"
-                >Home</a
-              >
-            </li>
+            <span
+              class="self-center text-lg md:text-2xl font-semibold whitespace-nowrap"
+              >East Javacation</span
+            >
+          </a>
 
-            <li>
-              <button
-                id="dropdownNavbarLink"
-                data-dropdown-toggle="dropdownNavbar"
-                class="flex items-center justify-between w-full py-2 px-3 text-mixed100 md:text-white dark:text-white rounded md:hover:bg-transparent md:border-0 md:p-0 md:w-auto md:dark:hover:bg-transparent"
-              >
-                What to Visit
-                <svg
-                  class="w-2.5 h-2.5 ms-2.5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 10 6"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 1 4 4 4-4"
-                  />
-                </svg>
-              </button>
-              <!-- Dropdown menu -->
-              <div
-                id="dropdownNavbar"
-                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-mixed200 dark:divide-gray-600"
-              >
-                <ul
-                  class="py-2 text-gray-700 dark:text-gray-100"
-                  aria-labelledby="dropdownLargeButton"
-                >
-                  <li>
-                    <a
-                      href="/destinations"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed100/[0.2] dark:hover:text-white"
-                      >Destinations</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/city"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed100/[0.2] dark:hover:text-white"
-                      >City</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
+          <button
+            data-collapse-toggle="navbar-dropdown"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center rounded-lg md:hidden z-10"
+            aria-controls="navbar-dropdown"
+            aria-expanded="false"
+          >
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
 
-            <li>
-              <a
-                href="/local-quirkiness"
-                class="block py-2 px-3 md:p-0 md:text-white"
-                >Local Quirkiness</a
-              >
-            </li>
-
-            <li>
-              <a href="/gallery" class="block py-2 px-3 md:p-0 md:text-white"
-                >Gallery</a
-              >
-            </li>
-
-            <li class="md:hidden">
-              <button
-                id="theme-toggle"
-                type="button"
-                class="md:text-white rounded-lg text-sm p-2.5 z-30"
-              >
-                <svg
-                  id="theme-toggle-dark"
-                  class="hidden w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="hidden w-full md:block md:w-auto z-10"
+            id="navbar-dropdown"
+          >
+            <ul
+              class="bg-white text-mixed100 dark:bg-mixed100 dark:text-white md:bg-transparent dark:md:bg-transparent right-0 flex flex-col font-medium p-4 md:p-0 mt-4 border md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 rounded-md items-center"
+            >
+              <li>
+                <a href="/" class="block py-2 px-3 md:p-0 md:text-white"
+                  >Home</a
                 >
-                  <path
-                    d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                  ></path>
-                </svg>
-                <svg
-                  id="theme-toggle-light"
-                  class="hidden w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
+              </li>
+
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 px-3 text-mixed100 md:text-white dark:text-white rounded md:hover:bg-transparent md:border-0 md:p-0 md:w-auto md:dark:hover:bg-transparent"
                 >
-                  <path
-                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-            </li>
-          </ul>
+                  What to Visit
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-mixed200 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-gray-700 dark:text-gray-100"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="/destinations"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed100/[0.2] dark:hover:text-white"
+                        >Destinations</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/city"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-mixed100/[0.2] dark:hover:text-white"
+                        >City</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <a
+                  href="/local-quirkiness"
+                  class="block py-2 px-3 md:p-0 md:text-white"
+                  >Local Quirkiness</a
+                >
+              </li>
+
+              <li>
+                <a href="/gallery" class="block py-2 px-3 md:p-0 md:text-white"
+                  >Gallery</a
+                >
+              </li>
+
+              <li class="md:hidden">
+                <button
+                  id="theme-toggle"
+                  type="button"
+                  class="md:text-white rounded-lg text-sm p-2.5 z-30"
+                >
+                  <svg
+                    id="theme-toggle-dark"
+                    class="hidden w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                    ></path>
+                  </svg>
+                  <svg
+                    id="theme-toggle-light"
+                    class="hidden w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <button
+            type="button"
+            class="hidden md:block theme-toggle md:text-white rounded-lg text-sm p-2.5 z-30"
+          >
+            <svg
+              class="theme-toggle-dark-icon hidden w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+              ></path>
+            </svg>
+            <svg
+              class="theme-toggle-light-icon hidden w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
         </div>
-
-        <button
-          type="button"
-          class="hidden md:block theme-toggle md:text-white rounded-lg text-sm p-2.5 z-30"
-        >
-          <svg
-            class="theme-toggle-dark-icon hidden w-5 h-5"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-            ></path>
-          </svg>
-          <svg
-            class="theme-toggle-light-icon hidden w-5 h-5"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
     <div class="bg-background bg-cover bg-center aspect-widescreen">
-        <img src="https://live.staticflickr.com/65535/53551053825_4d9c214cce_k.jpg"
-            class="object-cover lg:w-full image-hero">
+      <img
+        src="https://live.staticflickr.com/65535/53551053825_4d9c214cce_k.jpg"
+        class="object-cover lg:w-full image-hero"
+      />
+      <div class="absolute w-full top-[30%] text-shadow">
+        <h1 class="text-white font-bold text-4xl md:text-6xl text-center">
+          Pacitan
+        </h1>
+        <h2 class="text-white text-center text-xl md:text-3xl">
+          <span id="pacitan-city"></span>
+        </h2>
+      </div>
+      <div class="w-full grid px-12 absolute bottom-0 my-16">
+        <div
+          id="weather-header"
+          class="md:w-full text-white text-shadow fade-in hidden md:block"
+        ></div>
+      </div>
     </div>
 
-    <section class=" container max-w-screen-xl mx-auto my-8 px-4 md:px-12" id="how-to-start">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-            <div class="col-span-2">
-                <div id="#history">
-                    <h1 class="text-4xl lg:text-6xl font-bold my-4 md:mt-12 " >Pacitan : City of 1001 Caves</h1>
-                    <div class="mb-12">
-                        <h3 class="text-2xl " >Pacitan : City in East Java</h3>
-                        <hr class="my-2 border-1" >
-                    </div>
-                    <p >Pacitan City, nestled in East Java, Indonesia, captivates visitors with its breathtaking natural
-                        beauty, pristine
-                        beaches, and rich cultural heritage. From the picturesque coastline adorned with unique rock
-                        formations to the lush
-                        green mountains that frame the city, Pacitan offers a serene and idyllic setting for relaxation
-                        and exploration.
-                        Visitors can indulge in swimming, surfing, and snorkeling at Klayar Beach and Teleng Ria Beach,
-                        or marvel at the
-                        stunning geological formations of Goa Gong. The city's vibrant markets, shops, and restaurants
-                        provide a taste of local
-                        flavors and craftsmanship, while its friendly ambiance invites travelers to immerse themselves
-                        in the warmth and
-                        hospitality of coastal Indonesian life. Overall, Pacitan City promises an unforgettable
-                        experience, blending natural
-                        wonders, cultural treasures, and the laid-back charm of East Java's coastal communities.</p>
-                    <h3 class="text-3xl my-6 ">History of Pacitan</h3>
-                    <p>Pacitan, nestled in East Java, Indonesia, boasts a storied past that spans centuries. Initially
-                        inhabited during ancient
-                        times, the region flourished under the influence of various kingdoms, including the powerful
-                        Mataram Kingdom. Serving as
-                        a strategic trading hub and center of culture, Pacitan thrived amidst the ebb and flow of Java's
-                        historical landscape.
-                        During the colonial era, Pacitan fell under Dutch control as part of the Dutch East Indies,
-                        witnessing the establishment
-                        of administrative structures and the introduction of modern infrastructure.</p>
-                    <img src="https://live.staticflickr.com/65535/53548546351_a839a6fc9d_z.jpg" alt=""
-                        class="py-3 w-full">
-                    <p>Following Indonesia's independence in 1945, Pacitan underwent significant development, evolving
-                        into a bustling
-                        agricultural and commercial center. Its fertile lands and strategic location contributed to its
-                        growth, shaping the city
-                        into the vibrant coastal destination it is today. Despite its modernization, Pacitan has managed
-                        to preserve its rich
-                        cultural heritage, evident in its historical sites, traditional practices, and warm hospitality,
-                        making it a fascinating
-                        destination for those seeking to explore the dynamic history of East Java.</p>
-                </div>
-                <div id="destination">
-                    <h2 class="text-3xl my-6 mt-12  ">Popular Destination</h2>
-                    <div id="pacitan1">
-                        <h2 class="text-2xl my-3 ">1. Klayar Beach</h2>
-                        <p>Situated along the southern coast of Pacitan, Klayar Beach captivates visitors with its
-                            pristine white sands,
-                            crystal-clear turquoise waters, and dramatic rock formations. As one of the most picturesque
-                            beaches in the region,
-                            Klayar offers a tranquil escape from the hustle and bustle of city life.</p>
-                        <img class="py-3 w-full" src="https://live.staticflickr.com/65535/53548408281_f749703277_z.jpg"
-                            alt="">
-                        <p>Visitors can spend their days lounging on the soft sands, basking in the warm sun, or taking
-                            refreshing dips in the
-                            inviting waters. The beach is also known for its iconic rock arch, which adds to its allure
-                            and provides a stunning
-                            backdrop for memorable photographs. Additionally, adventurous souls can explore the nearby
-                            caves and cliffs, offering
-                            opportunities for hiking, rock climbing, and discovering hidden gems along the coastline.
-                        </p>
-                    </div>
-                    <div id="pacitan2">
-                        <h2 class="text-2xl my-3 ">2. Teleng Ria Beach</h2>
-                        <p>Teleng Ria Beach is another gem along Pacitan's coastline, offering a more laid-back and
-                            family-friendly atmosphere.
-                            With its gentle waves and shallow waters, Teleng Ria is ideal for swimming, snorkeling, and
-                            other water activities
-                            suitable for visitors of all ages.</p>
-                        <br>
-                        <p>The beach is dotted with traditional warungs (small eateries) serving fresh seafood and local
-                            delicacies, allowing
-                            visitors to savor the flavors of Pacitan while enjoying panoramic views of the ocean. Teleng
-                            Ria is also a popular spot
-                            for beach picnics and leisurely walks along the shoreline, where visitors can admire the
-                            natural beauty of the
-                            surroundings and soak in the serene ambiance.
-                        </p>
-                    </div>
-                    <div id="pacitan3">
-                        <h2 class="text-2xl my-3 ">3. Gua Gong (Gong Cave)</h2>
-                        <p>Nestled amidst lush greenery, Gua Gong is a captivating cave system renowned for its
-                            impressive limestone formations and
-                            unique acoustics. As visitors venture into the depths of the cave, they are greeted by a
-                            mesmerizing world of
-                            stalactites and stalagmites, illuminated by soft lighting that accentuates the cave's
-                            natural beauty.</p>
-                        <br>
-                        <p>One of the highlights of Gua Gong is its namesake, the Gong Stone, a massive rock formation
-                            that produces melodious
-                            sounds when struck. This natural wonder has made Gua Gong a popular destination for both
-                            adventure seekers and cultural
-                            enthusiasts alike, offering a one-of-a-kind experience that combines awe-inspiring
-                            geological formations with the
-                            enchanting allure of traditional Javanese folklore.
-                        </p>
-                    </div>
-                    <div id="pacitan3">
-                        <h2 class="text-2xl my-3 ">4. Watu Karung Beach</h2>
-                        <p>Known as a surfer's paradise, Watu Karung Beach attracts wave riders from around the world
-                            with its legendary breaks and
-                            pristine surroundings. Located on the southern coast of Pacitan, this secluded beach offers
-                            some of the best surfing
-                            conditions in Indonesia, with consistent swells and powerful waves that cater to surfers of
-                            all skill levels.</p>
-                        <br>
-                        <p>The beach is surrounded by rugged cliffs and lush green hills, creating a dramatic backdrop
-                            that adds to its allure.
-                            While surfing is the main draw, Watu Karung also offers opportunities for sunbathing,
-                            beachcombing, and exploring the
-                            nearby caves and rock formations. Whether you're a seasoned surfer or simply seeking a
-                            tranquil retreat by the sea, Watu
-                            Karung Beach offers an unforgettable experience amidst the natural beauty of Pacitan's
-                            coastline.
-                        </p>
-                    </div>
-                </div>
+    <section
+      class="container max-w-screen-xl mx-auto my-8 px-4 md:px-12"
+      id="how-to-start"
+    >
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div class="col-span-2">
+          <div id="#history">
+            <h1 class="text-4xl lg:text-6xl font-bold my-4 md:mt-12">
+              Pacitan : City of 1001 Caves
+            </h1>
+            <div class="mb-12">
+              <h3 class="text-2xl">Pacitan : City in East Java</h3>
+              <hr class="my-2 border-1" />
             </div>
-            <div class="lg:grid-cols-4 mt-12 lg:ml-3">
-                <iframe class="sticky top-40 w-full h-80"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126374.7822901509!2d111.02261002215049!3d-8.181391953440059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7961bc2b61a3b9%3A0xa01cdca45579ebf5!2sPacitan%2C%20Pacitan%20Regency%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1708701191878!5m2!1sen!2sid"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>
+              Pacitan City, nestled in East Java, Indonesia, captivates visitors
+              with its breathtaking natural beauty, pristine beaches, and rich
+              cultural heritage. From the picturesque coastline adorned with
+              unique rock formations to the lush green mountains that frame the
+              city, Pacitan offers a serene and idyllic setting for relaxation
+              and exploration. Visitors can indulge in swimming, surfing, and
+              snorkeling at Klayar Beach and Teleng Ria Beach, or marvel at the
+              stunning geological formations of Goa Gong. The city's vibrant
+              markets, shops, and restaurants provide a taste of local flavors
+              and craftsmanship, while its friendly ambiance invites travelers
+              to immerse themselves in the warmth and hospitality of coastal
+              Indonesian life. Overall, Pacitan City promises an unforgettable
+              experience, blending natural wonders, cultural treasures, and the
+              laid-back charm of East Java's coastal communities.
+            </p>
+            <h3 class="text-3xl my-6">History of Pacitan</h3>
+            <p>
+              Pacitan, nestled in East Java, Indonesia, boasts a storied past
+              that spans centuries. Initially inhabited during ancient times,
+              the region flourished under the influence of various kingdoms,
+              including the powerful Mataram Kingdom. Serving as a strategic
+              trading hub and center of culture, Pacitan thrived amidst the ebb
+              and flow of Java's historical landscape. During the colonial era,
+              Pacitan fell under Dutch control as part of the Dutch East Indies,
+              witnessing the establishment of administrative structures and the
+              introduction of modern infrastructure.
+            </p>
+            <img
+              src="https://live.staticflickr.com/65535/53548546351_a839a6fc9d_z.jpg"
+              alt=""
+              class="py-3 w-full"
+            />
+            <p>
+              Following Indonesia's independence in 1945, Pacitan underwent
+              significant development, evolving into a bustling agricultural and
+              commercial center. Its fertile lands and strategic location
+              contributed to its growth, shaping the city into the vibrant
+              coastal destination it is today. Despite its modernization,
+              Pacitan has managed to preserve its rich cultural heritage,
+              evident in its historical sites, traditional practices, and warm
+              hospitality, making it a fascinating destination for those seeking
+              to explore the dynamic history of East Java.
+            </p>
+          </div>
+          <div id="destination">
+            <h2 class="text-3xl my-6 mt-12">Popular Destination</h2>
+            <div id="pacitan1">
+              <h2 class="text-2xl my-3">1. Klayar Beach</h2>
+              <p>
+                Situated along the southern coast of Pacitan, Klayar Beach
+                captivates visitors with its pristine white sands, crystal-clear
+                turquoise waters, and dramatic rock formations. As one of the
+                most picturesque beaches in the region, Klayar offers a tranquil
+                escape from the hustle and bustle of city life.
+              </p>
+              <img
+                class="py-3 w-full"
+                src="https://live.staticflickr.com/65535/53548408281_f749703277_z.jpg"
+                alt=""
+              />
+              <p>
+                Visitors can spend their days lounging on the soft sands,
+                basking in the warm sun, or taking refreshing dips in the
+                inviting waters. The beach is also known for its iconic rock
+                arch, which adds to its allure and provides a stunning backdrop
+                for memorable photographs. Additionally, adventurous souls can
+                explore the nearby caves and cliffs, offering opportunities for
+                hiking, rock climbing, and discovering hidden gems along the
+                coastline.
+              </p>
             </div>
+            <div id="pacitan2">
+              <h2 class="text-2xl my-3">2. Teleng Ria Beach</h2>
+              <p>
+                Teleng Ria Beach is another gem along Pacitan's coastline,
+                offering a more laid-back and family-friendly atmosphere. With
+                its gentle waves and shallow waters, Teleng Ria is ideal for
+                swimming, snorkeling, and other water activities suitable for
+                visitors of all ages.
+              </p>
+              <br />
+              <p>
+                The beach is dotted with traditional warungs (small eateries)
+                serving fresh seafood and local delicacies, allowing visitors to
+                savor the flavors of Pacitan while enjoying panoramic views of
+                the ocean. Teleng Ria is also a popular spot for beach picnics
+                and leisurely walks along the shoreline, where visitors can
+                admire the natural beauty of the surroundings and soak in the
+                serene ambiance.
+              </p>
+            </div>
+            <div id="pacitan3">
+              <h2 class="text-2xl my-3">3. Gua Gong (Gong Cave)</h2>
+              <p>
+                Nestled amidst lush greenery, Gua Gong is a captivating cave
+                system renowned for its impressive limestone formations and
+                unique acoustics. As visitors venture into the depths of the
+                cave, they are greeted by a mesmerizing world of stalactites and
+                stalagmites, illuminated by soft lighting that accentuates the
+                cave's natural beauty.
+              </p>
+              <br />
+              <p>
+                One of the highlights of Gua Gong is its namesake, the Gong
+                Stone, a massive rock formation that produces melodious sounds
+                when struck. This natural wonder has made Gua Gong a popular
+                destination for both adventure seekers and cultural enthusiasts
+                alike, offering a one-of-a-kind experience that combines
+                awe-inspiring geological formations with the enchanting allure
+                of traditional Javanese folklore.
+              </p>
+            </div>
+            <div id="pacitan3">
+              <h2 class="text-2xl my-3">4. Watu Karung Beach</h2>
+              <p>
+                Known as a surfer's paradise, Watu Karung Beach attracts wave
+                riders from around the world with its legendary breaks and
+                pristine surroundings. Located on the southern coast of Pacitan,
+                this secluded beach offers some of the best surfing conditions
+                in Indonesia, with consistent swells and powerful waves that
+                cater to surfers of all skill levels.
+              </p>
+              <br />
+              <p>
+                The beach is surrounded by rugged cliffs and lush green hills,
+                creating a dramatic backdrop that adds to its allure. While
+                surfing is the main draw, Watu Karung also offers opportunities
+                for sunbathing, beachcombing, and exploring the nearby caves and
+                rock formations. Whether you're a seasoned surfer or simply
+                seeking a tranquil retreat by the sea, Watu Karung Beach offers
+                an unforgettable experience amidst the natural beauty of
+                Pacitan's coastline.
+              </p>
+            </div>
+          </div>
         </div>
-        <hr class="my-6 border-1">
+        <div class="lg:grid-cols-4 mt-12 lg:ml-3">
+          <iframe
+            class="sticky top-40 w-full h-80"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126374.7822901509!2d111.02261002215049!3d-8.181391953440059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7961bc2b61a3b9%3A0xa01cdca45579ebf5!2sPacitan%2C%20Pacitan%20Regency%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1708701191878!5m2!1sen!2sid"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <hr class="my-6 border-1" />
     </section>
 
-    <section class="container max-w-screen-xl mx-auto my-8 px-4 md:px-12" id="gallery">
-        <h2 class="text-2xl md:text-3xl my-12 " >Pacitan Gallery</h2>
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 text-center md:text-left overflow-x-hidden" data-carousel="static"
-            id="controls-carousel">
-            <div class="relative overflow-hidden rounded" >
-                <a data-modal-target="gallery1" data-modal-toggle="gallery1">
-                    <img src="https://live.staticflickr.com/65535/53548845110_df46b51294_z.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Teleng Ria Beach</h3>
-                    </div>
-                </a>
-                <div id="gallery1" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53548845110_df46b51294_z.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Teleng Ria Beach
-                                    </h3>
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="gallery1" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section
+      class="container max-w-screen-xl mx-auto my-8 px-4 md:px-12"
+      id="gallery"
+    >
+      <h2 class="text-2xl md:text-3xl my-12">Pacitan Gallery</h2>
+      <div
+        class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 text-center md:text-left overflow-x-hidden"
+        data-carousel="static"
+        id="controls-carousel"
+      >
+        <div class="relative overflow-hidden rounded">
+          <a data-modal-target="gallery1" data-modal-toggle="gallery1">
+            <img
+              src="https://live.staticflickr.com/65535/53548845110_df46b51294_z.jpg"
+              alt=""
+              class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3
+                class="text-sm md:text-md font-semibold text-white text-start"
+              >
+                Teleng Ria Beach
+              </h3>
             </div>
-
-            <div class="relative overflow-hidden rounded" >
-                <a data-modal-target="gallery2" data-modal-toggle="gallery2">
-                    <img src="https://live.staticflickr.com/65535/53548737189_9accffa707_z.jpg" alt=""
-                        class="w-auto h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Gong Caves</h3>
-                    </div>
-                </a>
-                <div id="gallery2" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53548737189_9accffa707_z.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Gong Caves
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="gallery2" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-
-                            </div>
-                        </div>
-                    </div>
+          </a>
+          <div
+            id="gallery1"
+            tabindex="-1"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative p-4 w-full max-w-4xl max-h-full">
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="text-center">
+                  <img
+                    src="https://live.staticflickr.com/65535/53548845110_df46b51294_z.jpg"
+                    alt=""
+                    class="w-full h-full rounded"
+                  />
+                  <div
+                    class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+                  >
+                    <h3
+                      class="text-sm md:text-md font-semibold text-white text-start"
+                    >
+                      Teleng Ria Beach
+                    </h3>
+                  </div>
+                  <button
+                    data-modal-hide="gallery1"
+                    type="button"
+                    class="absolute top-0 right-0 p-4"
+                  >
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
                 </div>
+              </div>
             </div>
-
-            <div class="relative overflow-hidden rounded" >
-                <a data-modal-target="gallery3" data-modal-toggle="gallery3">
-                    <img src="https://live.staticflickr.com/65535/53548845075_af96bf3725_z.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Watu Karang Beach</h3>
-                    </div>
-                </a>
-                <div id="gallery3" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53548845075_af96bf3725_z.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Watu Karang Beach
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="gallery3" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="relative overflow-hidden rounded" >
-                <a data-modal-target="gallery4" data-modal-toggle="gallery4">
-                    <img src="https://live.staticflickr.com/65535/53550890169_1fe33e0968_z.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Banyu Tibo Beach
-                        </h3>
-                    </div>
-                </a>
-                <div id="gallery4" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53550890169_1fe33e0968_z.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Banyu Tibo Beach
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="gallery4" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="relative overflow-hidden rounded" >
-                <a data-modal-target="gallery5" data-modal-toggle="gallery5">
-                    <img src="https://live.staticflickr.com/65535/53550749633_eccbcd6d40_z.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Soge Beach</h3>
-                    </div>
-                </a>
-                <div id="gallery5" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53550749633_eccbcd6d40_z.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Soge Beach
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="gallery5" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="relative overflow-hidden rounded" >
-                <a data-modal-target="gallery6" data-modal-toggle="gallery6">
-                    <img src="https://live.staticflickr.com/65535/53550999590_a6a7814552_z.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Pacitan City Gate
-                        </h3>
-                    </div>
-                </a>
-                <div id="gallery6" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53550999590_a6a7814552_z.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Pacitan City Gate
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="gallery6" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="relative overflow-hidden rounded" >
-                <a data-modal-target="gallery7" data-modal-toggle="gallery7">
-                    <img src="https://live.staticflickr.com/65535/53550557246_8f085290e9_z.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Srau Beach</h3>
-                    </div>
-                </a>
-                <div id="gallery7" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53550557246_8f085290e9_z.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Srau Beach
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="gallery7" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="relative overflow-hidden rounded" >
-                <a data-modal-target="gallery8" data-modal-toggle="gallery8">
-                    <img src="https://live.staticflickr.com/65535/53550561491_6ee451dbaa_z.jpg" alt=""
-                        class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer" />
-                    <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                        <h3 class="text-sm md:text-md font-semibold text-white text-start">Kasap Beach</h3>
-                    </div>
-                </a>
-                <div id="gallery8" tabindex="-1"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-full max-w-4xl max-h-full">
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <div class="text-center">
-                                <img src="https://live.staticflickr.com/65535/53550561491_6ee451dbaa_z.jpg" alt=""
-                                    class="w-full h-full rounded" />
-                                <div class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full">
-                                    <h3 class="text-sm md:text-md font-semibold text-white text-start">Kasap Beach
-                                    </h3>
-                                </div>
-                                <button data-modal-hide="gallery8" type="button" class="absolute top-0 right-0 p-4">
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="relative overflow-hidden rounded">
+          <a data-modal-target="gallery2" data-modal-toggle="gallery2">
+            <img
+              src="https://live.staticflickr.com/65535/53548737189_9accffa707_z.jpg"
+              alt=""
+              class="w-auto h-full rounded hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3
+                class="text-sm md:text-md font-semibold text-white text-start"
+              >
+                Gong Caves
+              </h3>
+            </div>
+          </a>
+          <div
+            id="gallery2"
+            tabindex="-1"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative p-4 w-full max-w-4xl max-h-full">
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="text-center">
+                  <img
+                    src="https://live.staticflickr.com/65535/53548737189_9accffa707_z.jpg"
+                    alt=""
+                    class="w-full h-full rounded"
+                  />
+                  <div
+                    class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+                  >
+                    <h3
+                      class="text-sm md:text-md font-semibold text-white text-start"
+                    >
+                      Gong Caves
+                    </h3>
+                  </div>
+                  <button
+                    data-modal-hide="gallery2"
+                    type="button"
+                    class="absolute top-0 right-0 p-4"
+                  >
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded">
+          <a data-modal-target="gallery3" data-modal-toggle="gallery3">
+            <img
+              src="https://live.staticflickr.com/65535/53548845075_af96bf3725_z.jpg"
+              alt=""
+              class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3
+                class="text-sm md:text-md font-semibold text-white text-start"
+              >
+                Watu Karang Beach
+              </h3>
+            </div>
+          </a>
+          <div
+            id="gallery3"
+            tabindex="-1"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative p-4 w-full max-w-4xl max-h-full">
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="text-center">
+                  <img
+                    src="https://live.staticflickr.com/65535/53548845075_af96bf3725_z.jpg"
+                    alt=""
+                    class="w-full h-full rounded"
+                  />
+                  <div
+                    class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+                  >
+                    <h3
+                      class="text-sm md:text-md font-semibold text-white text-start"
+                    >
+                      Watu Karang Beach
+                    </h3>
+                  </div>
+                  <button
+                    data-modal-hide="gallery3"
+                    type="button"
+                    class="absolute top-0 right-0 p-4"
+                  >
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded">
+          <a data-modal-target="gallery4" data-modal-toggle="gallery4">
+            <img
+              src="https://live.staticflickr.com/65535/53550890169_1fe33e0968_z.jpg"
+              alt=""
+              class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3
+                class="text-sm md:text-md font-semibold text-white text-start"
+              >
+                Banyu Tibo Beach
+              </h3>
+            </div>
+          </a>
+          <div
+            id="gallery4"
+            tabindex="-1"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative p-4 w-full max-w-4xl max-h-full">
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="text-center">
+                  <img
+                    src="https://live.staticflickr.com/65535/53550890169_1fe33e0968_z.jpg"
+                    alt=""
+                    class="w-full h-full rounded"
+                  />
+                  <div
+                    class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+                  >
+                    <h3
+                      class="text-sm md:text-md font-semibold text-white text-start"
+                    >
+                      Banyu Tibo Beach
+                    </h3>
+                  </div>
+                  <button
+                    data-modal-hide="gallery4"
+                    type="button"
+                    class="absolute top-0 right-0 p-4"
+                  >
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded">
+          <a data-modal-target="gallery5" data-modal-toggle="gallery5">
+            <img
+              src="https://live.staticflickr.com/65535/53550749633_eccbcd6d40_z.jpg"
+              alt=""
+              class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3
+                class="text-sm md:text-md font-semibold text-white text-start"
+              >
+                Soge Beach
+              </h3>
+            </div>
+          </a>
+          <div
+            id="gallery5"
+            tabindex="-1"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative p-4 w-full max-w-4xl max-h-full">
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="text-center">
+                  <img
+                    src="https://live.staticflickr.com/65535/53550749633_eccbcd6d40_z.jpg"
+                    alt=""
+                    class="w-full h-full rounded"
+                  />
+                  <div
+                    class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+                  >
+                    <h3
+                      class="text-sm md:text-md font-semibold text-white text-start"
+                    >
+                      Soge Beach
+                    </h3>
+                  </div>
+                  <button
+                    data-modal-hide="gallery5"
+                    type="button"
+                    class="absolute top-0 right-0 p-4"
+                  >
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded">
+          <a data-modal-target="gallery6" data-modal-toggle="gallery6">
+            <img
+              src="https://live.staticflickr.com/65535/53550999590_a6a7814552_z.jpg"
+              alt=""
+              class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3
+                class="text-sm md:text-md font-semibold text-white text-start"
+              >
+                Pacitan City Gate
+              </h3>
+            </div>
+          </a>
+          <div
+            id="gallery6"
+            tabindex="-1"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative p-4 w-full max-w-4xl max-h-full">
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="text-center">
+                  <img
+                    src="https://live.staticflickr.com/65535/53550999590_a6a7814552_z.jpg"
+                    alt=""
+                    class="w-full h-full rounded"
+                  />
+                  <div
+                    class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+                  >
+                    <h3
+                      class="text-sm md:text-md font-semibold text-white text-start"
+                    >
+                      Pacitan City Gate
+                    </h3>
+                  </div>
+                  <button
+                    data-modal-hide="gallery6"
+                    type="button"
+                    class="absolute top-0 right-0 p-4"
+                  >
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded">
+          <a data-modal-target="gallery7" data-modal-toggle="gallery7">
+            <img
+              src="https://live.staticflickr.com/65535/53550557246_8f085290e9_z.jpg"
+              alt=""
+              class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3
+                class="text-sm md:text-md font-semibold text-white text-start"
+              >
+                Srau Beach
+              </h3>
+            </div>
+          </a>
+          <div
+            id="gallery7"
+            tabindex="-1"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative p-4 w-full max-w-4xl max-h-full">
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="text-center">
+                  <img
+                    src="https://live.staticflickr.com/65535/53550557246_8f085290e9_z.jpg"
+                    alt=""
+                    class="w-full h-full rounded"
+                  />
+                  <div
+                    class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+                  >
+                    <h3
+                      class="text-sm md:text-md font-semibold text-white text-start"
+                    >
+                      Srau Beach
+                    </h3>
+                  </div>
+                  <button
+                    data-modal-hide="gallery7"
+                    type="button"
+                    class="absolute top-0 right-0 p-4"
+                  >
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden rounded">
+          <a data-modal-target="gallery8" data-modal-toggle="gallery8">
+            <img
+              src="https://live.staticflickr.com/65535/53550561491_6ee451dbaa_z.jpg"
+              alt=""
+              class="w-full h-full rounded hover:scale-125 transition duration-300 cursor-pointer"
+            />
+            <div
+              class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+            >
+              <h3
+                class="text-sm md:text-md font-semibold text-white text-start"
+              >
+                Kasap Beach
+              </h3>
+            </div>
+          </a>
+          <div
+            id="gallery8"
+            tabindex="-1"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+          >
+            <div class="relative p-4 w-full max-w-4xl max-h-full">
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="text-center">
+                  <img
+                    src="https://live.staticflickr.com/65535/53550561491_6ee451dbaa_z.jpg"
+                    alt=""
+                    class="w-full h-full rounded"
+                  />
+                  <div
+                    class="absolute bottom-0 p-4 bg-gradient-to-t from-mixed100 w-full"
+                  >
+                    <h3
+                      class="text-sm md:text-md font-semibold text-white text-start"
+                    >
+                      Kasap Beach
+                    </h3>
+                  </div>
+                  <button
+                    data-modal-hide="gallery8"
+                    type="button"
+                    class="absolute top-0 right-0 p-4"
+                  >
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="mx-auto p-4 bg-gray-100 dark:bg-mixed200">
-        <div class="grid md:grid-cols-2 gap-4">
-          <div>
-            <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse z-10">
-              <span class="self-center text-lg md:text-2xl font-semibold whitespace-nowrap">East Javacation</span>
-            </a>
-            <p>Discover Nature's Beauty and Cultural Wonders!</p>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div>
+          <a
+            href="/"
+            class="flex items-center space-x-3 rtl:space-x-reverse z-10"
+          >
+            <span
+              class="self-center text-lg md:text-2xl font-semibold whitespace-nowrap"
+              >East Javacation</span
+            >
+          </a>
+          <p>Discover Nature's Beauty and Cultural Wonders!</p>
+        </div>
+        <div
+          class="bg-gray-300/[0.3] dark:bg-mixed300/[0.3] p-2 md:p-4 rounded"
+        >
+          <div id="weather" class="p-2"></div>
+          <div class="flex gap-2 mt-6 p-2">
+            <p>Source :</p>
+            <a href="https://data.bmkg.go.id/prakiraan-cuaca/" target="_blank"
+              >BMKG</a
+            >
+            <a
+              href="https://github.com/renomureza/cuaca-gempa-rest-api"
+              target="_blank"
+              >Rest API</a
+            >
           </div>
-          <div class="bg-gray-300/[0.3] dark:bg-mixed300/[0.3] p-2 md:p-4 rounded">
-            <div id="weather" class="p-2"></div>
-            <div class="flex gap-2 mt-6 p-2">
-              <p>Source : </p>
-              <a href="https://data.bmkg.go.id/prakiraan-cuaca/" target="_blank">BMKG</a>
-              <a href="https://github.com/renomureza/cuaca-gempa-rest-api" target="_blank">Rest API</a> 
-            </div>
-          </div>
         </div>
-        <h2 class="mt-6 mb-2">Social Media</h2>
-        <div class="flex flex-wrap gap-4 items-center">
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
-              <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-            </svg>
-          </a>
-        </div>
-        <div class="text-center mt-4">
-          <p>&copy; 2024 East Javacation</p>
-        </div>
-      </footer>
+      </div>
+      <h2 class="mt-6 mb-2">Social Media</h2>
+      <div class="flex flex-wrap gap-4 items-center">
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-instagram"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+            />
+          </svg>
+        </a>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-facebook"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+            />
+          </svg>
+        </a>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-tiktok"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"
+            />
+          </svg>
+        </a>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-youtube"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+            />
+          </svg>
+        </a>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-twitter-x"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="text-center mt-4">
+        <p>&copy; 2024 East Javacation</p>
+      </div>
+    </footer>
 
-     
+    <script>
+      let typedGallery = new Typed("#pacitan-city", {
+        strings: ["Warm hospitality and welcoming community."],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
     <script src="/assets/js/app.js"></script>
     <script src="/assets/js/weather.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
-</body>
-
+  </body>
 </html>
