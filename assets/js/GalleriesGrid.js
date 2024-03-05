@@ -48,12 +48,12 @@ const generateGalleryHTML = (items) => {
                       >
                         ${item.title}
                       </h3>
-                      <p class="text-start">${item.city}</p>
+                      <p class="text-start text-white">${item.city}</p>
                     </div>
                     <button
                       data-modal-hide="${item.id}"
                       type="button"
-                      class="absolute top-0 right-0 p-4"
+                      class="absolute top-0 right-0 p-4 text-white"
                     >
                       <svg
                         class="h-6 w-6"
