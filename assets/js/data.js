@@ -533,7 +533,7 @@ export const destinations = [
   },
   {
     id: "kelud_mount",
-    title: "Kelud Mountai",
+    title: "Kelud Mountaim",
     description: `Mount Kelud is a volcano located in East Java, Indonesia.
     It's known for its frequent eruptions throughout history,
     with the most recent significant eruption occurring in
